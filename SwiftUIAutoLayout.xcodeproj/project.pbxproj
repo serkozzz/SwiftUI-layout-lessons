@@ -18,7 +18,7 @@
 		9D3C74A22DF874060048D4E1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D3C748E2DF874060048D4E1 /* Preview Assets.xcassets */; };
 		9D3C74A32DF874060048D4E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D3C74902DF874060048D4E1 /* Assets.xcassets */; };
 		9D3C74A52DF8876E0048D4E1 /* Variable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3C74A42DF8876E0048D4E1 /* Variable.swift */; };
-		9D3C74A72DF8941C0048D4E1 /* sandbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3C74A62DF8941C0048D4E1 /* sandbox.swift */; };
+		9D3C74A72DF8941C0048D4E1 /* CircleWithText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3C74A62DF8941C0048D4E1 /* CircleWithText.swift */; };
 		9D3C74AA2DF8E84F0048D4E1 /* IndexCardsWithStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3C74A92DF8E84F0048D4E1 /* IndexCardsWithStack.swift */; };
 		9D3C74AC2DF8FB430048D4E1 /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3C74AB2DF8FB410048D4E1 /* Grid.swift */; };
 		9D3C74AE2DF907DB0048D4E1 /* Grid2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3C74AD2DF907D70048D4E1 /* Grid2.swift */; };
@@ -39,7 +39,7 @@
 		9D3C74972DF874060048D4E1 /* ScrollTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollTest.swift; sourceTree = "<group>"; };
 		9D3C74982DF874060048D4E1 /* SwiftUIAutoLayoutApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIAutoLayoutApp.swift; sourceTree = "<group>"; };
 		9D3C74A42DF8876E0048D4E1 /* Variable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Variable.swift; sourceTree = "<group>"; };
-		9D3C74A62DF8941C0048D4E1 /* sandbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sandbox.swift; sourceTree = "<group>"; };
+		9D3C74A62DF8941C0048D4E1 /* CircleWithText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleWithText.swift; sourceTree = "<group>"; };
 		9D3C74A92DF8E84F0048D4E1 /* IndexCardsWithStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexCardsWithStack.swift; sourceTree = "<group>"; };
 		9D3C74AB2DF8FB410048D4E1 /* Grid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
 		9D3C74AD2DF907D70048D4E1 /* Grid2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid2.swift; sourceTree = "<group>"; };
@@ -60,6 +60,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9D0BD3852DFD17560029DBBB /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				9D3C74BF2DFCEAF20048D4E1 /* Anchors */,
+				9D3C74A62DF8941C0048D4E1 /* CircleWithText.swift */,
+			);
+			path = Preferences;
+			sourceTree = "<group>";
+		};
 		9D3C748F2DF874060048D4E1 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
@@ -75,14 +84,13 @@
 				9D3C748F2DF874060048D4E1 /* Preview Content */,
 				9D3C74902DF874060048D4E1 /* Assets.xcassets */,
 				9D3C74A82DF8965E0048D4E1 /* Collections */,
-				9D3C74BF2DFCEAF20048D4E1 /* Anchors */,
+				9D0BD3852DFD17560029DBBB /* Preferences */,
 				9D3C74922DF874060048D4E1 /* ContentView.swift */,
 				9D3C74932DF874060048D4E1 /* Counter.swift */,
 				9D3C74942DF874060048D4E1 /* ImageTest.swift */,
 				9D3C74962DF874060048D4E1 /* MeasureBehavior.swift */,
 				9D3C74972DF874060048D4E1 /* ScrollTest.swift */,
 				9D3C74A42DF8876E0048D4E1 /* Variable.swift */,
-				9D3C74A62DF8941C0048D4E1 /* sandbox.swift */,
 			);
 			path = SwiftUIAutoLayout;
 			sourceTree = "<group>";
@@ -203,7 +211,7 @@
 				9D3C749B2DF874060048D4E1 /* ContentView.swift in Sources */,
 				9D3C74BE2DFCEAEA0048D4E1 /* AnchorTabsExample.swift in Sources */,
 				9D3C749C2DF874060048D4E1 /* Counter.swift in Sources */,
-				9D3C74A72DF8941C0048D4E1 /* sandbox.swift in Sources */,
+				9D3C74A72DF8941C0048D4E1 /* CircleWithText.swift in Sources */,
 				9D3C749D2DF874060048D4E1 /* ImageTest.swift in Sources */,
 				9D3C74BC2DFC73ED0048D4E1 /* AnchorSimpleExample.swift in Sources */,
 				9D3C74AE2DF907DB0048D4E1 /* Grid2.swift in Sources */,

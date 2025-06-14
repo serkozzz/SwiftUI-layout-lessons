@@ -16,8 +16,7 @@ struct WidthKey: PreferenceKey {
 }
 
 
-struct sandbox: View {
-    
+struct CircleWithText: View {
     @State private var width: CGFloat?
     
     var body: some View {
@@ -28,8 +27,11 @@ struct sandbox: View {
                 Color.clear
                     .preference(key: WidthKey.self, value: proxy.size.width)
             })
-
-        
+            .onPreferenceChange(WidthKey.self) { width in
+                DispatchQueue.main.async {
+                    self.width = width
+                }
+            }
             .frame(width: self.width, height: width)
             .padding(10)
             .border(.black)
@@ -45,5 +47,5 @@ private struct Cell: View {
 }
 
 #Preview {
-    sandbox()
+    CircleWithText()
 }

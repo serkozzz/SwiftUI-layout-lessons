@@ -19,15 +19,10 @@ struct AnchorSimpleExample: View {
     var body: some View {
         VStack {
             Text("Hello, world!")
-                .background(
-                    GeometryReader { geo in
-                        Color.clear
-                            .anchorPreference(
-                                key: CircleCenterKey.self,
-                                value: .center
-                            ) { anchor in anchor }
-                    }
-                )
+                .anchorPreference(
+                    key: CircleCenterKey.self,
+                    value: .center
+                ) { anchor in anchor }
         }
         // Теперь родитель использует это значение
         .overlayPreferenceValue(CircleCenterKey.self) { anchor in

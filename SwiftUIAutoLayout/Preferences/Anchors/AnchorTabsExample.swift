@@ -43,12 +43,9 @@ struct AnchorTabsExample: View {
                     Rectangle()
                         .fill(Color.accentColor)
                         .frame(width: anchorBounds.width, height: 2)
-                        .offset(x: anchorBounds.minX)
-//                        .frame(
-//                            width: proxy.size.width,
-//                            height: proxy.size.height,
-//                            alignment: .bottomLeading
-//                        )
+                        .offset(x: anchorBounds.minX, y: anchorBounds.maxY - 2)
+                        .animation(.default)
+                    
                 }
             })
         }
