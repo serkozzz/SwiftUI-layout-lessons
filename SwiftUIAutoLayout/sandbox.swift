@@ -7,13 +7,33 @@
 
 import SwiftUI
 
+struct WidthKey: PreferenceKey {
+    static let defaultValue: CGFloat? = nil
+    
+    static func reduce(value: inout CGFloat?, nextValue: () -> CGFloat?) {
+        value = value ?? nextValue()
+    }
+}
+
+
 struct sandbox: View {
+    
+    @State private var width: CGFloat?
+    
     var body: some View {
-        HStack {
-            Cell()
-            Cell()
-        }
-        .frame(maxWidth: .infinity, alignment: .leading)
+        
+        Text("Hello, world")
+            .foregroundColor(.white)
+            .background(GeometryReader { proxy in
+                Color.clear
+                    .preference(key: WidthKey.self, value: proxy.size.width)
+            })
+
+        
+            .frame(width: self.width, height: width)
+            .padding(10)
+            .border(.black)
+            .background(Circle().fill(Color.blue))
     }
 }
 

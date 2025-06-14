@@ -17,6 +17,7 @@ struct MeasureBehavior<Content: View>: View {
                 .border(Color.gray)
                 .frame(width: width, height: height, alignment: .center)
                 .border(Color.black)
+            
             Slider(value: $width, in: 0...500)
             Slider(value: $height, in: 0...200)
         }
@@ -26,10 +27,16 @@ struct MeasureBehavior<Content: View>: View {
 #Preview {
     MeasureBehavior(content:
                         HStack {
-            Text("Hello, World")
-            Text("It's me!")
-            .layoutPriority(1)
+        Path {p in
+            p.move(to: CGPoint(x: 50, y: 0))
+            p.addLines([
+                CGPoint(x: 100, y: 75),
+                CGPoint(x: 0, y: 75),
+                CGPoint(x: 50, y: 0)
+            ])
         }
+        .layoutPriority(1)
+    }
     )
 }
 

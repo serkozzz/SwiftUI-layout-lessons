@@ -34,6 +34,7 @@ struct IndexCardsWithStack: View {
                         }
                         .frame(maxWidth: .infinity, alignment: .center)
                     }
+                    
                 }
             }
         }

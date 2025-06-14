@@ -20,6 +20,11 @@
 		9D3C74A52DF8876E0048D4E1 /* Variable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3C74A42DF8876E0048D4E1 /* Variable.swift */; };
 		9D3C74A72DF8941C0048D4E1 /* sandbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3C74A62DF8941C0048D4E1 /* sandbox.swift */; };
 		9D3C74AA2DF8E84F0048D4E1 /* IndexCardsWithStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3C74A92DF8E84F0048D4E1 /* IndexCardsWithStack.swift */; };
+		9D3C74AC2DF8FB430048D4E1 /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3C74AB2DF8FB410048D4E1 /* Grid.swift */; };
+		9D3C74AE2DF907DB0048D4E1 /* Grid2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3C74AD2DF907D70048D4E1 /* Grid2.swift */; };
+		9D3C74B02DF929F50048D4E1 /* LazyGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3C74AF2DF929F50048D4E1 /* LazyGrid.swift */; };
+		9D3C74BC2DFC73ED0048D4E1 /* AnchorSimpleExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3C74BB2DFC73EA0048D4E1 /* AnchorSimpleExample.swift */; };
+		9D3C74BE2DFCEAEA0048D4E1 /* AnchorTabsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3C74BD2DFCEADD0048D4E1 /* AnchorTabsExample.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +41,11 @@
 		9D3C74A42DF8876E0048D4E1 /* Variable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Variable.swift; sourceTree = "<group>"; };
 		9D3C74A62DF8941C0048D4E1 /* sandbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sandbox.swift; sourceTree = "<group>"; };
 		9D3C74A92DF8E84F0048D4E1 /* IndexCardsWithStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexCardsWithStack.swift; sourceTree = "<group>"; };
+		9D3C74AB2DF8FB410048D4E1 /* Grid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
+		9D3C74AD2DF907D70048D4E1 /* Grid2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid2.swift; sourceTree = "<group>"; };
+		9D3C74AF2DF929F50048D4E1 /* LazyGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyGrid.swift; sourceTree = "<group>"; };
+		9D3C74BB2DFC73EA0048D4E1 /* AnchorSimpleExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorSimpleExample.swift; sourceTree = "<group>"; };
+		9D3C74BD2DFCEADD0048D4E1 /* AnchorTabsExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorTabsExample.swift; sourceTree = "<group>"; };
 		9D93F8642DF63977009A957B /* SwiftUIAutoLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIAutoLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -61,15 +71,16 @@
 		9D3C74992DF874060048D4E1 /* SwiftUIAutoLayout */ = {
 			isa = PBXGroup;
 			children = (
+				9D3C74982DF874060048D4E1 /* SwiftUIAutoLayoutApp.swift */,
 				9D3C748F2DF874060048D4E1 /* Preview Content */,
 				9D3C74902DF874060048D4E1 /* Assets.xcassets */,
 				9D3C74A82DF8965E0048D4E1 /* Collections */,
+				9D3C74BF2DFCEAF20048D4E1 /* Anchors */,
 				9D3C74922DF874060048D4E1 /* ContentView.swift */,
 				9D3C74932DF874060048D4E1 /* Counter.swift */,
 				9D3C74942DF874060048D4E1 /* ImageTest.swift */,
 				9D3C74962DF874060048D4E1 /* MeasureBehavior.swift */,
 				9D3C74972DF874060048D4E1 /* ScrollTest.swift */,
-				9D3C74982DF874060048D4E1 /* SwiftUIAutoLayoutApp.swift */,
 				9D3C74A42DF8876E0048D4E1 /* Variable.swift */,
 				9D3C74A62DF8941C0048D4E1 /* sandbox.swift */,
 			);
@@ -82,8 +93,20 @@
 				9D3C74912DF874060048D4E1 /* CompositionalLayout.swift */,
 				9D3C74952DF874060048D4E1 /* TilesWithStack.swift */,
 				9D3C74A92DF8E84F0048D4E1 /* IndexCardsWithStack.swift */,
+				9D3C74AB2DF8FB410048D4E1 /* Grid.swift */,
+				9D3C74AD2DF907D70048D4E1 /* Grid2.swift */,
+				9D3C74AF2DF929F50048D4E1 /* LazyGrid.swift */,
 			);
 			path = Collections;
+			sourceTree = "<group>";
+		};
+		9D3C74BF2DFCEAF20048D4E1 /* Anchors */ = {
+			isa = PBXGroup;
+			children = (
+				9D3C74BB2DFC73EA0048D4E1 /* AnchorSimpleExample.swift */,
+				9D3C74BD2DFCEADD0048D4E1 /* AnchorTabsExample.swift */,
+			);
+			path = Anchors;
 			sourceTree = "<group>";
 		};
 		9D93F85B2DF63977009A957B = {
@@ -176,16 +199,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D3C749A2DF874060048D4E1 /* CompositionalLayout.swift in Sources */,
+				9D3C74B02DF929F50048D4E1 /* LazyGrid.swift in Sources */,
 				9D3C749B2DF874060048D4E1 /* ContentView.swift in Sources */,
+				9D3C74BE2DFCEAEA0048D4E1 /* AnchorTabsExample.swift in Sources */,
 				9D3C749C2DF874060048D4E1 /* Counter.swift in Sources */,
 				9D3C74A72DF8941C0048D4E1 /* sandbox.swift in Sources */,
 				9D3C749D2DF874060048D4E1 /* ImageTest.swift in Sources */,
+				9D3C74BC2DFC73ED0048D4E1 /* AnchorSimpleExample.swift in Sources */,
+				9D3C74AE2DF907DB0048D4E1 /* Grid2.swift in Sources */,
 				9D3C749E2DF874060048D4E1 /* TilesWithStack.swift in Sources */,
 				9D3C749F2DF874060048D4E1 /* MeasureBehavior.swift in Sources */,
 				9D3C74A52DF8876E0048D4E1 /* Variable.swift in Sources */,
 				9D3C74A02DF874060048D4E1 /* ScrollTest.swift in Sources */,
 				9D3C74A12DF874060048D4E1 /* SwiftUIAutoLayoutApp.swift in Sources */,
 				9D3C74AA2DF8E84F0048D4E1 /* IndexCardsWithStack.swift in Sources */,
+				9D3C74AC2DF8FB430048D4E1 /* Grid.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
