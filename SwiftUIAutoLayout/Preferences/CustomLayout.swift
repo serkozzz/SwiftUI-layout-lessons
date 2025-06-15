@@ -26,7 +26,29 @@ struct CollectSize: ViewModifier {
     }
 }
 
-struct Stack<Element, Content: View> {
+
+
+struct CustomLayout: View {
+    let colors: [(Color, CGFloat)] = [(.red, 50), (.green, 30), (.blue, 75)]
+    @State var horizontal: Bool = true
+    var body: some View {
+        VStack {
+            Button(action: {
+                withAnimation(.default) {
+                    self.horizontal.toggle()
+                }
+            }) { Text("Toggle axis") }
+            Stack(elements: colors, axis: horizontal ? .horizontal : .vertical) { item in
+                Rectangle()
+                    .fill(item.0)
+                    .frame(width: item.1, height: item.1)
+            }
+            .border(Color.black)
+        }
+    }
+}
+
+struct Stack<Element, Content: View>: View {
     
     var elements: [Element]
     var spacing: CGFloat = 8
@@ -36,15 +58,14 @@ struct Stack<Element, Content: View> {
     
     @State private var offsets: [CGPoint] = []
    
-    
     var body: some View {
         ZStack(alignment: alignment) {
-            ForEach(elements.indices, content: { idx in
+            ForEach(elements.indices) { idx in
                 self.content(self.elements[idx])
                     .modifier(CollectSize(index: idx))
                     .alignmentGuide(self.alignment.horizontal, computeValue: {
                         self.axis == .horizontal
-                        ? -self.offset(at: idx).x
+                        ? -offset.x
                         : $0[self.alignment.horizontal]
                     })
                     .alignmentGuide(self.alignment.vertical, computeValue: {
@@ -52,9 +73,13 @@ struct Stack<Element, Content: View> {
                         ? -self.offset(at: idx).y
                         : $0[self.alignment.vertical]
                     })
-            })
+            }
         }
-        .onPreferenceChange(CollectSizePreference.self, perform: self.computeOffsets)
+        .onPreferenceChange(CollectSizePreference.self) { sizes in
+            Task { @MainActor in
+                self.computeOffsets(sizes: sizes)
+            }
+        }
     }
 
 
@@ -75,7 +100,12 @@ struct Stack<Element, Content: View> {
     //метод нужен только потому что в первом layout pass массив offsets ещё не заполнен
     //и мы возвращаем .zero
     private func offset(at index: Int) -> CGPoint {
-        guard index < offsets.endIndex else { return .zero }
-        return offsets[index]
+        guard index < _offsets.wrappedValue.endIndex else { return .zero }
+        return _offsets.wrappedValue[index]
     }
+}
+
+
+#Preview {
+    CustomLayout()
 }
