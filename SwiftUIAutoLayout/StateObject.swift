@@ -9,26 +9,34 @@ import SwiftUI
 
 struct StateObjectExample: View {
     @State private var showPhotos = false
+    @State private var index = 1
     
     var body: some View {
         VStack {
-            Button("Toggle Photos") { showPhotos.toggle() }
+            Stepper("index", value: $index)
+                .fixedSize()
+            
+            Spacer()
+            Button("Toggle") { showPhotos.toggle() }
+                .buttonStyle(.borderedProminent)
             if showPhotos {
-                PhotosListView()
+                MyView(index: index)
             }
+            Spacer()
         }
     }
 }
 
-struct PhotosListView: View {
-    @StateObject var viewModel = PhotosListViewModel() // или @StateObject
-    
+
+private struct MyView: View {
+    @ObservedObject var viewModel = ViewModel() // или @StateObject
+    var index: Int
     var body: some View {
-        Text("PhotosListView")
+        Text("MyView. index = \(index)")
     }
 }
 
-class PhotosListViewModel: ObservableObject {
+private class ViewModel: ObservableObject {
     init() {
         print("ViewModel initialized, id: \(Unmanaged.passUnretained(self).toOpaque())")
     }
@@ -37,3 +45,5 @@ class PhotosListViewModel: ObservableObject {
 #Preview {
     StateObjectExample()
 }
+
+
