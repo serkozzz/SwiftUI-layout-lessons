@@ -65,7 +65,7 @@ struct Stack<Element, Content: View>: View {
                     .modifier(CollectSize(index: idx))
                     .alignmentGuide(self.alignment.horizontal, computeValue: {
                         self.axis == .horizontal
-                        ? -offset.x
+                        ? -self.offset(at: idx).x
                         : $0[self.alignment.horizontal]
                     })
                     .alignmentGuide(self.alignment.vertical, computeValue: {
@@ -99,7 +99,7 @@ struct Stack<Element, Content: View>: View {
 
     //метод нужен только потому что в первом layout pass массив offsets ещё не заполнен
     //и мы возвращаем .zero
-    private func offset(at index: Int) -> CGPoint {
+    nonisolated private func offset(at index: Int) -> CGPoint {
         guard index < _offsets.wrappedValue.endIndex else { return .zero }
         return _offsets.wrappedValue[index]
     }

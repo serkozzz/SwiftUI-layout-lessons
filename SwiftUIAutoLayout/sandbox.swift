@@ -8,20 +8,22 @@
 import SwiftUI
 
 
-struct sandbox: View {
 
+struct sandbox: View {
+    
+    @State var width: CGFloat? = 80
+    
     var body: some View {
-        
-        ZStack(alignment: .topLeading) {
-            Rectangle().fill(.red)
-                .frame(width: 200, height: 100)
-            
-            Rectangle().fill(.green)
-                .frame(width: 50, height: 50)
-                .alignmentGuide(.top) { dimension in
-                    60
-            }
-        }
+        Rectangle()
+            .frame(width: width, height: width)
+            .padding(10)
+            .background(GeometryReader { proxy in
+                Color.clear
+                    .onChange(of: proxy.size.width) {
+                        self.width = width
+
+                    }
+            })
     }
 }
 

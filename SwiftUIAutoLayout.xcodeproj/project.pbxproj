@@ -10,6 +10,7 @@
 		9D0BD3872DFD18320029DBBB /* sandbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0BD3862DFD182E0029DBBB /* sandbox.swift */; };
 		9D0BD3892DFDB1080029DBBB /* CustomLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0BD3882DFDB0FD0029DBBB /* CustomLayout.swift */; };
 		9D0BD38B2DFE31210029DBBB /* LayoutCodeOrganization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0BD38A2DFE310F0029DBBB /* LayoutCodeOrganization.swift */; };
+		9D0BD3C02E0261560029DBBB /* StateObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0BD3BF2E02601F0029DBBB /* StateObject.swift */; };
 		9D3C749A2DF874060048D4E1 /* CompositionalLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3C74912DF874060048D4E1 /* CompositionalLayout.swift */; };
 		9D3C749B2DF874060048D4E1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3C74922DF874060048D4E1 /* ContentView.swift */; };
 		9D3C749C2DF874060048D4E1 /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3C74932DF874060048D4E1 /* Counter.swift */; };
@@ -34,6 +35,7 @@
 		9D0BD3862DFD182E0029DBBB /* sandbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sandbox.swift; sourceTree = "<group>"; };
 		9D0BD3882DFDB0FD0029DBBB /* CustomLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLayout.swift; sourceTree = "<group>"; };
 		9D0BD38A2DFE310F0029DBBB /* LayoutCodeOrganization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutCodeOrganization.swift; sourceTree = "<group>"; };
+		9D0BD3BF2E02601F0029DBBB /* StateObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateObject.swift; sourceTree = "<group>"; };
 		9D3C748E2DF874060048D4E1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9D3C74902DF874060048D4E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D3C74912DF874060048D4E1 /* CompositionalLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionalLayout.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 				9D3C74902DF874060048D4E1 /* Assets.xcassets */,
 				9D3C74A82DF8965E0048D4E1 /* Collections */,
 				9D0BD3852DFD17560029DBBB /* Preferences */,
+				9D0BD3BF2E02601F0029DBBB /* StateObject.swift */,
 				9D0BD38A2DFE310F0029DBBB /* LayoutCodeOrganization.swift */,
 				9D3C74922DF874060048D4E1 /* ContentView.swift */,
 				9D3C74932DF874060048D4E1 /* Counter.swift */,
@@ -227,6 +230,7 @@
 				9D3C749D2DF874060048D4E1 /* ImageTest.swift in Sources */,
 				9D3C74BC2DFC73ED0048D4E1 /* AnchorSimpleExample.swift in Sources */,
 				9D3C74AE2DF907DB0048D4E1 /* Grid2.swift in Sources */,
+				9D0BD3C02E0261560029DBBB /* StateObject.swift in Sources */,
 				9D3C749E2DF874060048D4E1 /* TilesWithStack.swift in Sources */,
 				9D3C749F2DF874060048D4E1 /* MeasureBehavior.swift in Sources */,
 				9D3C74A52DF8876E0048D4E1 /* Variable.swift in Sources */,
