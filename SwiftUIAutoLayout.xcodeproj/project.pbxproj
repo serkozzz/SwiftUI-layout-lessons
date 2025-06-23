@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		9D0BD3872DFD18320029DBBB /* sandbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0BD3862DFD182E0029DBBB /* sandbox.swift */; };
-		9D0BD3892DFDB1080029DBBB /* CustomLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0BD3882DFDB0FD0029DBBB /* CustomLayout.swift */; };
+		9D0BD3892DFDB1080029DBBB /* ThinkingInSwiftUI_AnimatedStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0BD3882DFDB0FD0029DBBB /* ThinkingInSwiftUI_AnimatedStack.swift */; };
 		9D0BD38B2DFE31210029DBBB /* LayoutCodeOrganization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0BD38A2DFE310F0029DBBB /* LayoutCodeOrganization.swift */; };
 		9D0BD3C02E0261560029DBBB /* StateObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0BD3BF2E02601F0029DBBB /* StateObject.swift */; };
+		9D0BD4022E09CD560029DBBB /* PreferencesWithoutGeometryReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0BD4012E09CD420029DBBB /* PreferencesWithoutGeometryReader.swift */; };
 		9D3C749A2DF874060048D4E1 /* CompositionalLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3C74912DF874060048D4E1 /* CompositionalLayout.swift */; };
 		9D3C749B2DF874060048D4E1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3C74922DF874060048D4E1 /* ContentView.swift */; };
 		9D3C749C2DF874060048D4E1 /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3C74932DF874060048D4E1 /* Counter.swift */; };
@@ -33,9 +34,10 @@
 
 /* Begin PBXFileReference section */
 		9D0BD3862DFD182E0029DBBB /* sandbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sandbox.swift; sourceTree = "<group>"; };
-		9D0BD3882DFDB0FD0029DBBB /* CustomLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLayout.swift; sourceTree = "<group>"; };
+		9D0BD3882DFDB0FD0029DBBB /* ThinkingInSwiftUI_AnimatedStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThinkingInSwiftUI_AnimatedStack.swift; sourceTree = "<group>"; };
 		9D0BD38A2DFE310F0029DBBB /* LayoutCodeOrganization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutCodeOrganization.swift; sourceTree = "<group>"; };
 		9D0BD3BF2E02601F0029DBBB /* StateObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateObject.swift; sourceTree = "<group>"; };
+		9D0BD4012E09CD420029DBBB /* PreferencesWithoutGeometryReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesWithoutGeometryReader.swift; sourceTree = "<group>"; };
 		9D3C748E2DF874060048D4E1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9D3C74902DF874060048D4E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D3C74912DF874060048D4E1 /* CompositionalLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionalLayout.swift; sourceTree = "<group>"; };
@@ -73,7 +75,8 @@
 			children = (
 				9D3C74BF2DFCEAF20048D4E1 /* Anchors */,
 				9D3C74A62DF8941C0048D4E1 /* CircleWithText.swift */,
-				9D0BD3882DFDB0FD0029DBBB /* CustomLayout.swift */,
+				9D0BD3882DFDB0FD0029DBBB /* ThinkingInSwiftUI_AnimatedStack.swift */,
+				9D0BD4012E09CD420029DBBB /* PreferencesWithoutGeometryReader.swift */,
 			);
 			path = Preferences;
 			sourceTree = "<group>";
@@ -218,13 +221,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D0BD3892DFDB1080029DBBB /* CustomLayout.swift in Sources */,
+				9D0BD3892DFDB1080029DBBB /* ThinkingInSwiftUI_AnimatedStack.swift in Sources */,
 				9D3C749A2DF874060048D4E1 /* CompositionalLayout.swift in Sources */,
 				9D3C74B02DF929F50048D4E1 /* LazyGrid.swift in Sources */,
 				9D0BD38B2DFE31210029DBBB /* LayoutCodeOrganization.swift in Sources */,
 				9D3C749B2DF874060048D4E1 /* ContentView.swift in Sources */,
 				9D3C74BE2DFCEAEA0048D4E1 /* AnchorTabsExample.swift in Sources */,
 				9D0BD3872DFD18320029DBBB /* sandbox.swift in Sources */,
+				9D0BD4022E09CD560029DBBB /* PreferencesWithoutGeometryReader.swift in Sources */,
 				9D3C749C2DF874060048D4E1 /* Counter.swift in Sources */,
 				9D3C74A72DF8941C0048D4E1 /* CircleWithText.swift in Sources */,
 				9D3C749D2DF874060048D4E1 /* ImageTest.swift in Sources */,

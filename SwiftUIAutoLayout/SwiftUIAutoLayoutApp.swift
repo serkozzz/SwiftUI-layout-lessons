@@ -11,7 +11,7 @@ import SwiftUI
 struct SwiftUIAutoLayoutApp: App {
     var body: some Scene {
         WindowGroup {
-            StateObjectExample()
+            PreferencesWithoutGeometryReader()
         }
     }
 }

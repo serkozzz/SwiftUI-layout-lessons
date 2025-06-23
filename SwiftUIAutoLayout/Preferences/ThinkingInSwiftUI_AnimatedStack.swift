@@ -28,7 +28,7 @@ struct CollectSize: ViewModifier {
 
 
 
-struct CustomLayout: View {
+struct AnimatedStackExample: View {
     let colors: [(Color, CGFloat)] = [(.red, 50), (.green, 30), (.blue, 75)]
     @State var horizontal: Bool = true
     var body: some View {
@@ -107,5 +107,7 @@ struct Stack<Element, Content: View>: View {
 
 
 #Preview {
-    CustomLayout()
+    AnimatedStackExample()
 }
+
+

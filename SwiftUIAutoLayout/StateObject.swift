@@ -21,6 +21,9 @@ struct StateObjectExample: View {
                 .buttonStyle(.borderedProminent)
             if showPhotos {
                 MyView(index: index)
+                    .onAppear {
+                        print("onAppear")
+                    }
             }
             Spacer()
         }

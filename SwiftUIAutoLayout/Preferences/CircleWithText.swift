@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct WidthKey: PreferenceKey {
+private struct WidthKey: PreferenceKey {
     static let defaultValue: CGFloat? = nil
     
     static func reduce(value: inout CGFloat?, nextValue: () -> CGFloat?) {
