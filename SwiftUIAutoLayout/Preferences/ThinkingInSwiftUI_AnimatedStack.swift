@@ -109,5 +109,3 @@ struct Stack<Element, Content: View>: View {
 #Preview {
     AnimatedStackExample()
 }
-
-

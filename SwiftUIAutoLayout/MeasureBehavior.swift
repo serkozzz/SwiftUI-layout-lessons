@@ -15,7 +15,7 @@ struct MeasureBehavior<Content: View>: View {
         VStack {
             content
                 .border(Color.gray)
-                .frame(width: width, height: height, alignment: .center)
+                //.frame(width: width, height: height, alignment: .center)
                 .border(Color.black)
             
             Slider(value: $width, in: 0...500)
@@ -26,17 +26,14 @@ struct MeasureBehavior<Content: View>: View {
 
 #Preview {
     MeasureBehavior(content:
-                        HStack {
-        Path {p in
-            p.move(to: CGPoint(x: 50, y: 0))
-            p.addLines([
-                CGPoint(x: 100, y: 75),
-                CGPoint(x: 0, y: 75),
-                CGPoint(x: 50, y: 0)
-            ])
+            ZStack {
+                Text("sdsdasdasdasdsa")
+                    .position(CGPoint(x:0, y: 0))
+            }
+        .frame(width: 100, height: 100)
+        .background {
+            Color.red
         }
-        .layoutPriority(1)
-    }
     )
 }
 
