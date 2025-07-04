@@ -13,7 +13,6 @@
 		9D0BD3C02E0261560029DBBB /* StateObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0BD3BF2E02601F0029DBBB /* StateObject.swift */; };
 		9D0BD4022E09CD560029DBBB /* PreferencesWithoutGeometryReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0BD4012E09CD420029DBBB /* PreferencesWithoutGeometryReader.swift */; };
 		9D3C749A2DF874060048D4E1 /* CompositionalLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3C74912DF874060048D4E1 /* CompositionalLayout.swift */; };
-		9D3C749B2DF874060048D4E1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3C74922DF874060048D4E1 /* ContentView.swift */; };
 		9D3C749C2DF874060048D4E1 /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3C74932DF874060048D4E1 /* Counter.swift */; };
 		9D3C749D2DF874060048D4E1 /* ImageTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3C74942DF874060048D4E1 /* ImageTest.swift */; };
 		9D3C749E2DF874060048D4E1 /* TilesWithStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3C74952DF874060048D4E1 /* TilesWithStack.swift */; };
@@ -33,6 +32,7 @@
 		9D5916032E10559000797BA7 /* NavigationPathSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5916022E10559000797BA7 /* NavigationPathSample.swift */; };
 		9D5916062E10710100797BA7 /* NavigationPathTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5916052E10710100797BA7 /* NavigationPathTree.swift */; };
 		9D5916092E10C42200797BA7 /* sandbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5916082E10C42200797BA7 /* sandbox.swift */; };
+		9D5916102E17F4C200797BA7 /* CircleLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D59160F2E17F4BC00797BA7 /* CircleLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,7 +44,6 @@
 		9D3C748E2DF874060048D4E1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9D3C74902DF874060048D4E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D3C74912DF874060048D4E1 /* CompositionalLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionalLayout.swift; sourceTree = "<group>"; };
-		9D3C74922DF874060048D4E1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9D3C74932DF874060048D4E1 /* Counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
 		9D3C74942DF874060048D4E1 /* ImageTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTest.swift; sourceTree = "<group>"; };
 		9D3C74952DF874060048D4E1 /* TilesWithStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TilesWithStack.swift; sourceTree = "<group>"; };
@@ -62,6 +61,7 @@
 		9D5916022E10559000797BA7 /* NavigationPathSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationPathSample.swift; sourceTree = "<group>"; };
 		9D5916052E10710100797BA7 /* NavigationPathTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationPathTree.swift; sourceTree = "<group>"; };
 		9D5916082E10C42200797BA7 /* sandbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sandbox.swift; sourceTree = "<group>"; };
+		9D59160F2E17F4BC00797BA7 /* CircleLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleLayout.swift; sourceTree = "<group>"; };
 		9D93F8642DF63977009A957B /* SwiftUIAutoLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIAutoLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -107,7 +107,6 @@
 				9D5916042E1070E400797BA7 /* Navigation */,
 				9D0BD3BF2E02601F0029DBBB /* StateObject.swift */,
 				9D0BD38A2DFE310F0029DBBB /* LayoutCodeOrganization.swift */,
-				9D3C74922DF874060048D4E1 /* ContentView.swift */,
 				9D3C74932DF874060048D4E1 /* Counter.swift */,
 				9D3C74942DF874060048D4E1 /* ImageTest.swift */,
 				9D3C74962DF874060048D4E1 /* MeasureBehavior.swift */,
@@ -121,6 +120,7 @@
 		9D3C74A82DF8965E0048D4E1 /* Collections */ = {
 			isa = PBXGroup;
 			children = (
+				9D59160E2E17F4B200797BA7 /* LayoutProtocol */,
 				9D3C74912DF874060048D4E1 /* CompositionalLayout.swift */,
 				9D3C74952DF874060048D4E1 /* TilesWithStack.swift */,
 				9D3C74A92DF8E84F0048D4E1 /* IndexCardsWithStack.swift */,
@@ -147,6 +147,14 @@
 				9D5916022E10559000797BA7 /* NavigationPathSample.swift */,
 			);
 			path = Navigation;
+			sourceTree = "<group>";
+		};
+		9D59160E2E17F4B200797BA7 /* LayoutProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				9D59160F2E17F4BC00797BA7 /* CircleLayout.swift */,
+			);
+			path = LayoutProtocol;
 			sourceTree = "<group>";
 		};
 		9D93F85B2DF63977009A957B = {
@@ -242,7 +250,6 @@
 				9D3C749A2DF874060048D4E1 /* CompositionalLayout.swift in Sources */,
 				9D3C74B02DF929F50048D4E1 /* LazyGrid.swift in Sources */,
 				9D0BD38B2DFE31210029DBBB /* LayoutCodeOrganization.swift in Sources */,
-				9D3C749B2DF874060048D4E1 /* ContentView.swift in Sources */,
 				9D3C74BE2DFCEAEA0048D4E1 /* AnchorTabsExample.swift in Sources */,
 				9D0BD3872DFD18320029DBBB /* CircleWithTextWithoutPref.swift in Sources */,
 				9D0BD4022E09CD560029DBBB /* PreferencesWithoutGeometryReader.swift in Sources */,
@@ -250,6 +257,7 @@
 				9D3C74A72DF8941C0048D4E1 /* CircleWithText.swift in Sources */,
 				9D3C749D2DF874060048D4E1 /* ImageTest.swift in Sources */,
 				9D5916062E10710100797BA7 /* NavigationPathTree.swift in Sources */,
+				9D5916102E17F4C200797BA7 /* CircleLayout.swift in Sources */,
 				9D3C74BC2DFC73ED0048D4E1 /* AnchorSimpleExample.swift in Sources */,
 				9D3C74AE2DF907DB0048D4E1 /* Grid2.swift in Sources */,
 				9D0BD3C02E0261560029DBBB /* StateObject.swift in Sources */,
