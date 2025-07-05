@@ -33,6 +33,7 @@
 		9D5916062E10710100797BA7 /* NavigationPathTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5916052E10710100797BA7 /* NavigationPathTree.swift */; };
 		9D5916092E10C42200797BA7 /* sandbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5916082E10C42200797BA7 /* sandbox.swift */; };
 		9D5916102E17F4C200797BA7 /* CircleLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D59160F2E17F4BC00797BA7 /* CircleLayout.swift */; };
+		9D5916122E189D8200797BA7 /* MyHStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5916112E189D8200797BA7 /* MyHStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		9D5916052E10710100797BA7 /* NavigationPathTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationPathTree.swift; sourceTree = "<group>"; };
 		9D5916082E10C42200797BA7 /* sandbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sandbox.swift; sourceTree = "<group>"; };
 		9D59160F2E17F4BC00797BA7 /* CircleLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleLayout.swift; sourceTree = "<group>"; };
+		9D5916112E189D8200797BA7 /* MyHStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHStack.swift; sourceTree = "<group>"; };
 		9D93F8642DF63977009A957B /* SwiftUIAutoLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIAutoLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -153,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				9D59160F2E17F4BC00797BA7 /* CircleLayout.swift */,
+				9D5916112E189D8200797BA7 /* MyHStack.swift */,
 			);
 			path = LayoutProtocol;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				9D5916032E10559000797BA7 /* NavigationPathSample.swift in Sources */,
 				9D3C749E2DF874060048D4E1 /* TilesWithStack.swift in Sources */,
 				9D3C749F2DF874060048D4E1 /* MeasureBehavior.swift in Sources */,
+				9D5916122E189D8200797BA7 /* MyHStack.swift in Sources */,
 				9D3C74A52DF8876E0048D4E1 /* Variable.swift in Sources */,
 				9D3C74A02DF874060048D4E1 /* ScrollTest.swift in Sources */,
 				9D3C74A12DF874060048D4E1 /* SwiftUIAutoLayoutApp.swift in Sources */,
