@@ -6,34 +6,33 @@
 //
 
 import SwiftUI
+import Combine
 
-
-private class Car : ObservableObject {
-    @Published var speed: Int
-    
-    init(speed: Int = 60) {
-        self.speed = speed
-    }
-}
-
-private struct CarView: View {
-    
-    @Binding var car: Car
-    
-    var body: some View {
-        Text("car speed = \(car.speed)")
-    }
-}
 
 struct sandbox: View {
     
-    @State private var car = Car()
-    
-    
     var body: some View {
-        VStack {
-            Rectangle().fill(.red)
-                
+        NavigationStack {
+            List {
+                ZStack {
+                    Rectangle()
+                        .fill(.yellow)
+                        .frame(width: 100, height: 100)
+                    NavigationLink(value: 10) {
+                        EmptyView()
+                    }
+                }
+                ZStack {
+                    Text("Hello")
+                    NavigationLink(value: 10) {
+                        //EmptyView()
+                    }
+                   // .opacity(0)
+                }
+            }
+            .navigationDestination(for: Int.self) { number in
+                Text("Subview")
+            }
         }
     }
 }
@@ -41,3 +40,4 @@ struct sandbox: View {
 #Preview {
     sandbox()
 }
+

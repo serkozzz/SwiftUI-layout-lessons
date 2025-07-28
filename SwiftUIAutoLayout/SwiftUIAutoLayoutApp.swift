@@ -9,9 +9,16 @@ import SwiftUI
 
 @main
 struct SwiftUIAutoLayoutApp: App {
+    
+    init() {
+        DBGenerator().generateIfNeeded()
+    }
+    
     var body: some Scene {
         WindowGroup {
-            MyHStackExample()
+            BindingExample()
+                .environment(\.managedObjectContext, CoreDataStack.shared.managedContext)
+
         }
     }
 }

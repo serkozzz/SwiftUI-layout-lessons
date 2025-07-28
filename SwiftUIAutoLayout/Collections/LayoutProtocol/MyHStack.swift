@@ -11,8 +11,8 @@ struct MyHStackExample: View {
 
     var body: some View {
         MyHStack{
-            Text("adf")
-            Text("asetweqt")
+            Text("Hello")
+            Text("World")
             Rectangle().frame(width: 100, height: 50)
         }
         .background(.green)
@@ -20,7 +20,7 @@ struct MyHStackExample: View {
 }
 
 struct MyHStack: Layout {
-    var spacing: CGFloat = 100
+    var spacing: CGFloat = 20
     
     func sizeThatFits(proposal: ProposedViewSize, subviews: Subviews, cache: inout ()) -> CGSize {
         
@@ -48,7 +48,6 @@ struct MyHStack: Layout {
             offset += size.width + spacing
         }
     }
-    
 }
 
 
