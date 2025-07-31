@@ -51,3 +51,5 @@ struct BindingExample: View {
     FetchRequestExample()
         .environment(\.managedObjectContext, CoreDataStack.shared.managedContext)
 }
+
+

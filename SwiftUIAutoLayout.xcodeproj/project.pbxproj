@@ -29,6 +29,7 @@
 		9D3C74B02DF929F50048D4E1 /* LazyGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3C74AF2DF929F50048D4E1 /* LazyGrid.swift */; };
 		9D3C74BC2DFC73ED0048D4E1 /* AnchorSimpleExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3C74BB2DFC73EA0048D4E1 /* AnchorSimpleExample.swift */; };
 		9D3C74BE2DFCEAEA0048D4E1 /* AnchorTabsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3C74BD2DFCEADD0048D4E1 /* AnchorTabsExample.swift */; };
+		9D52781C2E3B8AFD0046C07A /* CompactModeReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D52781B2E3B8AFD0046C07A /* CompactModeReader.swift */; };
 		9D5916032E10559000797BA7 /* NavigationPathSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5916022E10559000797BA7 /* NavigationPathSample.swift */; };
 		9D5916062E10710100797BA7 /* NavigationPathTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5916052E10710100797BA7 /* NavigationPathTree.swift */; };
 		9D5916092E10C42200797BA7 /* sandbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5916082E10C42200797BA7 /* sandbox.swift */; };
@@ -65,6 +66,7 @@
 		9D3C74AF2DF929F50048D4E1 /* LazyGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyGrid.swift; sourceTree = "<group>"; };
 		9D3C74BB2DFC73EA0048D4E1 /* AnchorSimpleExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorSimpleExample.swift; sourceTree = "<group>"; };
 		9D3C74BD2DFCEADD0048D4E1 /* AnchorTabsExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorTabsExample.swift; sourceTree = "<group>"; };
+		9D52781B2E3B8AFD0046C07A /* CompactModeReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompactModeReader.swift; sourceTree = "<group>"; };
 		9D5916022E10559000797BA7 /* NavigationPathSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationPathSample.swift; sourceTree = "<group>"; };
 		9D5916052E10710100797BA7 /* NavigationPathTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationPathTree.swift; sourceTree = "<group>"; };
 		9D5916082E10C42200797BA7 /* sandbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sandbox.swift; sourceTree = "<group>"; };
@@ -116,12 +118,12 @@
 				9D3C74982DF874060048D4E1 /* SwiftUIAutoLayoutApp.swift */,
 				9D3C748F2DF874060048D4E1 /* Preview Content */,
 				9D3C74902DF874060048D4E1 /* Assets.xcassets */,
+				9D52781A2E3B8AA20046C07A /* Architecture */,
 				9D3C74A82DF8965E0048D4E1 /* Collections */,
 				9D0BD3852DFD17560029DBBB /* Preferences */,
 				9D5916042E1070E400797BA7 /* Navigation */,
 				9DA62E212E36EA5F00C85E7E /* CoreData */,
 				9D0BD3BF2E02601F0029DBBB /* StateObject.swift */,
-				9D0BD38A2DFE310F0029DBBB /* LayoutCodeOrganization.swift */,
 				9D3C74932DF874060048D4E1 /* Counter.swift */,
 				9D3C74942DF874060048D4E1 /* ImageTest.swift */,
 				9D3C74962DF874060048D4E1 /* MeasureBehavior.swift */,
@@ -153,6 +155,15 @@
 				9D3C74BD2DFCEADD0048D4E1 /* AnchorTabsExample.swift */,
 			);
 			path = Anchors;
+			sourceTree = "<group>";
+		};
+		9D52781A2E3B8AA20046C07A /* Architecture */ = {
+			isa = PBXGroup;
+			children = (
+				9D52781B2E3B8AFD0046C07A /* CompactModeReader.swift */,
+				9D0BD38A2DFE310F0029DBBB /* LayoutCodeOrganization.swift */,
+			);
+			path = Architecture;
 			sourceTree = "<group>";
 		};
 		9D5916042E1070E400797BA7 /* Navigation */ = {
@@ -300,6 +311,7 @@
 				9D5916062E10710100797BA7 /* NavigationPathTree.swift in Sources */,
 				9D5916102E17F4C200797BA7 /* CircleLayout.swift in Sources */,
 				9D3C74BC2DFC73ED0048D4E1 /* AnchorSimpleExample.swift in Sources */,
+				9D52781C2E3B8AFD0046C07A /* CompactModeReader.swift in Sources */,
 				9D3C74AE2DF907DB0048D4E1 /* Grid2.swift in Sources */,
 				9DA62E322E36ED3300C85E7E /* Model.xcdatamodeld in Sources */,
 				9D0BD3C02E0261560029DBBB /* StateObject.swift in Sources */,
