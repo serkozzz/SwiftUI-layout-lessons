@@ -42,6 +42,8 @@
 		9DA62E2F2E36EAF500C85E7E /* FetchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA62E2E2E36EAF500C85E7E /* FetchRequest.swift */; };
 		9DA62E322E36ED3300C85E7E /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9DA62E302E36ED3300C85E7E /* Model.xcdatamodeld */; };
 		9DA62E342E36F2D000C85E7E /* BindingExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA62E332E36F2D000C85E7E /* BindingExample.swift */; };
+		9DB39EDF2E54141C00F9708A /* ZoomableScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB39EDE2E54141600F9708A /* ZoomableScrollView.swift */; };
+		9DB39EE22E54AED300F9708A /* UIViewRepresentableExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB39EE12E54AEC700F9708A /* UIViewRepresentableExample.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,6 +83,8 @@
 		9DA62E2E2E36EAF500C85E7E /* FetchRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchRequest.swift; sourceTree = "<group>"; };
 		9DA62E312E36ED3300C85E7E /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		9DA62E332E36F2D000C85E7E /* BindingExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingExample.swift; sourceTree = "<group>"; };
+		9DB39EDE2E54141600F9708A /* ZoomableScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomableScrollView.swift; sourceTree = "<group>"; };
+		9DB39EE12E54AEC700F9708A /* UIViewRepresentableExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewRepresentableExample.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +121,8 @@
 		9D3C74992DF874060048D4E1 /* SwiftUIAutoLayout */ = {
 			isa = PBXGroup;
 			children = (
+				9DB39EE02E54AEAC00F9708A /* SwiftUI-UIKit Bridges */,
+				9DB39EDC2E54140900F9708A /* Zoom */,
 				9D3C74982DF874060048D4E1 /* SwiftUIAutoLayoutApp.swift */,
 				9D3C748F2DF874060048D4E1 /* Preview Content */,
 				9D3C74902DF874060048D4E1 /* Assets.xcassets */,
@@ -224,6 +230,22 @@
 			path = db;
 			sourceTree = "<group>";
 		};
+		9DB39EDC2E54140900F9708A /* Zoom */ = {
+			isa = PBXGroup;
+			children = (
+				9DB39EDE2E54141600F9708A /* ZoomableScrollView.swift */,
+			);
+			path = Zoom;
+			sourceTree = "<group>";
+		};
+		9DB39EE02E54AEAC00F9708A /* SwiftUI-UIKit Bridges */ = {
+			isa = PBXGroup;
+			children = (
+				9DB39EE12E54AEC700F9708A /* UIViewRepresentableExample.swift */,
+			);
+			path = "SwiftUI-UIKit Bridges";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -299,10 +321,12 @@
 			files = (
 				9DA62E292E36EA7B00C85E7E /* Car+CoreDataClass.swift in Sources */,
 				9DA62E342E36F2D000C85E7E /* BindingExample.swift in Sources */,
+				9DB39EE22E54AED300F9708A /* UIViewRepresentableExample.swift in Sources */,
 				9DA62E2A2E36EA7B00C85E7E /* DBGenerator.swift in Sources */,
 				9DA62E2B2E36EA7B00C85E7E /* CoreDataStack.swift in Sources */,
 				9D0BD3892DFDB1080029DBBB /* ThinkingInSwiftUI_AnimatedStack.swift in Sources */,
 				9D5278222E3BCCB90046C07A /* ViewModelExample.swift in Sources */,
+				9DB39EDF2E54141C00F9708A /* ZoomableScrollView.swift in Sources */,
 				9D3C749A2DF874060048D4E1 /* CompositionalLayout.swift in Sources */,
 				9D3C74B02DF929F50048D4E1 /* LazyGrid.swift in Sources */,
 				9D0BD38B2DFE31210029DBBB /* LayoutCodeOrganization.swift in Sources */,
