@@ -44,6 +44,7 @@
 		9DA62E342E36F2D000C85E7E /* BindingExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA62E332E36F2D000C85E7E /* BindingExample.swift */; };
 		9DB39EDF2E54141C00F9708A /* ZoomableScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB39EDE2E54141600F9708A /* ZoomableScrollView.swift */; };
 		9DB39EE22E54AED300F9708A /* UIViewRepresentableExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB39EE12E54AEC700F9708A /* UIViewRepresentableExample.swift */; };
+		9DB39EE42E54E17100F9708A /* ZoomableScrollViewExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB39EE32E54E16900F9708A /* ZoomableScrollViewExample.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,6 +86,7 @@
 		9DA62E332E36F2D000C85E7E /* BindingExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingExample.swift; sourceTree = "<group>"; };
 		9DB39EDE2E54141600F9708A /* ZoomableScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomableScrollView.swift; sourceTree = "<group>"; };
 		9DB39EE12E54AEC700F9708A /* UIViewRepresentableExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewRepresentableExample.swift; sourceTree = "<group>"; };
+		9DB39EE32E54E16900F9708A /* ZoomableScrollViewExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomableScrollViewExample.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,11 +123,11 @@
 		9D3C74992DF874060048D4E1 /* SwiftUIAutoLayout */ = {
 			isa = PBXGroup;
 			children = (
-				9DB39EE02E54AEAC00F9708A /* SwiftUI-UIKit Bridges */,
-				9DB39EDC2E54140900F9708A /* Zoom */,
 				9D3C74982DF874060048D4E1 /* SwiftUIAutoLayoutApp.swift */,
 				9D3C748F2DF874060048D4E1 /* Preview Content */,
 				9D3C74902DF874060048D4E1 /* Assets.xcassets */,
+				9DB39EE02E54AEAC00F9708A /* SwiftUI-UIKit Bridges */,
+				9DB39EDC2E54140900F9708A /* Zoom */,
 				9D52781A2E3B8AA20046C07A /* Architecture */,
 				9D3C74A82DF8965E0048D4E1 /* Collections */,
 				9D0BD3852DFD17560029DBBB /* Preferences */,
@@ -233,6 +235,7 @@
 		9DB39EDC2E54140900F9708A /* Zoom */ = {
 			isa = PBXGroup;
 			children = (
+				9DB39EE32E54E16900F9708A /* ZoomableScrollViewExample.swift */,
 				9DB39EDE2E54141600F9708A /* ZoomableScrollView.swift */,
 			);
 			path = Zoom;
@@ -344,6 +347,7 @@
 				9DA62E322E36ED3300C85E7E /* Model.xcdatamodeld in Sources */,
 				9D0BD3C02E0261560029DBBB /* StateObject.swift in Sources */,
 				9D5916092E10C42200797BA7 /* sandbox.swift in Sources */,
+				9DB39EE42E54E17100F9708A /* ZoomableScrollViewExample.swift in Sources */,
 				9D5916032E10559000797BA7 /* NavigationPathSample.swift in Sources */,
 				9D3C749E2DF874060048D4E1 /* TilesWithStack.swift in Sources */,
 				9D3C749F2DF874060048D4E1 /* MeasureBehavior.swift in Sources */,

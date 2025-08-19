@@ -21,24 +21,24 @@ struct TextFieldView: UIViewRepresentable {
         uiView.text = text
     }
 
-    func makeCoordinator() -> TextViewCoordinator {
+    func makeCoordinator() -> Coordinator {
         Coordinator(self)
     }
+    
+    class Coordinator: NSObject, UITextFieldDelegate {
+        var parent: TextFieldView
+        
+        init(_ parent: TextFieldView) {
+            self.parent = parent
+        }
+        
+        func textFieldDidEndEditing(_ textField: UITextField) {
+            parent.text = textField.text!
+        }
+    }
 }
 
 
-class TextViewCoordinator: NSObject, UITextFieldDelegate {
-    var parent: TextFieldView
-    
-    init(_ parent: TextFieldView) {
-        self.parent = parent
-    }
-    
-    func textFieldDidEndEditing(_ textField: UITextField) {
-        print("textFieldDidEndEditing")
-        parent.text = textField.text!
-    }
-}
 
 
 
