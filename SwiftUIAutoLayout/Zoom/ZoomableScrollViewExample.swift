@@ -10,7 +10,7 @@ import SwiftUI
 struct ZoomableScrollViewExample: View {
     
     var body: some View {
-        ZoomableScrollView() {
+        ZoomableScrollView(maxZoomScale: 3) {
             Image("beatImage").resizable().aspectRatio(contentMode: .fit)
         }
     }

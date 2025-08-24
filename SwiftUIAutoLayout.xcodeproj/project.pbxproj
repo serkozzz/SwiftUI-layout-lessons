@@ -45,6 +45,9 @@
 		9DB39EDF2E54141C00F9708A /* ZoomableScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB39EDE2E54141600F9708A /* ZoomableScrollView.swift */; };
 		9DB39EE22E54AED300F9708A /* UIViewRepresentableExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB39EE12E54AEC700F9708A /* UIViewRepresentableExample.swift */; };
 		9DB39EE42E54E17100F9708A /* ZoomableScrollViewExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB39EE32E54E16900F9708A /* ZoomableScrollViewExample.swift */; };
+		9DFFBE322E5AADF5003CA6C7 /* SimpleOpacityAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFFBE312E5AADF5003CA6C7 /* SimpleOpacityAnimation.swift */; };
+		9DFFBE342E5AB2AE003CA6C7 /* SimpleTransitionAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFFBE332E5AB2AE003CA6C7 /* SimpleTransitionAnimation.swift */; };
+		9DFFBE382E5BDE06003CA6C7 /* EndlessRotationSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFFBE372E5BDDFF003CA6C7 /* EndlessRotationSample.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -87,6 +90,9 @@
 		9DB39EDE2E54141600F9708A /* ZoomableScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomableScrollView.swift; sourceTree = "<group>"; };
 		9DB39EE12E54AEC700F9708A /* UIViewRepresentableExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewRepresentableExample.swift; sourceTree = "<group>"; };
 		9DB39EE32E54E16900F9708A /* ZoomableScrollViewExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomableScrollViewExample.swift; sourceTree = "<group>"; };
+		9DFFBE312E5AADF5003CA6C7 /* SimpleOpacityAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleOpacityAnimation.swift; sourceTree = "<group>"; };
+		9DFFBE332E5AB2AE003CA6C7 /* SimpleTransitionAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTransitionAnimation.swift; sourceTree = "<group>"; };
+		9DFFBE372E5BDDFF003CA6C7 /* EndlessRotationSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndlessRotationSample.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +132,7 @@
 				9D3C74982DF874060048D4E1 /* SwiftUIAutoLayoutApp.swift */,
 				9D3C748F2DF874060048D4E1 /* Preview Content */,
 				9D3C74902DF874060048D4E1 /* Assets.xcassets */,
+				9DFFBE302E5AADE9003CA6C7 /* Animations */,
 				9DB39EE02E54AEAC00F9708A /* SwiftUI-UIKit Bridges */,
 				9DB39EDC2E54140900F9708A /* Zoom */,
 				9D52781A2E3B8AA20046C07A /* Architecture */,
@@ -249,6 +256,16 @@
 			path = "SwiftUI-UIKit Bridges";
 			sourceTree = "<group>";
 		};
+		9DFFBE302E5AADE9003CA6C7 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				9DFFBE312E5AADF5003CA6C7 /* SimpleOpacityAnimation.swift */,
+				9DFFBE332E5AB2AE003CA6C7 /* SimpleTransitionAnimation.swift */,
+				9DFFBE372E5BDDFF003CA6C7 /* EndlessRotationSample.swift */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -333,6 +350,7 @@
 				9D3C749A2DF874060048D4E1 /* CompositionalLayout.swift in Sources */,
 				9D3C74B02DF929F50048D4E1 /* LazyGrid.swift in Sources */,
 				9D0BD38B2DFE31210029DBBB /* LayoutCodeOrganization.swift in Sources */,
+				9DFFBE322E5AADF5003CA6C7 /* SimpleOpacityAnimation.swift in Sources */,
 				9D3C74BE2DFCEAEA0048D4E1 /* AnchorTabsExample.swift in Sources */,
 				9D0BD3872DFD18320029DBBB /* CircleWithTextWithoutPref.swift in Sources */,
 				9D0BD4022E09CD560029DBBB /* PreferencesWithoutGeometryReader.swift in Sources */,
@@ -347,6 +365,7 @@
 				9DA62E322E36ED3300C85E7E /* Model.xcdatamodeld in Sources */,
 				9D0BD3C02E0261560029DBBB /* StateObject.swift in Sources */,
 				9D5916092E10C42200797BA7 /* sandbox.swift in Sources */,
+				9DFFBE342E5AB2AE003CA6C7 /* SimpleTransitionAnimation.swift in Sources */,
 				9DB39EE42E54E17100F9708A /* ZoomableScrollViewExample.swift in Sources */,
 				9D5916032E10559000797BA7 /* NavigationPathSample.swift in Sources */,
 				9D3C749E2DF874060048D4E1 /* TilesWithStack.swift in Sources */,
@@ -358,6 +377,7 @@
 				9DA62E2F2E36EAF500C85E7E /* FetchRequest.swift in Sources */,
 				9D3C74AA2DF8E84F0048D4E1 /* IndexCardsWithStack.swift in Sources */,
 				9D3C74AC2DF8FB430048D4E1 /* Grid.swift in Sources */,
+				9DFFBE382E5BDE06003CA6C7 /* EndlessRotationSample.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
