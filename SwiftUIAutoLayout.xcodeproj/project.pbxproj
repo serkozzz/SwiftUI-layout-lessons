@@ -31,6 +31,8 @@
 		9D3C74BE2DFCEAEA0048D4E1 /* AnchorTabsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3C74BD2DFCEADD0048D4E1 /* AnchorTabsExample.swift */; };
 		9D52781C2E3B8AFD0046C07A /* CompactModeReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D52781B2E3B8AFD0046C07A /* CompactModeReader.swift */; };
 		9D5278222E3BCCB90046C07A /* ViewModelExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5278212E3BCCB20046C07A /* ViewModelExample.swift */; };
+		9D5539602E687DD70074E241 /* TextFittingPopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D55395F2E687DD70074E241 /* TextFittingPopover.swift */; };
+		9D5539622E687DE30074E241 /* PopoverSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5539612E687DE30074E241 /* PopoverSample.swift */; };
 		9D5916032E10559000797BA7 /* NavigationPathSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5916022E10559000797BA7 /* NavigationPathSample.swift */; };
 		9D5916062E10710100797BA7 /* NavigationPathTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5916052E10710100797BA7 /* NavigationPathTree.swift */; };
 		9D5916092E10C42200797BA7 /* sandbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5916082E10C42200797BA7 /* sandbox.swift */; };
@@ -49,6 +51,7 @@
 		9DFFBE342E5AB2AE003CA6C7 /* SimpleTransitionAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFFBE332E5AB2AE003CA6C7 /* SimpleTransitionAnimation.swift */; };
 		9DFFBE382E5BDE06003CA6C7 /* EndlessRotationSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFFBE372E5BDDFF003CA6C7 /* EndlessRotationSample.swift */; };
 		9DFFBE3A2E5C08E4003CA6C7 /* CustomAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFFBE392E5C08DF003CA6C7 /* CustomAnimation.swift */; };
+		9DFFBE602E5E2D0E003CA6C7 /* SimpleCircleAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFFBE5F2E5E2D02003CA6C7 /* SimpleCircleAnimation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +79,8 @@
 		9D3C74BD2DFCEADD0048D4E1 /* AnchorTabsExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorTabsExample.swift; sourceTree = "<group>"; };
 		9D52781B2E3B8AFD0046C07A /* CompactModeReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompactModeReader.swift; sourceTree = "<group>"; };
 		9D5278212E3BCCB20046C07A /* ViewModelExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelExample.swift; sourceTree = "<group>"; };
+		9D55395F2E687DD70074E241 /* TextFittingPopover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFittingPopover.swift; sourceTree = "<group>"; };
+		9D5539612E687DE30074E241 /* PopoverSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverSample.swift; sourceTree = "<group>"; };
 		9D5916022E10559000797BA7 /* NavigationPathSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationPathSample.swift; sourceTree = "<group>"; };
 		9D5916052E10710100797BA7 /* NavigationPathTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationPathTree.swift; sourceTree = "<group>"; };
 		9D5916082E10C42200797BA7 /* sandbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sandbox.swift; sourceTree = "<group>"; };
@@ -95,6 +100,7 @@
 		9DFFBE332E5AB2AE003CA6C7 /* SimpleTransitionAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTransitionAnimation.swift; sourceTree = "<group>"; };
 		9DFFBE372E5BDDFF003CA6C7 /* EndlessRotationSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndlessRotationSample.swift; sourceTree = "<group>"; };
 		9DFFBE392E5C08DF003CA6C7 /* CustomAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnimation.swift; sourceTree = "<group>"; };
+		9DFFBE5F2E5E2D02003CA6C7 /* SimpleCircleAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCircleAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +146,7 @@
 				9D52781A2E3B8AA20046C07A /* Architecture */,
 				9D3C74A82DF8965E0048D4E1 /* Collections */,
 				9D0BD3852DFD17560029DBBB /* Preferences */,
+				9D55395E2E687DCA0074E241 /* Popover */,
 				9D5916042E1070E400797BA7 /* Navigation */,
 				9DA62E212E36EA5F00C85E7E /* CoreData */,
 				9D0BD3BF2E02601F0029DBBB /* StateObject.swift */,
@@ -184,6 +191,15 @@
 				9D0BD38A2DFE310F0029DBBB /* LayoutCodeOrganization.swift */,
 			);
 			path = Architecture;
+			sourceTree = "<group>";
+		};
+		9D55395E2E687DCA0074E241 /* Popover */ = {
+			isa = PBXGroup;
+			children = (
+				9D55395F2E687DD70074E241 /* TextFittingPopover.swift */,
+				9D5539612E687DE30074E241 /* PopoverSample.swift */,
+			);
+			path = Popover;
 			sourceTree = "<group>";
 		};
 		9D5916042E1070E400797BA7 /* Navigation */ = {
@@ -264,6 +280,7 @@
 				9DFFBE392E5C08DF003CA6C7 /* CustomAnimation.swift */,
 				9DFFBE312E5AADF5003CA6C7 /* SimpleOpacityAnimation.swift */,
 				9DFFBE332E5AB2AE003CA6C7 /* SimpleTransitionAnimation.swift */,
+				9DFFBE5F2E5E2D02003CA6C7 /* SimpleCircleAnimation.swift */,
 				9DFFBE372E5BDDFF003CA6C7 /* EndlessRotationSample.swift */,
 			);
 			path = Animations;
@@ -356,6 +373,7 @@
 				9DFFBE322E5AADF5003CA6C7 /* SimpleOpacityAnimation.swift in Sources */,
 				9D3C74BE2DFCEAEA0048D4E1 /* AnchorTabsExample.swift in Sources */,
 				9D0BD3872DFD18320029DBBB /* CircleWithTextWithoutPref.swift in Sources */,
+				9DFFBE602E5E2D0E003CA6C7 /* SimpleCircleAnimation.swift in Sources */,
 				9D0BD4022E09CD560029DBBB /* PreferencesWithoutGeometryReader.swift in Sources */,
 				9D3C749C2DF874060048D4E1 /* Counter.swift in Sources */,
 				9D3C74A72DF8941C0048D4E1 /* CircleWithText.swift in Sources */,
@@ -365,8 +383,10 @@
 				9D5916102E17F4C200797BA7 /* CircleLayout.swift in Sources */,
 				9D3C74BC2DFC73ED0048D4E1 /* AnchorSimpleExample.swift in Sources */,
 				9D52781C2E3B8AFD0046C07A /* CompactModeReader.swift in Sources */,
+				9D5539602E687DD70074E241 /* TextFittingPopover.swift in Sources */,
 				9D3C74AE2DF907DB0048D4E1 /* Grid2.swift in Sources */,
 				9DA62E322E36ED3300C85E7E /* Model.xcdatamodeld in Sources */,
+				9D5539622E687DE30074E241 /* PopoverSample.swift in Sources */,
 				9D0BD3C02E0261560029DBBB /* StateObject.swift in Sources */,
 				9D5916092E10C42200797BA7 /* sandbox.swift in Sources */,
 				9DFFBE342E5AB2AE003CA6C7 /* SimpleTransitionAnimation.swift in Sources */,
