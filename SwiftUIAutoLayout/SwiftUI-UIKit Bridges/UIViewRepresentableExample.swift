@@ -8,6 +8,46 @@
 import SwiftUI
 
 
+struct UIViewRepresentableExample: View {
+    
+    @FocusState private var isTextEditorFocused: Bool
+    @State var text: String = "2025"
+    var body: some View {
+        ZStack {
+            Color.clear
+                .contentShape(Rectangle())
+                .hideKeyboardOnTap()
+            
+            VStack {
+                HStack {
+                    Text("UIKit: ")
+                    TextFieldView(text: $text)
+                        .focusable(isTextEditorFocused)
+                        .fixedSize()
+                        .background(.yellow)
+                }
+                HStack {
+                    Text("SwiftUI: ")
+                    Text(text).fixedSize()
+                }
+                .padding()
+                Button("Set text 1984") {
+                    text = "1984"
+                }
+            }
+        }
+    }
+}
+
+
+#Preview {
+    UIViewRepresentableExample()
+}
+
+
+
+
+
 struct TextFieldView: UIViewRepresentable {
     
     @Binding var text: String
@@ -38,44 +78,6 @@ struct TextFieldView: UIViewRepresentable {
     }
 }
 
-
-
-
-
-struct UIViewRepresentableExample: View {
-    
-    @FocusState private var isTextEditorFocused: Bool
-    @State var text: String = "2025"
-    var body: some View {
-        ZStack {
-            Color.clear
-                .contentShape(Rectangle())
-                .hideKeyboardOnTap()
-            
-            VStack {
-                HStack {
-                    Text("UIKit: ")
-                    TextFieldView(text: $text)
-                        .focusable(isTextEditorFocused)
-                        .fixedSize()
-                }
-                HStack {
-                    Text("SwiftUI: ")
-                    Text(text).fixedSize()
-                }
-                .padding()
-                Button("Set text 1984") {
-                    text = "1984"
-                }
-            }
-        }
-    }
-}
-
-
-#Preview {
-    UIViewRepresentableExample()
-}
 
 
 extension View {

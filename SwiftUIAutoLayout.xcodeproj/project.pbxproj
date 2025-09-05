@@ -33,6 +33,9 @@
 		9D5278222E3BCCB90046C07A /* ViewModelExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5278212E3BCCB20046C07A /* ViewModelExample.swift */; };
 		9D5539602E687DD70074E241 /* TextFittingPopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D55395F2E687DD70074E241 /* TextFittingPopover.swift */; };
 		9D5539622E687DE30074E241 /* PopoverSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5539612E687DE30074E241 /* PopoverSample.swift */; };
+		9D5539642E687E9A0074E241 /* FittingSizeUIViewSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5539632E687E8B0074E241 /* FittingSizeUIViewSample.swift */; };
+		9D5539782E6A79410074E241 /* ClipShapeSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5539772E6A79410074E241 /* ClipShapeSample.swift */; };
+		9D55397D2E6B1F040074E241 /* TrimShapeAnimSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D55397C2E6B1F040074E241 /* TrimShapeAnimSample.swift */; };
 		9D5916032E10559000797BA7 /* NavigationPathSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5916022E10559000797BA7 /* NavigationPathSample.swift */; };
 		9D5916062E10710100797BA7 /* NavigationPathTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5916052E10710100797BA7 /* NavigationPathTree.swift */; };
 		9D5916092E10C42200797BA7 /* sandbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5916082E10C42200797BA7 /* sandbox.swift */; };
@@ -81,6 +84,9 @@
 		9D5278212E3BCCB20046C07A /* ViewModelExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelExample.swift; sourceTree = "<group>"; };
 		9D55395F2E687DD70074E241 /* TextFittingPopover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFittingPopover.swift; sourceTree = "<group>"; };
 		9D5539612E687DE30074E241 /* PopoverSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverSample.swift; sourceTree = "<group>"; };
+		9D5539632E687E8B0074E241 /* FittingSizeUIViewSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FittingSizeUIViewSample.swift; sourceTree = "<group>"; };
+		9D5539772E6A79410074E241 /* ClipShapeSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipShapeSample.swift; sourceTree = "<group>"; };
+		9D55397C2E6B1F040074E241 /* TrimShapeAnimSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrimShapeAnimSample.swift; sourceTree = "<group>"; };
 		9D5916022E10559000797BA7 /* NavigationPathSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationPathSample.swift; sourceTree = "<group>"; };
 		9D5916052E10710100797BA7 /* NavigationPathTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationPathTree.swift; sourceTree = "<group>"; };
 		9D5916082E10C42200797BA7 /* sandbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sandbox.swift; sourceTree = "<group>"; };
@@ -149,6 +155,7 @@
 				9D55395E2E687DCA0074E241 /* Popover */,
 				9D5916042E1070E400797BA7 /* Navigation */,
 				9DA62E212E36EA5F00C85E7E /* CoreData */,
+				9D5539742E6A79170074E241 /* Shape&Path */,
 				9D0BD3BF2E02601F0029DBBB /* StateObject.swift */,
 				9D3C74932DF874060048D4E1 /* Counter.swift */,
 				9D3C74942DF874060048D4E1 /* ImageTest.swift */,
@@ -200,6 +207,31 @@
 				9D5539612E687DE30074E241 /* PopoverSample.swift */,
 			);
 			path = Popover;
+			sourceTree = "<group>";
+		};
+		9D5539652E687EC20074E241 /* FittingSizeUIView */ = {
+			isa = PBXGroup;
+			children = (
+				9D5539632E687E8B0074E241 /* FittingSizeUIViewSample.swift */,
+			);
+			path = FittingSizeUIView;
+			sourceTree = "<group>";
+		};
+		9D5539742E6A79170074E241 /* Shape&Path */ = {
+			isa = PBXGroup;
+			children = (
+				9D55397B2E6B1EFB0074E241 /* Animation */,
+				9D5539772E6A79410074E241 /* ClipShapeSample.swift */,
+			);
+			path = "Shape&Path";
+			sourceTree = "<group>";
+		};
+		9D55397B2E6B1EFB0074E241 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				9D55397C2E6B1F040074E241 /* TrimShapeAnimSample.swift */,
+			);
+			path = Animation;
 			sourceTree = "<group>";
 		};
 		9D5916042E1070E400797BA7 /* Navigation */ = {
@@ -269,6 +301,7 @@
 		9DB39EE02E54AEAC00F9708A /* SwiftUI-UIKit Bridges */ = {
 			isa = PBXGroup;
 			children = (
+				9D5539652E687EC20074E241 /* FittingSizeUIView */,
 				9DB39EE12E54AEC700F9708A /* UIViewRepresentableExample.swift */,
 			);
 			path = "SwiftUI-UIKit Bridges";
@@ -375,6 +408,7 @@
 				9D0BD3872DFD18320029DBBB /* CircleWithTextWithoutPref.swift in Sources */,
 				9DFFBE602E5E2D0E003CA6C7 /* SimpleCircleAnimation.swift in Sources */,
 				9D0BD4022E09CD560029DBBB /* PreferencesWithoutGeometryReader.swift in Sources */,
+				9D55397D2E6B1F040074E241 /* TrimShapeAnimSample.swift in Sources */,
 				9D3C749C2DF874060048D4E1 /* Counter.swift in Sources */,
 				9D3C74A72DF8941C0048D4E1 /* CircleWithText.swift in Sources */,
 				9D3C749D2DF874060048D4E1 /* ImageTest.swift in Sources */,
@@ -383,6 +417,7 @@
 				9D5916102E17F4C200797BA7 /* CircleLayout.swift in Sources */,
 				9D3C74BC2DFC73ED0048D4E1 /* AnchorSimpleExample.swift in Sources */,
 				9D52781C2E3B8AFD0046C07A /* CompactModeReader.swift in Sources */,
+				9D5539642E687E9A0074E241 /* FittingSizeUIViewSample.swift in Sources */,
 				9D5539602E687DD70074E241 /* TextFittingPopover.swift in Sources */,
 				9D3C74AE2DF907DB0048D4E1 /* Grid2.swift in Sources */,
 				9DA62E322E36ED3300C85E7E /* Model.xcdatamodeld in Sources */,
@@ -395,6 +430,7 @@
 				9D3C749E2DF874060048D4E1 /* TilesWithStack.swift in Sources */,
 				9D3C749F2DF874060048D4E1 /* MeasureBehavior.swift in Sources */,
 				9D5916122E189D8200797BA7 /* MyHStack.swift in Sources */,
+				9D5539782E6A79410074E241 /* ClipShapeSample.swift in Sources */,
 				9D3C74A52DF8876E0048D4E1 /* Variable.swift in Sources */,
 				9D3C74A02DF874060048D4E1 /* ScrollTest.swift in Sources */,
 				9D3C74A12DF874060048D4E1 /* SwiftUIAutoLayoutApp.swift in Sources */,

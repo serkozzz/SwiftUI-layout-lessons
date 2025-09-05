@@ -11,6 +11,21 @@ import SwiftUI
 
 
 
+struct FittingSizeUIViewSample: View {
+    
+    var body: some View {
+        VStack {
+            MyViewControllerRepresentable()
+                .fixedSize()
+                .background(.yellow)
+            Text("SwiftUI")
+        }
+    }
+}
+
+#Preview {
+    FittingSizeUIViewSample()
+}
 
 
 
@@ -34,7 +49,14 @@ private class MyViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(stack)
-        
+        NSLayoutConstraint.activate([
+            stack.topAnchor.constraint(equalTo: view.topAnchor),
+            stack.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            stack.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            stack.trailingAnchor.constraint(equalTo: view.trailingAnchor)
+        ])
+        preferredContentSize = stack.systemLayoutSizeFitting(UIView.layoutFittingCompressedSize)
+
     }
     
     lazy var label1: UILabel = {
@@ -63,6 +85,8 @@ private class MyViewController: UIViewController {
     
     lazy var stack: UIStackView = {
         let stack = UIStackView(arrangedSubviews: [label1, label2, button1])
+        stack.axis = .vertical
+        stack.alignment = .center
         stack.translatesAutoresizingMaskIntoConstraints = false
         return stack
     }()
