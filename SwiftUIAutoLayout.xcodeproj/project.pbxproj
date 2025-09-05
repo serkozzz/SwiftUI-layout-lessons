@@ -36,6 +36,7 @@
 		9D5539642E687E9A0074E241 /* FittingSizeUIViewSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5539632E687E8B0074E241 /* FittingSizeUIViewSample.swift */; };
 		9D5539782E6A79410074E241 /* ClipShapeSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5539772E6A79410074E241 /* ClipShapeSample.swift */; };
 		9D55397D2E6B1F040074E241 /* TrimShapeAnimSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D55397C2E6B1F040074E241 /* TrimShapeAnimSample.swift */; };
+		9D5539832E6BAF360074E241 /* KeyFrameAnimSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5539822E6BAF360074E241 /* KeyFrameAnimSample.swift */; };
 		9D5916032E10559000797BA7 /* NavigationPathSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5916022E10559000797BA7 /* NavigationPathSample.swift */; };
 		9D5916062E10710100797BA7 /* NavigationPathTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5916052E10710100797BA7 /* NavigationPathTree.swift */; };
 		9D5916092E10C42200797BA7 /* sandbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5916082E10C42200797BA7 /* sandbox.swift */; };
@@ -87,6 +88,7 @@
 		9D5539632E687E8B0074E241 /* FittingSizeUIViewSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FittingSizeUIViewSample.swift; sourceTree = "<group>"; };
 		9D5539772E6A79410074E241 /* ClipShapeSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipShapeSample.swift; sourceTree = "<group>"; };
 		9D55397C2E6B1F040074E241 /* TrimShapeAnimSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrimShapeAnimSample.swift; sourceTree = "<group>"; };
+		9D5539822E6BAF360074E241 /* KeyFrameAnimSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyFrameAnimSample.swift; sourceTree = "<group>"; };
 		9D5916022E10559000797BA7 /* NavigationPathSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationPathSample.swift; sourceTree = "<group>"; };
 		9D5916052E10710100797BA7 /* NavigationPathTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationPathTree.swift; sourceTree = "<group>"; };
 		9D5916082E10C42200797BA7 /* sandbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sandbox.swift; sourceTree = "<group>"; };
@@ -310,6 +312,7 @@
 		9DFFBE302E5AADE9003CA6C7 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				9D5539822E6BAF360074E241 /* KeyFrameAnimSample.swift */,
 				9DFFBE392E5C08DF003CA6C7 /* CustomAnimation.swift */,
 				9DFFBE312E5AADF5003CA6C7 /* SimpleOpacityAnimation.swift */,
 				9DFFBE332E5AB2AE003CA6C7 /* SimpleTransitionAnimation.swift */,
@@ -419,6 +422,7 @@
 				9D52781C2E3B8AFD0046C07A /* CompactModeReader.swift in Sources */,
 				9D5539642E687E9A0074E241 /* FittingSizeUIViewSample.swift in Sources */,
 				9D5539602E687DD70074E241 /* TextFittingPopover.swift in Sources */,
+				9D5539832E6BAF360074E241 /* KeyFrameAnimSample.swift in Sources */,
 				9D3C74AE2DF907DB0048D4E1 /* Grid2.swift in Sources */,
 				9DA62E322E36ED3300C85E7E /* Model.xcdatamodeld in Sources */,
 				9D5539622E687DE30074E241 /* PopoverSample.swift in Sources */,
