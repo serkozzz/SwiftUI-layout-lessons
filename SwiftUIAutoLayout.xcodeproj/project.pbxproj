@@ -57,7 +57,7 @@
 		9DFFBE322E5AADF5003CA6C7 /* SimpleOpacityAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFFBE312E5AADF5003CA6C7 /* SimpleOpacityAnimation.swift */; };
 		9DFFBE342E5AB2AE003CA6C7 /* SimpleTransitionAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFFBE332E5AB2AE003CA6C7 /* SimpleTransitionAnimation.swift */; };
 		9DFFBE382E5BDE06003CA6C7 /* EndlessRotationSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFFBE372E5BDDFF003CA6C7 /* EndlessRotationSample.swift */; };
-		9DFFBE3A2E5C08E4003CA6C7 /* CustomAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFFBE392E5C08DF003CA6C7 /* CustomAnimation.swift */; };
+		9DFFBE3A2E5C08E4003CA6C7 /* AnimatableModifierSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFFBE392E5C08DF003CA6C7 /* AnimatableModifierSample.swift */; };
 		9DFFBE602E5E2D0E003CA6C7 /* SimpleCircleAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFFBE5F2E5E2D02003CA6C7 /* SimpleCircleAnimation.swift */; };
 /* End PBXBuildFile section */
 
@@ -113,7 +113,7 @@
 		9DFFBE312E5AADF5003CA6C7 /* SimpleOpacityAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleOpacityAnimation.swift; sourceTree = "<group>"; };
 		9DFFBE332E5AB2AE003CA6C7 /* SimpleTransitionAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTransitionAnimation.swift; sourceTree = "<group>"; };
 		9DFFBE372E5BDDFF003CA6C7 /* EndlessRotationSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndlessRotationSample.swift; sourceTree = "<group>"; };
-		9DFFBE392E5C08DF003CA6C7 /* CustomAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnimation.swift; sourceTree = "<group>"; };
+		9DFFBE392E5C08DF003CA6C7 /* AnimatableModifierSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableModifierSample.swift; sourceTree = "<group>"; };
 		9DFFBE5F2E5E2D02003CA6C7 /* SimpleCircleAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCircleAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -330,7 +330,7 @@
 			children = (
 				9D5539822E6BAF360074E241 /* KeyFrameAnimSample.swift */,
 				9D55398B2E6BCFC10074E241 /* GeneralPurposeInterpolator */,
-				9DFFBE392E5C08DF003CA6C7 /* CustomAnimation.swift */,
+				9DFFBE392E5C08DF003CA6C7 /* AnimatableModifierSample.swift */,
 				9DFFBE312E5AADF5003CA6C7 /* SimpleOpacityAnimation.swift */,
 				9DFFBE332E5AB2AE003CA6C7 /* SimpleTransitionAnimation.swift */,
 				9DFFBE5F2E5E2D02003CA6C7 /* SimpleCircleAnimation.swift */,
@@ -435,7 +435,7 @@
 				9D3C74A72DF8941C0048D4E1 /* CircleWithText.swift in Sources */,
 				9D3C749D2DF874060048D4E1 /* ImageTest.swift in Sources */,
 				9D5916062E10710100797BA7 /* NavigationPathTree.swift in Sources */,
-				9DFFBE3A2E5C08E4003CA6C7 /* CustomAnimation.swift in Sources */,
+				9DFFBE3A2E5C08E4003CA6C7 /* AnimatableModifierSample.swift in Sources */,
 				9D5916102E17F4C200797BA7 /* CircleLayout.swift in Sources */,
 				9D33478E2E6BE3490075A381 /* KeyFrameSample.swift in Sources */,
 				9D3C74BC2DFC73ED0048D4E1 /* AnchorSimpleExample.swift in Sources */,

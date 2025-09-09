@@ -10,7 +10,9 @@ import SwiftUI
 //если вы делаете View: Animatable то будет интерполироваться само её свойство animatableData. Если бы это была не вью а просто произвольная тектсура, то само свойство бы не интерполировалось
 
 struct AnimatingNumberText: View, Animatable {
-    var value: CGFloat
+    
+    var value: CGFloat //instead you can delete this prop and use stored animatableData from outside
+    
     nonisolated var animatableData: CGFloat {
         get { value }
         set { value = newValue } // SwiftUI будет задавать промежуточные значения на каждом кадре

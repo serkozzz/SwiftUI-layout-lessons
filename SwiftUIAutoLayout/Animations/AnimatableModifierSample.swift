@@ -25,7 +25,7 @@ extension View {
     }
 }
 
-struct CustomAnimation: View {
+struct AnimatableModifierSample: View {
     @State private var taps: Int = 0
     var body: some View {
         Button("Hello") {
@@ -40,7 +40,7 @@ struct CustomAnimation: View {
 
 
 #Preview {
-    CustomAnimation()
+    AnimatableModifierSample()
 }
 
 
