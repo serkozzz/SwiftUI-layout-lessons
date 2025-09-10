@@ -16,7 +16,7 @@
 		9D33478E2E6BE3490075A381 /* KeyFrameSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D33478D2E6BE3490075A381 /* KeyFrameSample.swift */; };
 		9D3347902E6BE6DA0075A381 /* KeyFrameInterpolator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D33478F2E6BE6DA0075A381 /* KeyFrameInterpolator.swift */; };
 		9D3347EB2E70DACD0075A381 /* ClockViewSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3347EA2E70DACD0075A381 /* ClockViewSample.swift */; };
-		9D33480D2E71267C0075A381 /* AnimatableEmitterSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D33480C2E71267C0075A381 /* AnimatableEmitterSample.swift */; };
+		9D33480D2E71267C0075A381 /* AnimatableEmitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D33480C2E71267C0075A381 /* AnimatableEmitter.swift */; };
 		9D3C749A2DF874060048D4E1 /* CompositionalLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3C74912DF874060048D4E1 /* CompositionalLayout.swift */; };
 		9D3C749C2DF874060048D4E1 /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3C74932DF874060048D4E1 /* Counter.swift */; };
 		9D3C749D2DF874060048D4E1 /* ImageTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3C74942DF874060048D4E1 /* ImageTest.swift */; };
@@ -73,7 +73,7 @@
 		9D33478D2E6BE3490075A381 /* KeyFrameSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyFrameSample.swift; sourceTree = "<group>"; };
 		9D33478F2E6BE6DA0075A381 /* KeyFrameInterpolator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyFrameInterpolator.swift; sourceTree = "<group>"; };
 		9D3347EA2E70DACD0075A381 /* ClockViewSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockViewSample.swift; sourceTree = "<group>"; };
-		9D33480C2E71267C0075A381 /* AnimatableEmitterSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableEmitterSample.swift; sourceTree = "<group>"; };
+		9D33480C2E71267C0075A381 /* AnimatableEmitter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableEmitter.swift; sourceTree = "<group>"; };
 		9D3C748E2DF874060048D4E1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9D3C74902DF874060048D4E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D3C74912DF874060048D4E1 /* CompositionalLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionalLayout.swift; sourceTree = "<group>"; };
@@ -249,7 +249,7 @@
 		9D55398B2E6BCFC10074E241 /* GeneralPurposeInterpolator */ = {
 			isa = PBXGroup;
 			children = (
-				9D33480C2E71267C0075A381 /* AnimatableEmitterSample.swift */,
+				9D33480C2E71267C0075A381 /* AnimatableEmitter.swift */,
 				9D33478F2E6BE6DA0075A381 /* KeyFrameInterpolator.swift */,
 				9D33478D2E6BE3490075A381 /* KeyFrameSample.swift */,
 				9D33478B2E6BDF0B0075A381 /* AnimatableViewSample.swift */,
@@ -440,7 +440,7 @@
 				9D3C749C2DF874060048D4E1 /* Counter.swift in Sources */,
 				9D3C74A72DF8941C0048D4E1 /* CircleWithText.swift in Sources */,
 				9D3C749D2DF874060048D4E1 /* ImageTest.swift in Sources */,
-				9D33480D2E71267C0075A381 /* AnimatableEmitterSample.swift in Sources */,
+				9D33480D2E71267C0075A381 /* AnimatableEmitter.swift in Sources */,
 				9D5916062E10710100797BA7 /* NavigationPathTree.swift in Sources */,
 				9DFFBE3A2E5C08E4003CA6C7 /* AnimatableModifierSample.swift in Sources */,
 				9D5916102E17F4C200797BA7 /* CircleLayout.swift in Sources */,
