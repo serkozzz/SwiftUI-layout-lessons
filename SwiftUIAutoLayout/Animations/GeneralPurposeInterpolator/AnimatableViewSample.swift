@@ -11,14 +11,11 @@ import SwiftUI
 
 struct AnimatingNumberText: View, Animatable {
     
-    var value: CGFloat //instead you can delete this prop and use stored animatableData from outside
-    
-    nonisolated var animatableData: CGFloat {
-        get { value }
-        set { value = newValue } // SwiftUI будет задавать промежуточные значения на каждом кадре
-    }
+
+    var animatableData: CGFloat
+
     var body: some View {
-        Text("Velocity: \(value, specifier: "%.2f")")
+        Text("Velocity: \(animatableData, specifier: "%.2f")")
     }
 }
 
@@ -31,7 +28,7 @@ struct AnimatableViewSample: View {
                 .fill(.blue)
                 .frame(width: value, height: value)   // это анимируется через CA
 
-            AnimatingNumberText(value: value)        // а вот это — через Animatable (покадрово)
+            AnimatingNumberText(animatableData: value)        // а вот это — через Animatable (покадрово)
 
             Button("Start Animation") {
                 withAnimation(.easeInOut(duration: 2)) {
@@ -49,3 +46,4 @@ struct AnimatableViewSample: View {
 #Preview {
     AnimatableViewSample()
 }
+

@@ -3,7 +3,7 @@ import SwiftUI
 
 //based on keyframeAnimator general purpose interpolator
 
-struct Interpolator: View {
+struct KeyFrameInterpolator: View {
     var from: CGFloat
     var to: CGFloat
     var duration: TimeInterval
@@ -38,7 +38,7 @@ struct InterpolatorSample: View {
     var body: some View {
         Group {
             Text("value: \(value)")
-            Interpolator(from: 0, to: 100, duration: 1) { value in
+            KeyFrameInterpolator(from: 0, to: 100, duration: 1) { value in
                 self.value = value
                 print(value)
             }
