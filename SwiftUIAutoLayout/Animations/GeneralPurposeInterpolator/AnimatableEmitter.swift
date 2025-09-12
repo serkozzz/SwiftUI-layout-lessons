@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct AnimatableEmitter: View, Animatable {
-    var value: Double // конечное значение (куда хотим прийти)
-    var onValueChange: (Double) -> Void
 
-    // это "живое" анимируемое значение
-    nonisolated var animatableData: Double {
+struct AnimatableEmitter<Value: VectorArithmetic>: View, @preconcurrency Animatable {
+    var value: Value
+    var onValueChange: (Value) -> Void
+
+    var animatableData: Value {
         get { value }
         set {
             DispatchQueue.main.async { [self] in

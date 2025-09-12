@@ -56,6 +56,7 @@
 		9DB39EDF2E54141C00F9708A /* ZoomableScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB39EDE2E54141600F9708A /* ZoomableScrollView.swift */; };
 		9DB39EE22E54AED300F9708A /* UIViewRepresentableExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB39EE12E54AEC700F9708A /* UIViewRepresentableExample.swift */; };
 		9DB39EE42E54E17100F9708A /* ZoomableScrollViewExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB39EE32E54E16900F9708A /* ZoomableScrollViewExample.swift */; };
+		9DF9E4C12E7237F6004FD61D /* AdaptivePopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF9E4C02E7237F6004FD61D /* AdaptivePopover.swift */; };
 		9DFFBE322E5AADF5003CA6C7 /* SimpleOpacityAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFFBE312E5AADF5003CA6C7 /* SimpleOpacityAnimation.swift */; };
 		9DFFBE342E5AB2AE003CA6C7 /* SimpleTransitionAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFFBE332E5AB2AE003CA6C7 /* SimpleTransitionAnimation.swift */; };
 		9DFFBE382E5BDE06003CA6C7 /* EndlessRotationSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFFBE372E5BDDFF003CA6C7 /* EndlessRotationSample.swift */; };
@@ -114,6 +115,7 @@
 		9DB39EDE2E54141600F9708A /* ZoomableScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomableScrollView.swift; sourceTree = "<group>"; };
 		9DB39EE12E54AEC700F9708A /* UIViewRepresentableExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewRepresentableExample.swift; sourceTree = "<group>"; };
 		9DB39EE32E54E16900F9708A /* ZoomableScrollViewExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomableScrollViewExample.swift; sourceTree = "<group>"; };
+		9DF9E4C02E7237F6004FD61D /* AdaptivePopover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptivePopover.swift; sourceTree = "<group>"; };
 		9DFFBE312E5AADF5003CA6C7 /* SimpleOpacityAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleOpacityAnimation.swift; sourceTree = "<group>"; };
 		9DFFBE332E5AB2AE003CA6C7 /* SimpleTransitionAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTransitionAnimation.swift; sourceTree = "<group>"; };
 		9DFFBE372E5BDDFF003CA6C7 /* EndlessRotationSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndlessRotationSample.swift; sourceTree = "<group>"; };
@@ -215,6 +217,7 @@
 		9D55395E2E687DCA0074E241 /* Popover */ = {
 			isa = PBXGroup;
 			children = (
+				9DF9E4C02E7237F6004FD61D /* AdaptivePopover.swift */,
 				9D55395F2E687DD70074E241 /* TextFittingPopover.swift */,
 				9D5539612E687DE30074E241 /* PopoverSample.swift */,
 			);
@@ -430,6 +433,7 @@
 				9DB39EDF2E54141C00F9708A /* ZoomableScrollView.swift in Sources */,
 				9D3C749A2DF874060048D4E1 /* CompositionalLayout.swift in Sources */,
 				9D3C74B02DF929F50048D4E1 /* LazyGrid.swift in Sources */,
+				9DF9E4C12E7237F6004FD61D /* AdaptivePopover.swift in Sources */,
 				9D0BD38B2DFE31210029DBBB /* LayoutCodeOrganization.swift in Sources */,
 				9DFFBE322E5AADF5003CA6C7 /* SimpleOpacityAnimation.swift in Sources */,
 				9D3C74BE2DFCEAEA0048D4E1 /* AnchorTabsExample.swift in Sources */,

@@ -22,14 +22,14 @@ struct PopoverSample: View {
             .textFittingPopover(text: text,
                                 isPresented: $isPresented,
                                 backgroundColor: .green,
-                                width: nil)
+                                width: 300)
         }
-        .task {
-            while true {
-                try? await Task.sleep(for: .seconds(2))
-                text = Array(repeating: "X", count: Int.random(in: 0..<50)).joined(separator: " ")
-            }
-        }
+//        .task {
+//            while true {
+//                try? await Task.sleep(for: .seconds(2))
+//                text = Array(repeating: "X", count: Int.random(in: 0..<50)).joined(separator: " ")
+//            }
+//        }
     }
 }
 
