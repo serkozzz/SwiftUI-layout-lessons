@@ -52,8 +52,9 @@ struct ClockViewSample: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct ClockView_Previews: PreviewProvider {
     static var previews: some View {
         ClockViewSample()
     }
 }
+
