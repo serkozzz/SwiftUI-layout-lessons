@@ -7,12 +7,17 @@
 
 import SwiftUI
 
+
+///Попытка повторить близкий к козловскому паттерн координатор в SwiftUI
+///ЗАДОЛБАЛСЯ С ЭТИМ ПРИМЕРОМ, НЕ НУЖНО ЭТО ТЕБЕ, НЕ ДЕЛАЙ
+///
 @MainActor
 private enum AppRouter: Hashable {
     case main
     case detail(String)
     case detailOfDetail(String)
 }
+
 
 @MainActor
 private final class RootCoordinator: ObservableObject {
@@ -43,15 +48,14 @@ private final class RootCoordinator: ObservableObject {
 
 @MainActor
 private final class DetailCoordinator: ObservableObject {
-    // RootCoordinator владеет DetailCoordinator; цикла нет из‑за unowned
-    unowned let root: RootCoordinator
+    weak var root: RootCoordinator?
 
     init(root: RootCoordinator) {
         self.root = root
     }
 
     func showDetailOfDetail(text: String) {
-        root.path.append(.detailOfDetail(text))
+        root?.path.append(.detailOfDetail(text))
     }
 }
 

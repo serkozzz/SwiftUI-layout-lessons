@@ -13,7 +13,7 @@ private enum AppRouter : Hashable{
     case main
 
     @ViewBuilder
-    func createView(path: Binding<NavigationPath>) -> some View {
+    func createView(path: Binding<[AppRouter]>) -> some View {
         switch self {
         case .main:
             MainView(path: path)
@@ -28,7 +28,7 @@ private enum AppRouter : Hashable{
 //all next moves make via path
 struct AppRouterSample: View {
     
-    @State var path = NavigationPath()
+    @State private var path = [AppRouter]()
     var body: some View {
         NavigationStack(path: $path) {
             MainView(path: $path)
@@ -40,7 +40,7 @@ struct AppRouterSample: View {
 }
 
 private struct MainView: View {
-    @Binding var path: NavigationPath
+    @Binding var path: [AppRouter]
     var body: some View {
         Text("Main")
         Button("detail") {
@@ -50,7 +50,7 @@ private struct MainView: View {
 }
 
 private struct DetailView: View {
-    @Binding var path: NavigationPath
+    @Binding var path: [AppRouter]
     var detailText: String
     var body: some View {
         Text("Detail:")
@@ -61,3 +61,4 @@ private struct DetailView: View {
 #Preview {
     AppRouterSample()
 }
+
