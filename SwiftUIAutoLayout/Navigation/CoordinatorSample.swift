@@ -6,23 +6,41 @@
 //
 
 import SwiftUI
-
+//
 ///Попытка повторить близкий к козловскому паттерн координатор в SwiftUI
 ///ЗАДОЛБАЛСЯ С ЭТИМ ПРИМЕРОМ, НЕ НУЖНО ЭТО ТЕБЕ, НЕ ДЕЛАЙ
 ///
+///
+///Пример координатора.
+///Вместо NavigationPath используем типизированный подход. Наш NavigationStack будет работать с [AppRoute].
+///
+///Чтобы не возиться со структурами и биндингом делаем обертку над - AppNavigationPath. Это сильно упростит нам передачу между координаторами и инициализацию (была трабла как проинить RootCoordinator передав в него @State path - когда они оба члены CoordinatorSample: View)
+///
+///Нужный координатор иньектится через @EnvironmentObject внутри RootCoordinator.createView метода. Первый раз RootCoordinator иньектится вручную в CoordinatorSample:View.
+
+
 @MainActor
-private enum AppRouter: Hashable {
+private enum AppRoute: Hashable {
     case main
     case detail(String)
     case detailOfDetail(String)
 }
 
-///класс роутера нужен только обертка path, чтобы можно было спокойно передавать между координаторами, хранить не как State и не ебаться с Binding
+/// Путь навигации приложения (обёртка над массивом маршрутов),
+/// чтобы удобно передавать его между координаторами и давать Binding для NavigationStack.
 @MainActor
-private final class Router: ObservableObject {
-    @Published var path: [AppRouter] = []
+private final class AppNavigationPath: ObservableObject {
+    @Published private(set) var path: [AppRoute] = []
 
-    func push(_ route: AppRouter) {
+    // Готовый биндинг для NavigationStack(path:)
+    var binding: Binding<[AppRoute]> {
+        Binding(
+            get: { self.path },
+            set: { self.path = $0 }
+        )
+    }
+
+    func push(_ route: AppRoute) {
         path.append(route)
     }
 
@@ -37,19 +55,15 @@ private final class Router: ObservableObject {
 
 @MainActor
 private final class RootCoordinator: ObservableObject {
-    private let router: Router
-    private lazy var detailsCoordinator = DetailCoordinator(router: router)
-
-    init(router: Router) {
-        self.router = router
-    }
+    private(set) var path: AppNavigationPath = AppNavigationPath()
+    private lazy var detailsCoordinator = DetailCoordinator(path: path)
 
     func showDetail(text: String) {
-        router.push(.detail(text))
+        path.push(.detail(text))
     }
 
     @ViewBuilder
-    func createView(router route: AppRouter) -> some View {
+    func createView(for route: AppRoute) -> some View {
         switch route {
         case .main:
             MainView()
@@ -65,42 +79,42 @@ private final class RootCoordinator: ObservableObject {
 
 @MainActor
 private final class DetailCoordinator: ObservableObject {
-    private let router: Router
+    private let path: AppNavigationPath
 
-    init(router: Router) {
-        self.router = router
+    init(path: AppNavigationPath) {
+        self.path = path
     }
 
     func showDetailOfDetail(text: String) {
-        router.push(.detailOfDetail(text))
+        path.push(.detailOfDetail(text))
     }
 
     func goBack() {
-        router.pop()
+        path.pop()
     }
 
     func popToRoot() {
-        router.popToRoot()
+        path.popToRoot()
     }
 }
 
 struct CoordinatorSample: View {
-    @StateObject private var router: Router
+
+    // Важно: наблюдаем объект пути, чтобы View обновлялась при push/pop
+    @ObservedObject private var path: AppNavigationPath
     @StateObject private var coordinator: RootCoordinator
 
     init() {
-        // Создаём один Router и передаём его и в координатор, и в NavigationStack
-        let router = Router()
-        _router = StateObject(wrappedValue: router)
-        _coordinator = StateObject(wrappedValue: RootCoordinator(router: router))
+        let coordinator = RootCoordinator()
+        _coordinator = StateObject(wrappedValue: coordinator)
+        _path = ObservedObject(wrappedValue: coordinator.path)
     }
 
     var body: some View {
-        // NavigationStack нужен Binding к пути — собираем его из router.path
-        NavigationStack(path: Binding(get: { router.path }, set: { router.path = $0 })) {
+        NavigationStack(path: path.binding) {
             MainView()
-                .navigationDestination(for: AppRouter.self) { route in
-                    coordinator.createView(router: route)
+                .navigationDestination(for: AppRoute.self) { route in
+                    coordinator.createView(for: route)
                 }
                 .environmentObject(coordinator)
         }
