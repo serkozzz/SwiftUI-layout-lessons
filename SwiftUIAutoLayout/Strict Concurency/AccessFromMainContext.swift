@@ -12,7 +12,8 @@ import SwiftUI
 //    var speed: Int = 100
 //}
 
-private class MyCar {
+
+private class MyCar: @unchecked Sendable {
     var speed = 100
 }
 
@@ -25,10 +26,10 @@ struct AccessFromMainContextSample: View {
         .onAppear() {
             Task.detached {
                 var car = MyCar()
-                Task { @MainActor [car] in
+                Task { @MainActor in
                     print(car.speed)
                 }
-                //car.speed = 90
+                car.speed = 90
             }
         }
     }

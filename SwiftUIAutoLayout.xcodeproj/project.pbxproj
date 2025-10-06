@@ -48,6 +48,8 @@
 		9D5916102E17F4C200797BA7 /* CircleLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D59160F2E17F4BC00797BA7 /* CircleLayout.swift */; };
 		9D5916122E189D8200797BA7 /* MyHStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5916112E189D8200797BA7 /* MyHStack.swift */; };
 		9D6F834B2E8DF2B400F17E41 /* SingletonWithStrictConcurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6F834A2E8DF2B100F17E41 /* SingletonWithStrictConcurrency.swift */; };
+		9D982FEC2E94052900190A8C /* AppRouterSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D982FEB2E94052400190A8C /* AppRouterSample.swift */; };
+		9D982FEE2E94099E00190A8C /* CoordinatorSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D982FED2E94099600190A8C /* CoordinatorSample.swift */; };
 		9DA62E292E36EA7B00C85E7E /* Car+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA62E232E36EA7B00C85E7E /* Car+CoreDataClass.swift */; };
 		9DA62E2A2E36EA7B00C85E7E /* DBGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA62E242E36EA7B00C85E7E /* DBGenerator.swift */; };
 		9DA62E2B2E36EA7B00C85E7E /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA62E252E36EA7B00C85E7E /* CoreDataStack.swift */; };
@@ -111,6 +113,8 @@
 		9D5916112E189D8200797BA7 /* MyHStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHStack.swift; sourceTree = "<group>"; };
 		9D6F834A2E8DF2B100F17E41 /* SingletonWithStrictConcurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingletonWithStrictConcurrency.swift; sourceTree = "<group>"; };
 		9D93F8642DF63977009A957B /* SwiftUIAutoLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIAutoLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D982FEB2E94052400190A8C /* AppRouterSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouterSample.swift; sourceTree = "<group>"; };
+		9D982FED2E94099600190A8C /* CoordinatorSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorSample.swift; sourceTree = "<group>"; };
 		9DA62E232E36EA7B00C85E7E /* Car+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Car+CoreDataClass.swift"; sourceTree = "<group>"; };
 		9DA62E242E36EA7B00C85E7E /* DBGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBGenerator.swift; sourceTree = "<group>"; };
 		9DA62E252E36EA7B00C85E7E /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
@@ -273,6 +277,8 @@
 		9D5916042E1070E400797BA7 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
+				9D982FED2E94099600190A8C /* CoordinatorSample.swift */,
+				9D982FEB2E94052400190A8C /* AppRouterSample.swift */,
 				9D5916052E10710100797BA7 /* NavigationPathTree.swift */,
 				9D5916022E10559000797BA7 /* NavigationPathSample.swift */,
 			);
@@ -451,6 +457,7 @@
 			files = (
 				9DA62E292E36EA7B00C85E7E /* Car+CoreDataClass.swift in Sources */,
 				9D33478C2E6BDF0B0075A381 /* AnimatableViewSample.swift in Sources */,
+				9D982FEC2E94052900190A8C /* AppRouterSample.swift in Sources */,
 				9DA62E342E36F2D000C85E7E /* BindingExample.swift in Sources */,
 				9DB39EE22E54AED300F9708A /* UIViewRepresentableExample.swift in Sources */,
 				9DA62E2A2E36EA7B00C85E7E /* DBGenerator.swift in Sources */,
@@ -471,6 +478,7 @@
 				9D0BD3872DFD18320029DBBB /* CircleWithTextWithoutPref.swift in Sources */,
 				9DFFBE602E5E2D0E003CA6C7 /* SimpleCircleAnimation.swift in Sources */,
 				9D0BD4022E09CD560029DBBB /* PreferencesWithoutGeometryReader.swift in Sources */,
+				9D982FEE2E94099E00190A8C /* CoordinatorSample.swift in Sources */,
 				9D55397D2E6B1F040074E241 /* TrimShapeAnimSample.swift in Sources */,
 				9D3C749C2DF874060048D4E1 /* Counter.swift in Sources */,
 				9D3C74A72DF8941C0048D4E1 /* CircleWithText.swift in Sources */,
