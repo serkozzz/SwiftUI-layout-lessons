@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-
 ///Попытка повторить близкий к козловскому паттерн координатор в SwiftUI
 ///ЗАДОЛБАЛСЯ С ЭТИМ ПРИМЕРОМ, НЕ НУЖНО ЭТО ТЕБЕ, НЕ ДЕЛАЙ
 ///
@@ -18,22 +17,40 @@ private enum AppRouter: Hashable {
     case detailOfDetail(String)
 }
 
+///класс роутера нужен только обертка path, чтобы можно было спокойно передавать между координаторами, хранить не как State и не ебаться с Binding
+@MainActor
+private final class Router: ObservableObject {
+    @Published var path: [AppRouter] = []
+
+    func push(_ route: AppRouter) {
+        path.append(route)
+    }
+
+    func pop() {
+        _ = path.popLast()
+    }
+
+    func popToRoot() {
+        path.removeAll()
+    }
+}
 
 @MainActor
 private final class RootCoordinator: ObservableObject {
-    // Единый источник правды для стека навигации
-    @Published var path: [AppRouter] = []
+    private let router: Router
+    private lazy var detailsCoordinator = DetailCoordinator(router: router)
 
-    // Создаётся лениво после полной инициализации self
-    private lazy var detailsCoordinator = DetailCoordinator(root: self)
+    init(router: Router) {
+        self.router = router
+    }
 
     func showDetail(text: String) {
-        path.append(.detail(text))
+        router.push(.detail(text))
     }
 
     @ViewBuilder
-    func createView(router: AppRouter) -> some View {
-        switch router {
+    func createView(router route: AppRouter) -> some View {
+        switch route {
         case .main:
             MainView()
         case .detail(let detailText):
@@ -48,26 +65,42 @@ private final class RootCoordinator: ObservableObject {
 
 @MainActor
 private final class DetailCoordinator: ObservableObject {
-    weak var root: RootCoordinator?
+    private let router: Router
 
-    init(root: RootCoordinator) {
-        self.root = root
+    init(router: Router) {
+        self.router = router
     }
 
     func showDetailOfDetail(text: String) {
-        root?.path.append(.detailOfDetail(text))
+        router.push(.detailOfDetail(text))
+    }
+
+    func goBack() {
+        router.pop()
+    }
+
+    func popToRoot() {
+        router.popToRoot()
     }
 }
 
 struct CoordinatorSample: View {
-    @StateObject private var coordinator = RootCoordinator()
+    @StateObject private var router: Router
+    @StateObject private var coordinator: RootCoordinator
+
+    init() {
+        // Создаём один Router и передаём его и в координатор, и в NavigationStack
+        let router = Router()
+        _router = StateObject(wrappedValue: router)
+        _coordinator = StateObject(wrappedValue: RootCoordinator(router: router))
+    }
 
     var body: some View {
-        // Для ObservableObject создаём биндинг вручную
-        NavigationStack(path: Binding(get: { coordinator.path }, set: { coordinator.path = $0 })) {
+        // NavigationStack нужен Binding к пути — собираем его из router.path
+        NavigationStack(path: Binding(get: { router.path }, set: { router.path = $0 })) {
             MainView()
-                .navigationDestination(for: AppRouter.self) { router in
-                    coordinator.createView(router: router)
+                .navigationDestination(for: AppRouter.self) { route in
+                    coordinator.createView(router: route)
                 }
                 .environmentObject(coordinator)
         }
@@ -96,6 +129,12 @@ private struct DetailView: View {
             Button("new View") {
                 coordinator.showDetailOfDetail(text: "3d level")
             }
+            Button("Back") {
+                coordinator.goBack()
+            }
+            Button("Pop to root") {
+                coordinator.popToRoot()
+            }
         }
     }
 }
@@ -107,6 +146,9 @@ private struct DetailOfDetailView: View {
         VStack {
             Text("DetailOfDetailView:")
             Text(detailText)
+            Button("Back") {
+                coordinator.goBack()
+            }
         }
     }
 }
