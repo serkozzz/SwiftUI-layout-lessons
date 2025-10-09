@@ -17,6 +17,8 @@
 		9D3347902E6BE6DA0075A381 /* KeyFrameInterpolator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D33478F2E6BE6DA0075A381 /* KeyFrameInterpolator.swift */; };
 		9D3347EB2E70DACD0075A381 /* ClockViewSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3347EA2E70DACD0075A381 /* ClockViewSample.swift */; };
 		9D33480D2E71267C0075A381 /* AnimatableEmitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D33480C2E71267C0075A381 /* AnimatableEmitter.swift */; };
+		9D3B4EFF2E972E6300E441AA /* HostingConfigurationSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3B4EFE2E972E6300E441AA /* HostingConfigurationSample.swift */; };
+		9D3B4F012E972E7800E441AA /* TableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3B4F002E972E6B00E441AA /* TableVC.swift */; };
 		9D3C749A2DF874060048D4E1 /* CompositionalLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3C74912DF874060048D4E1 /* CompositionalLayout.swift */; };
 		9D3C749C2DF874060048D4E1 /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3C74932DF874060048D4E1 /* Counter.swift */; };
 		9D3C749D2DF874060048D4E1 /* ImageTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3C74942DF874060048D4E1 /* ImageTest.swift */; };
@@ -81,6 +83,8 @@
 		9D33478F2E6BE6DA0075A381 /* KeyFrameInterpolator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyFrameInterpolator.swift; sourceTree = "<group>"; };
 		9D3347EA2E70DACD0075A381 /* ClockViewSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockViewSample.swift; sourceTree = "<group>"; };
 		9D33480C2E71267C0075A381 /* AnimatableEmitter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableEmitter.swift; sourceTree = "<group>"; };
+		9D3B4EFE2E972E6300E441AA /* HostingConfigurationSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingConfigurationSample.swift; sourceTree = "<group>"; };
+		9D3B4F002E972E6B00E441AA /* TableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableVC.swift; sourceTree = "<group>"; };
 		9D3C748E2DF874060048D4E1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9D3C74902DF874060048D4E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D3C74912DF874060048D4E1 /* CompositionalLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionalLayout.swift; sourceTree = "<group>"; };
@@ -156,6 +160,15 @@
 				9D0BD4012E09CD420029DBBB /* PreferencesWithoutGeometryReader.swift */,
 			);
 			path = Preferences;
+			sourceTree = "<group>";
+		};
+		9D3B4EFD2E972E3E00E441AA /* HostingConfiguration */ = {
+			isa = PBXGroup;
+			children = (
+				9D3B4F002E972E6B00E441AA /* TableVC.swift */,
+				9D3B4EFE2E972E6300E441AA /* HostingConfigurationSample.swift */,
+			);
+			path = HostingConfiguration;
 			sourceTree = "<group>";
 		};
 		9D3C748F2DF874060048D4E1 /* Preview Content */ = {
@@ -353,6 +366,7 @@
 		9DB39EE02E54AEAC00F9708A /* SwiftUI-UIKit Bridges */ = {
 			isa = PBXGroup;
 			children = (
+				9D3B4EFD2E972E3E00E441AA /* HostingConfiguration */,
 				9D5539652E687EC20074E241 /* FittingSizeUIView */,
 				9DB39EE12E54AEC700F9708A /* UIViewRepresentableExample.swift */,
 			);
@@ -481,6 +495,8 @@
 				9D982FEE2E94099E00190A8C /* CoordinatorSample.swift in Sources */,
 				9D55397D2E6B1F040074E241 /* TrimShapeAnimSample.swift in Sources */,
 				9D3C749C2DF874060048D4E1 /* Counter.swift in Sources */,
+				9D3B4F012E972E7800E441AA /* TableVC.swift in Sources */,
+				9D3B4EFF2E972E6300E441AA /* HostingConfigurationSample.swift in Sources */,
 				9D3C74A72DF8941C0048D4E1 /* CircleWithText.swift in Sources */,
 				9D3C749D2DF874060048D4E1 /* ImageTest.swift in Sources */,
 				9D33480D2E71267C0075A381 /* AnimatableEmitter.swift in Sources */,
