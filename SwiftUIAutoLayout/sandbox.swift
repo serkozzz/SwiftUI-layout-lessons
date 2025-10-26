@@ -11,29 +11,22 @@ import Combine
 
 struct sandbox: View {
     
+    @State var number = 10
+    @State var a = 0
     var body: some View {
-        NavigationStack {
-            List {
-                ZStack {
-                    Rectangle()
-                        .fill(.yellow)
-                        .frame(width: 100, height: 100)
-                    NavigationLink(value: 10) {
-                        EmptyView()
-                    }
-                }
-                ZStack {
-                    Text("Hello")
-                    NavigationLink(value: 10) {
-                        //EmptyView()
-                    }
-                   // .opacity(0)
-                }
-            }
-            .navigationDestination(for: Int.self) { number in
-                Text("Subview")
-            }
+        var s = myFunc()
+        Text(s)
+        Text(String(number))
+        Button("tap \(a)") {
+            a = a + 1
         }
+    }
+    
+    func myFunc() -> String {
+        number += 1
+        print(number)
+        return "a"
+        
     }
 }
 
