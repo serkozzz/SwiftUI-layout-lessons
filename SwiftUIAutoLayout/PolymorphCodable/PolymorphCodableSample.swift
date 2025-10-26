@@ -18,7 +18,12 @@ struct PolymorphCodableSample: View {
         Text("Hello")
         Button("make json") {
             let data = try! PolymorphCodableTreeSerializer().encodeTree(tree)
-            let jsonString = String(data: data, encoding: .utf8)!
+            
+            let restoredTree = try! PolymorphCodableTreeSerializer().decodeTree(data: data)
+            
+            let newData = try! PolymorphCodableTreeSerializer().encodeTree(restoredTree)
+            
+            let jsonString = String(data: newData, encoding: .utf8)!
             print(jsonString)
         }
     }
