@@ -52,9 +52,9 @@
 		9D6F834B2E8DF2B400F17E41 /* SingletonWithStrictConcurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6F834A2E8DF2B100F17E41 /* SingletonWithStrictConcurrency.swift */; };
 		9D982FEC2E94052900190A8C /* AppRouterSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D982FEB2E94052400190A8C /* AppRouterSample.swift */; };
 		9D982FEE2E94099E00190A8C /* CoordinatorSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D982FED2E94099600190A8C /* CoordinatorSample.swift */; };
-		9DA2790B2EAE990A002FCAB4 /* PolymorphCodableSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA2790A2EAE9906002FCAB4 /* PolymorphCodableSample.swift */; };
-		9DA2790D2EAEB1E2002FCAB4 /* PolymorphCodableTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA2790C2EAEB1D7002FCAB4 /* PolymorphCodableTree.swift */; };
-		9DA2790F2EAEB201002FCAB4 /* PolymorphCodableTreeSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA2790E2EAEB1FC002FCAB4 /* PolymorphCodableTreeSerializer.swift */; };
+		9DA2790B2EAE990A002FCAB4 /* Sample_PCSInheritance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA2790A2EAE9906002FCAB4 /* Sample_PCSInheritance.swift */; };
+		9DA2790D2EAEB1E2002FCAB4 /* Tree_PCSInheritance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA2790C2EAEB1D7002FCAB4 /* Tree_PCSInheritance.swift */; };
+		9DA2790F2EAEB201002FCAB4 /* TreeSerializer_PCSInheritance .swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA2790E2EAEB1FC002FCAB4 /* TreeSerializer_PCSInheritance .swift */; };
 		9DA62E292E36EA7B00C85E7E /* Car+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA62E232E36EA7B00C85E7E /* Car+CoreDataClass.swift */; };
 		9DA62E2A2E36EA7B00C85E7E /* DBGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA62E242E36EA7B00C85E7E /* DBGenerator.swift */; };
 		9DA62E2B2E36EA7B00C85E7E /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA62E252E36EA7B00C85E7E /* CoreDataStack.swift */; };
@@ -67,6 +67,12 @@
 		9DB39EE22E54AED300F9708A /* UIViewRepresentableExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB39EE12E54AEC700F9708A /* UIViewRepresentableExample.swift */; };
 		9DB39EE42E54E17100F9708A /* ZoomableScrollViewExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB39EE32E54E16900F9708A /* ZoomableScrollViewExample.swift */; };
 		9DD5850E2E86E0D90074455E /* ObservableChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD5850D2E86E0D90074455E /* ObservableChain.swift */; };
+		9DF79C8C2EAF17EF00A3B677 /* Tree_PCSProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF79C8B2EAF17EC00A3B677 /* Tree_PCSProtocol.swift */; };
+		9DF79C8E2EAF17FA00A3B677 /* TreeSerializer_PCSProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF79C8D2EAF17F200A3B677 /* TreeSerializer_PCSProtocol.swift */; };
+		9DF79C902EAF180B00A3B677 /* Sample_PCSProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF79C8F2EAF180500A3B677 /* Sample_PCSProtocol.swift */; };
+		9DF79C942EAF180D00A3B677 /* Tree_PCSEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF79C932EAF180D00A3B677 /* Tree_PCSEnum.swift */; };
+		9DF79C952EAF180D00A3B677 /* TreeSerializer_PCSEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF79C922EAF180D00A3B677 /* TreeSerializer_PCSEnum.swift */; };
+		9DF79C962EAF180D00A3B677 /* Sample_PCSEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF79C912EAF180D00A3B677 /* Sample_PCSEnum.swift */; };
 		9DF9E4C12E7237F6004FD61D /* AdaptivePopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF9E4C02E7237F6004FD61D /* AdaptivePopover.swift */; };
 		9DFFBE322E5AADF5003CA6C7 /* SimpleOpacityAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFFBE312E5AADF5003CA6C7 /* SimpleOpacityAnimation.swift */; };
 		9DFFBE342E5AB2AE003CA6C7 /* SimpleTransitionAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFFBE332E5AB2AE003CA6C7 /* SimpleTransitionAnimation.swift */; };
@@ -122,9 +128,9 @@
 		9D93F8642DF63977009A957B /* SwiftUIAutoLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIAutoLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D982FEB2E94052400190A8C /* AppRouterSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouterSample.swift; sourceTree = "<group>"; };
 		9D982FED2E94099600190A8C /* CoordinatorSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorSample.swift; sourceTree = "<group>"; };
-		9DA2790A2EAE9906002FCAB4 /* PolymorphCodableSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolymorphCodableSample.swift; sourceTree = "<group>"; };
-		9DA2790C2EAEB1D7002FCAB4 /* PolymorphCodableTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolymorphCodableTree.swift; sourceTree = "<group>"; };
-		9DA2790E2EAEB1FC002FCAB4 /* PolymorphCodableTreeSerializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolymorphCodableTreeSerializer.swift; sourceTree = "<group>"; };
+		9DA2790A2EAE9906002FCAB4 /* Sample_PCSInheritance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample_PCSInheritance.swift; sourceTree = "<group>"; };
+		9DA2790C2EAEB1D7002FCAB4 /* Tree_PCSInheritance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tree_PCSInheritance.swift; sourceTree = "<group>"; };
+		9DA2790E2EAEB1FC002FCAB4 /* TreeSerializer_PCSInheritance .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TreeSerializer_PCSInheritance .swift"; sourceTree = "<group>"; };
 		9DA62E232E36EA7B00C85E7E /* Car+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Car+CoreDataClass.swift"; sourceTree = "<group>"; };
 		9DA62E242E36EA7B00C85E7E /* DBGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBGenerator.swift; sourceTree = "<group>"; };
 		9DA62E252E36EA7B00C85E7E /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
@@ -137,6 +143,12 @@
 		9DB39EE12E54AEC700F9708A /* UIViewRepresentableExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewRepresentableExample.swift; sourceTree = "<group>"; };
 		9DB39EE32E54E16900F9708A /* ZoomableScrollViewExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomableScrollViewExample.swift; sourceTree = "<group>"; };
 		9DD5850D2E86E0D90074455E /* ObservableChain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableChain.swift; sourceTree = "<group>"; };
+		9DF79C8B2EAF17EC00A3B677 /* Tree_PCSProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tree_PCSProtocol.swift; sourceTree = "<group>"; };
+		9DF79C8D2EAF17F200A3B677 /* TreeSerializer_PCSProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeSerializer_PCSProtocol.swift; sourceTree = "<group>"; };
+		9DF79C8F2EAF180500A3B677 /* Sample_PCSProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample_PCSProtocol.swift; sourceTree = "<group>"; };
+		9DF79C912EAF180D00A3B677 /* Sample_PCSEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample_PCSEnum.swift; sourceTree = "<group>"; };
+		9DF79C922EAF180D00A3B677 /* TreeSerializer_PCSEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeSerializer_PCSEnum.swift; sourceTree = "<group>"; };
+		9DF79C932EAF180D00A3B677 /* Tree_PCSEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tree_PCSEnum.swift; sourceTree = "<group>"; };
 		9DF9E4C02E7237F6004FD61D /* AdaptivePopover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptivePopover.swift; sourceTree = "<group>"; };
 		9DFFBE312E5AADF5003CA6C7 /* SimpleOpacityAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleOpacityAnimation.swift; sourceTree = "<group>"; };
 		9DFFBE332E5AB2AE003CA6C7 /* SimpleTransitionAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTransitionAnimation.swift; sourceTree = "<group>"; };
@@ -188,7 +200,7 @@
 		9D3C74992DF874060048D4E1 /* SwiftUIAutoLayout */ = {
 			isa = PBXGroup;
 			children = (
-				9DA279092EAE98DB002FCAB4 /* PolymorphCodable */,
+				9DA279092EAE98DB002FCAB4 /* PolymorphCodableSample */,
 				9DB04BE52E8D94C0007BFA89 /* Strict Concurency */,
 				9D3C74982DF874060048D4E1 /* SwiftUIAutoLayoutApp.swift */,
 				9D3C748F2DF874060048D4E1 /* Preview Content */,
@@ -330,14 +342,44 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9DA279092EAE98DB002FCAB4 /* PolymorphCodable */ = {
+		9DA279092EAE98DB002FCAB4 /* PolymorphCodableSample */ = {
 			isa = PBXGroup;
 			children = (
-				9DA2790E2EAEB1FC002FCAB4 /* PolymorphCodableTreeSerializer.swift */,
-				9DA2790C2EAEB1D7002FCAB4 /* PolymorphCodableTree.swift */,
-				9DA2790A2EAE9906002FCAB4 /* PolymorphCodableSample.swift */,
+				9DA279122EAF1299002FCAB4 /* enum */,
+				9DA279112EAF128A002FCAB4 /* Inheritance */,
+				9DA279102EAF1278002FCAB4 /* Protocol */,
 			);
-			path = PolymorphCodable;
+			path = PolymorphCodableSample;
+			sourceTree = "<group>";
+		};
+		9DA279102EAF1278002FCAB4 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				9DF79C8D2EAF17F200A3B677 /* TreeSerializer_PCSProtocol.swift */,
+				9DF79C8B2EAF17EC00A3B677 /* Tree_PCSProtocol.swift */,
+				9DF79C8F2EAF180500A3B677 /* Sample_PCSProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		9DA279112EAF128A002FCAB4 /* Inheritance */ = {
+			isa = PBXGroup;
+			children = (
+				9DA2790E2EAEB1FC002FCAB4 /* TreeSerializer_PCSInheritance .swift */,
+				9DA2790C2EAEB1D7002FCAB4 /* Tree_PCSInheritance.swift */,
+				9DA2790A2EAE9906002FCAB4 /* Sample_PCSInheritance.swift */,
+			);
+			path = Inheritance;
+			sourceTree = "<group>";
+		};
+		9DA279122EAF1299002FCAB4 /* enum */ = {
+			isa = PBXGroup;
+			children = (
+				9DF79C922EAF180D00A3B677 /* TreeSerializer_PCSEnum.swift */,
+				9DF79C932EAF180D00A3B677 /* Tree_PCSEnum.swift */,
+				9DF79C912EAF180D00A3B677 /* Sample_PCSEnum.swift */,
+			);
+			path = enum;
 			sourceTree = "<group>";
 		};
 		9DA62E212E36EA5F00C85E7E /* CoreData */ = {
@@ -491,7 +533,7 @@
 				9D982FEC2E94052900190A8C /* AppRouterSample.swift in Sources */,
 				9DA62E342E36F2D000C85E7E /* BindingExample.swift in Sources */,
 				9DB39EE22E54AED300F9708A /* UIViewRepresentableExample.swift in Sources */,
-				9DA2790B2EAE990A002FCAB4 /* PolymorphCodableSample.swift in Sources */,
+				9DA2790B2EAE990A002FCAB4 /* Sample_PCSInheritance.swift in Sources */,
 				9DA62E2A2E36EA7B00C85E7E /* DBGenerator.swift in Sources */,
 				9DA62E2B2E36EA7B00C85E7E /* CoreDataStack.swift in Sources */,
 				9D3347902E6BE6DA0075A381 /* KeyFrameInterpolator.swift in Sources */,
@@ -507,6 +549,7 @@
 				9DFFBE322E5AADF5003CA6C7 /* SimpleOpacityAnimation.swift in Sources */,
 				9D3C74BE2DFCEAEA0048D4E1 /* AnchorTabsExample.swift in Sources */,
 				9DB04BE72E8D950D007BFA89 /* AccessFromBackgroundProcess.swift in Sources */,
+				9DF79C952EAF180D00A3B677 /* TreeSerializer_PCSEnum.swift in Sources */,
 				9D0BD3872DFD18320029DBBB /* CircleWithTextWithoutPref.swift in Sources */,
 				9DFFBE602E5E2D0E003CA6C7 /* SimpleCircleAnimation.swift in Sources */,
 				9D0BD4022E09CD560029DBBB /* PreferencesWithoutGeometryReader.swift in Sources */,
@@ -519,6 +562,7 @@
 				9D3C749D2DF874060048D4E1 /* ImageTest.swift in Sources */,
 				9D33480D2E71267C0075A381 /* AnimatableEmitter.swift in Sources */,
 				9D5916062E10710100797BA7 /* NavigationPathTree.swift in Sources */,
+				9DF79C962EAF180D00A3B677 /* Sample_PCSEnum.swift in Sources */,
 				9DFFBE3A2E5C08E4003CA6C7 /* AnimatableModifierSample.swift in Sources */,
 				9D5916102E17F4C200797BA7 /* CircleLayout.swift in Sources */,
 				9D33478E2E6BE3490075A381 /* KeyFrameSample.swift in Sources */,
@@ -531,14 +575,18 @@
 				9D3C74AE2DF907DB0048D4E1 /* Grid2.swift in Sources */,
 				9DA62E322E36ED3300C85E7E /* Model.xcdatamodeld in Sources */,
 				9D5539622E687DE30074E241 /* PopoverSample.swift in Sources */,
-				9DA2790F2EAEB201002FCAB4 /* PolymorphCodableTreeSerializer.swift in Sources */,
+				9DA2790F2EAEB201002FCAB4 /* TreeSerializer_PCSInheritance .swift in Sources */,
 				9D0BD3C02E0261560029DBBB /* StateObject.swift in Sources */,
+				9DF79C8C2EAF17EF00A3B677 /* Tree_PCSProtocol.swift in Sources */,
 				9D5916092E10C42200797BA7 /* sandbox.swift in Sources */,
 				9DFFBE342E5AB2AE003CA6C7 /* SimpleTransitionAnimation.swift in Sources */,
 				9DB39EE42E54E17100F9708A /* ZoomableScrollViewExample.swift in Sources */,
 				9D5916032E10559000797BA7 /* NavigationPathSample.swift in Sources */,
+				9DF79C942EAF180D00A3B677 /* Tree_PCSEnum.swift in Sources */,
 				9D6F834B2E8DF2B400F17E41 /* SingletonWithStrictConcurrency.swift in Sources */,
 				9D3C749E2DF874060048D4E1 /* TilesWithStack.swift in Sources */,
+				9DF79C8E2EAF17FA00A3B677 /* TreeSerializer_PCSProtocol.swift in Sources */,
+				9DF79C902EAF180B00A3B677 /* Sample_PCSProtocol.swift in Sources */,
 				9D3C749F2DF874060048D4E1 /* MeasureBehavior.swift in Sources */,
 				9D5916122E189D8200797BA7 /* MyHStack.swift in Sources */,
 				9D5539782E6A79410074E241 /* ClipShapeSample.swift in Sources */,
@@ -549,7 +597,7 @@
 				9D3C74AA2DF8E84F0048D4E1 /* IndexCardsWithStack.swift in Sources */,
 				9D3C74AC2DF8FB430048D4E1 /* Grid.swift in Sources */,
 				9DFFBE382E5BDE06003CA6C7 /* EndlessRotationSample.swift in Sources */,
-				9DA2790D2EAEB1E2002FCAB4 /* PolymorphCodableTree.swift in Sources */,
+				9DA2790D2EAEB1E2002FCAB4 /* Tree_PCSInheritance.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
