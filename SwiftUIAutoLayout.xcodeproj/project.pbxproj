@@ -71,7 +71,6 @@
 		9DF79C8E2EAF17FA00A3B677 /* TreeSerializer_PCSProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF79C8D2EAF17F200A3B677 /* TreeSerializer_PCSProtocol.swift */; };
 		9DF79C902EAF180B00A3B677 /* Sample_PCSProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF79C8F2EAF180500A3B677 /* Sample_PCSProtocol.swift */; };
 		9DF79C942EAF180D00A3B677 /* Tree_PCSEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF79C932EAF180D00A3B677 /* Tree_PCSEnum.swift */; };
-		9DF79C952EAF180D00A3B677 /* TreeSerializer_PCSEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF79C922EAF180D00A3B677 /* TreeSerializer_PCSEnum.swift */; };
 		9DF79C962EAF180D00A3B677 /* Sample_PCSEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF79C912EAF180D00A3B677 /* Sample_PCSEnum.swift */; };
 		9DF9E4C12E7237F6004FD61D /* AdaptivePopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF9E4C02E7237F6004FD61D /* AdaptivePopover.swift */; };
 		9DFFBE322E5AADF5003CA6C7 /* SimpleOpacityAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFFBE312E5AADF5003CA6C7 /* SimpleOpacityAnimation.swift */; };
@@ -147,7 +146,6 @@
 		9DF79C8D2EAF17F200A3B677 /* TreeSerializer_PCSProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeSerializer_PCSProtocol.swift; sourceTree = "<group>"; };
 		9DF79C8F2EAF180500A3B677 /* Sample_PCSProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample_PCSProtocol.swift; sourceTree = "<group>"; };
 		9DF79C912EAF180D00A3B677 /* Sample_PCSEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample_PCSEnum.swift; sourceTree = "<group>"; };
-		9DF79C922EAF180D00A3B677 /* TreeSerializer_PCSEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeSerializer_PCSEnum.swift; sourceTree = "<group>"; };
 		9DF79C932EAF180D00A3B677 /* Tree_PCSEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tree_PCSEnum.swift; sourceTree = "<group>"; };
 		9DF9E4C02E7237F6004FD61D /* AdaptivePopover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptivePopover.swift; sourceTree = "<group>"; };
 		9DFFBE312E5AADF5003CA6C7 /* SimpleOpacityAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleOpacityAnimation.swift; sourceTree = "<group>"; };
@@ -375,7 +373,6 @@
 		9DA279122EAF1299002FCAB4 /* enum */ = {
 			isa = PBXGroup;
 			children = (
-				9DF79C922EAF180D00A3B677 /* TreeSerializer_PCSEnum.swift */,
 				9DF79C932EAF180D00A3B677 /* Tree_PCSEnum.swift */,
 				9DF79C912EAF180D00A3B677 /* Sample_PCSEnum.swift */,
 			);
@@ -549,7 +546,6 @@
 				9DFFBE322E5AADF5003CA6C7 /* SimpleOpacityAnimation.swift in Sources */,
 				9D3C74BE2DFCEAEA0048D4E1 /* AnchorTabsExample.swift in Sources */,
 				9DB04BE72E8D950D007BFA89 /* AccessFromBackgroundProcess.swift in Sources */,
-				9DF79C952EAF180D00A3B677 /* TreeSerializer_PCSEnum.swift in Sources */,
 				9D0BD3872DFD18320029DBBB /* CircleWithTextWithoutPref.swift in Sources */,
 				9DFFBE602E5E2D0E003CA6C7 /* SimpleCircleAnimation.swift in Sources */,
 				9D0BD4022E09CD560029DBBB /* PreferencesWithoutGeometryReader.swift in Sources */,
