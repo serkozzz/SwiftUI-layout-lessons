@@ -16,7 +16,7 @@ struct SwiftUIAutoLayoutApp: App {
     
     var body: some Scene {
         WindowGroup {
-            PolymorphCodableSampleInheritance.ContentView()
+            NotPolymorphCodableTreeSample.ContentView()
                 .environment(\.managedObjectContext, CoreDataStack.shared.managedContext)
 
         }
