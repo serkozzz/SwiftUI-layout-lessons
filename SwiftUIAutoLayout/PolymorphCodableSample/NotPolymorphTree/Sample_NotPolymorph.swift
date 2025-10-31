@@ -7,6 +7,9 @@
 
 import SwiftUI
 
+//пример того как легко дерево кодируется декодируется в одну строку стандартными механизмами.
+//елси у вас нет иерерхии типов и все ноды одного типа - нет необходимости определять required init(from decoder: Decoder) + func encode(to encoder: Encoder)
+
 extension NotPolymorphCodableTreeSample {
     struct ContentView: View {
         

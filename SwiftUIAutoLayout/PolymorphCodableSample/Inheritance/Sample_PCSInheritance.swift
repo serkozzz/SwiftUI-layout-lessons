@@ -8,6 +8,15 @@
 
 import SwiftUI
 
+
+//пример с encode/decode дерева + иерархия классов. То есть дерево, где каждый нод может быть подклассом Node.
+//используется встроенная система: required init(from decoder: Decoder) + func encode(to encoder: Encoder)
+//то есть node кодируется одной строчкой: bodyData = try JSONEncoder.encode(node)
+//но чтобы это было возможно приходится вручную в каждом подклассе реализовывать init(from decoder: Decoder) + func encode(to encoder: Encoder). Вручную кладем каждое св-во.
+//Чтобы понимать какой нод мы сейчас декодируем, при кодировании мы записываем доп поле "kind". Этим занимается Serializer, проходит по дереву и пишет kind и body класса.
+//
+//
+
 enum PolymorphCodableSampleInheritance {
     
     struct ContentView: View {

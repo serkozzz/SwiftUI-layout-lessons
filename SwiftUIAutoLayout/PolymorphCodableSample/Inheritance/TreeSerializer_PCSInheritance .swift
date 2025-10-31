@@ -12,6 +12,7 @@ extension PolymorphCodableSampleInheritance {
         private let encoder = JSONEncoder()
         private let decoder = JSONDecoder()
         
+
         func encodeTree(_ root: Node) throws -> Data {
             let dict = try encodeNode(root)
             return try JSONSerialization.data(withJSONObject: dict, options: [.prettyPrinted])

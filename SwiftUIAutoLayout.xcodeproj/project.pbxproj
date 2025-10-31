@@ -71,6 +71,8 @@
 		9DF79C902EAF180B00A3B677 /* Sample_NotPolymorph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF79C8F2EAF180500A3B677 /* Sample_NotPolymorph.swift */; };
 		9DF79C942EAF180D00A3B677 /* Tree_PCSEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF79C932EAF180D00A3B677 /* Tree_PCSEnum.swift */; };
 		9DF79C962EAF180D00A3B677 /* Sample_PCSEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF79C912EAF180D00A3B677 /* Sample_PCSEnum.swift */; };
+		9DF79CEB2EB481BD00A3B677 /* Mirror_KVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF79CE82EB481BD00A3B677 /* Mirror_KVC.swift */; };
+		9DF79CEC2EB481BD00A3B677 /* SafeKVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DF79CEA2EB481BD00A3B677 /* SafeKVC.m */; };
 		9DF9E4C12E7237F6004FD61D /* AdaptivePopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF9E4C02E7237F6004FD61D /* AdaptivePopover.swift */; };
 		9DFFBE322E5AADF5003CA6C7 /* SimpleOpacityAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFFBE312E5AADF5003CA6C7 /* SimpleOpacityAnimation.swift */; };
 		9DFFBE342E5AB2AE003CA6C7 /* SimpleTransitionAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFFBE332E5AB2AE003CA6C7 /* SimpleTransitionAnimation.swift */; };
@@ -145,6 +147,10 @@
 		9DF79C8F2EAF180500A3B677 /* Sample_NotPolymorph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample_NotPolymorph.swift; sourceTree = "<group>"; };
 		9DF79C912EAF180D00A3B677 /* Sample_PCSEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample_PCSEnum.swift; sourceTree = "<group>"; };
 		9DF79C932EAF180D00A3B677 /* Tree_PCSEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tree_PCSEnum.swift; sourceTree = "<group>"; };
+		9DF79CE52EB481B100A3B677 /* SwiftUIAutoLayout-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftUIAutoLayout-Bridging-Header.h"; sourceTree = "<group>"; };
+		9DF79CE82EB481BD00A3B677 /* Mirror_KVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mirror_KVC.swift; sourceTree = "<group>"; };
+		9DF79CE92EB481BD00A3B677 /* SafeKVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SafeKVC.h; sourceTree = "<group>"; };
+		9DF79CEA2EB481BD00A3B677 /* SafeKVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SafeKVC.m; sourceTree = "<group>"; };
 		9DF9E4C02E7237F6004FD61D /* AdaptivePopover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptivePopover.swift; sourceTree = "<group>"; };
 		9DFFBE312E5AADF5003CA6C7 /* SimpleOpacityAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleOpacityAnimation.swift; sourceTree = "<group>"; };
 		9DFFBE332E5AB2AE003CA6C7 /* SimpleTransitionAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTransitionAnimation.swift; sourceTree = "<group>"; };
@@ -196,6 +202,7 @@
 		9D3C74992DF874060048D4E1 /* SwiftUIAutoLayout */ = {
 			isa = PBXGroup;
 			children = (
+				9DF79CE42EB4818F00A3B677 /* Mirror&KVC */,
 				9DA279092EAE98DB002FCAB4 /* PolymorphCodableSample */,
 				9DB04BE52E8D94C0007BFA89 /* Strict Concurency */,
 				9D3C74982DF874060048D4E1 /* SwiftUIAutoLayoutApp.swift */,
@@ -434,6 +441,17 @@
 			path = Observable;
 			sourceTree = "<group>";
 		};
+		9DF79CE42EB4818F00A3B677 /* Mirror&KVC */ = {
+			isa = PBXGroup;
+			children = (
+				9DF79CE82EB481BD00A3B677 /* Mirror_KVC.swift */,
+				9DF79CE92EB481BD00A3B677 /* SafeKVC.h */,
+				9DF79CEA2EB481BD00A3B677 /* SafeKVC.m */,
+				9DF79CE52EB481B100A3B677 /* SwiftUIAutoLayout-Bridging-Header.h */,
+			);
+			path = "Mirror&KVC";
+			sourceTree = "<group>";
+		};
 		9DFFBE302E5AADE9003CA6C7 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
@@ -483,6 +501,7 @@
 				TargetAttributes = {
 					9D93F8632DF63977009A957B = {
 						CreatedOnToolsVersion = 16.2;
+						LastSwiftMigration = 2600;
 					};
 				};
 			};
@@ -552,6 +571,8 @@
 				9D3B4F012E972E7800E441AA /* TableVC.swift in Sources */,
 				9D3B4EFF2E972E6300E441AA /* HostingConfigurationSample.swift in Sources */,
 				9D3C74A72DF8941C0048D4E1 /* CircleWithText.swift in Sources */,
+				9DF79CEB2EB481BD00A3B677 /* Mirror_KVC.swift in Sources */,
+				9DF79CEC2EB481BD00A3B677 /* SafeKVC.m in Sources */,
 				9D3C749D2DF874060048D4E1 /* ImageTest.swift in Sources */,
 				9D33480D2E71267C0075A381 /* AnimatableEmitter.swift in Sources */,
 				9D5916062E10710100797BA7 /* NavigationPathTree.swift in Sources */,
@@ -721,6 +742,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIAutoLayout/Preview Content\"";
@@ -740,6 +762,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = blackmana.SwiftUIAutoLayout;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftUIAutoLayout/Mirror&KVC/SwiftUIAutoLayout-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -750,6 +774,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIAutoLayout/Preview Content\"";
@@ -769,6 +794,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = blackmana.SwiftUIAutoLayout;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftUIAutoLayout/Mirror&KVC/SwiftUIAutoLayout-Bridging-Header.h";
 				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

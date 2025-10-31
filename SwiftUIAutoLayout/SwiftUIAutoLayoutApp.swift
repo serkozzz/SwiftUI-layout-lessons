@@ -16,7 +16,7 @@ struct SwiftUIAutoLayoutApp: App {
     
     var body: some Scene {
         WindowGroup {
-            NotPolymorphCodableTreeSample.ContentView()
+            Mirror_KVC.ContentView()
                 .environment(\.managedObjectContext, CoreDataStack.shared.managedContext)
 
         }
