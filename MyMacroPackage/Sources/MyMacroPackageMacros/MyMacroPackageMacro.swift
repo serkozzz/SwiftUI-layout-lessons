@@ -25,9 +25,22 @@ public struct StringifyMacro: ExpressionMacro {
     }
 }
 
+
+public struct TEPreviewableMacro: PeerMacro {
+    public static func expansion(
+        of node: AttributeSyntax,
+        providingPeersOf declaration: some DeclSyntaxProtocol,
+        in context: some MacroExpansionContext
+    ) throws -> [DeclSyntax] {
+        return []
+    }
+}
+
+
 @main
 struct MyMacroPackagePlugin: CompilerPlugin {
     let providingMacros: [Macro.Type] = [
         StringifyMacro.self,
+        TEPreviewableMacro.self
     ]
 }

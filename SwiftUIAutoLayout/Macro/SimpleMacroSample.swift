@@ -9,13 +9,16 @@ import SwiftUI
 import MyMacroPackage
 
 
+class Test {
+    @TEPreviewable var boundingBox = CGSize(width: 100, height: 100)
+}
+
 struct SimpleMacroSample: View {
     
-    //@TEPreviewable
-    var number = 100
+    var number1 = Int(100)
     
     var body: some View {
-        print(#stringify(number))
+        print(#stringify(number1))
         return Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
