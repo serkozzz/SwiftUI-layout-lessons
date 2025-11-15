@@ -67,6 +67,10 @@
 		9DB39EE22E54AED300F9708A /* UIViewRepresentableExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB39EE12E54AEC700F9708A /* UIViewRepresentableExample.swift */; };
 		9DB39EE42E54E17100F9708A /* ZoomableScrollViewExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB39EE32E54E16900F9708A /* ZoomableScrollViewExample.swift */; };
 		9DD5850E2E86E0D90074455E /* ObservableChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD5850D2E86E0D90074455E /* ObservableChain.swift */; };
+		9DE850002EC7AE1E0046026E /* MyMacroPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 9DE84FFF2EC7AE1E0046026E /* MyMacroPackage */; };
+		9DE850032EC7AED10046026E /* SimpleMacroSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE850022EC7AED10046026E /* SimpleMacroSample.swift */; };
+		9DE850062EC820E40046026E /* MyMacroPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 9DE850052EC820E40046026E /* MyMacroPackage */; };
+		9DE850092EC8218A0046026E /* MyMacroPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 9DE850082EC8218A0046026E /* MyMacroPackage */; };
 		9DF79C8C2EAF17EF00A3B677 /* Tree_NotPolymorph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF79C8B2EAF17EC00A3B677 /* Tree_NotPolymorph.swift */; };
 		9DF79C902EAF180B00A3B677 /* Sample_NotPolymorph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF79C8F2EAF180500A3B677 /* Sample_NotPolymorph.swift */; };
 		9DF79C942EAF180D00A3B677 /* Tree_PCSEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF79C932EAF180D00A3B677 /* Tree_PCSEnum.swift */; };
@@ -143,6 +147,7 @@
 		9DB39EE12E54AEC700F9708A /* UIViewRepresentableExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewRepresentableExample.swift; sourceTree = "<group>"; };
 		9DB39EE32E54E16900F9708A /* ZoomableScrollViewExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomableScrollViewExample.swift; sourceTree = "<group>"; };
 		9DD5850D2E86E0D90074455E /* ObservableChain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableChain.swift; sourceTree = "<group>"; };
+		9DE850022EC7AED10046026E /* SimpleMacroSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleMacroSample.swift; sourceTree = "<group>"; };
 		9DF79C8B2EAF17EC00A3B677 /* Tree_NotPolymorph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tree_NotPolymorph.swift; sourceTree = "<group>"; };
 		9DF79C8F2EAF180500A3B677 /* Sample_NotPolymorph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample_NotPolymorph.swift; sourceTree = "<group>"; };
 		9DF79C912EAF180D00A3B677 /* Sample_PCSEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample_PCSEnum.swift; sourceTree = "<group>"; };
@@ -164,6 +169,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DE850062EC820E40046026E /* MyMacroPackage in Frameworks */,
+				9DE850092EC8218A0046026E /* MyMacroPackage in Frameworks */,
+				9DE850002EC7AE1E0046026E /* MyMacroPackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +210,7 @@
 		9D3C74992DF874060048D4E1 /* SwiftUIAutoLayout */ = {
 			isa = PBXGroup;
 			children = (
+				9DE850012EC7AEA50046026E /* Macro */,
 				9DF79CE42EB4818F00A3B677 /* Mirror&KVC */,
 				9DA279092EAE98DB002FCAB4 /* PolymorphCodableSample */,
 				9DB04BE52E8D94C0007BFA89 /* Strict Concurency */,
@@ -441,6 +450,14 @@
 			path = Observable;
 			sourceTree = "<group>";
 		};
+		9DE850012EC7AEA50046026E /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				9DE850022EC7AED10046026E /* SimpleMacroSample.swift */,
+			);
+			path = Macro;
+			sourceTree = "<group>";
+		};
 		9DF79CE42EB4818F00A3B677 /* Mirror&KVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -484,6 +501,9 @@
 			);
 			name = SwiftUIAutoLayout;
 			packageProductDependencies = (
+				9DE84FFF2EC7AE1E0046026E /* MyMacroPackage */,
+				9DE850052EC820E40046026E /* MyMacroPackage */,
+				9DE850082EC8218A0046026E /* MyMacroPackage */,
 			);
 			productName = SwiftUIAutoLayout;
 			productReference = 9D93F8642DF63977009A957B /* SwiftUIAutoLayout.app */;
@@ -514,6 +534,9 @@
 			);
 			mainGroup = 9D93F85B2DF63977009A957B;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				9DE850072EC8218A0046026E /* XCLocalSwiftPackageReference "MyMacroPackage" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 9D93F8652DF63977009A957B /* Products */;
 			projectDirPath = "";
@@ -547,6 +570,7 @@
 				9DA62E342E36F2D000C85E7E /* BindingExample.swift in Sources */,
 				9DB39EE22E54AED300F9708A /* UIViewRepresentableExample.swift in Sources */,
 				9DA2790B2EAE990A002FCAB4 /* Sample_PCSInheritance.swift in Sources */,
+				9DE850032EC7AED10046026E /* SimpleMacroSample.swift in Sources */,
 				9DA62E2A2E36EA7B00C85E7E /* DBGenerator.swift in Sources */,
 				9DA62E2B2E36EA7B00C85E7E /* CoreDataStack.swift in Sources */,
 				9D3347902E6BE6DA0075A381 /* KeyFrameInterpolator.swift in Sources */,
@@ -822,6 +846,28 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		9DE850072EC8218A0046026E /* XCLocalSwiftPackageReference "MyMacroPackage" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = MyMacroPackage;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9DE84FFF2EC7AE1E0046026E /* MyMacroPackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MyMacroPackage;
+		};
+		9DE850052EC820E40046026E /* MyMacroPackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MyMacroPackage;
+		};
+		9DE850082EC8218A0046026E /* MyMacroPackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MyMacroPackage;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		9DA62E302E36ED3300C85E7E /* Model.xcdatamodeld */ = {

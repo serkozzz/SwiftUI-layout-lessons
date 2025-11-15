@@ -16,7 +16,7 @@ struct SwiftUIAutoLayoutApp: App {
     
     var body: some Scene {
         WindowGroup {
-            Mirror_KVC.ContentView()
+            SimpleMacroSample()
                 .environment(\.managedObjectContext, CoreDataStack.shared.managedContext)
 
         }
