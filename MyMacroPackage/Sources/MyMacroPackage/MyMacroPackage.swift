@@ -10,9 +10,9 @@
 @freestanding(expression)
 public macro stringify<T>(_ value: T) -> (T, String) = #externalMacro(module: "MyMacroPackageMacros", type: "StringifyMacro")
 
-
-@attached(peer)
-public macro TEPreviewable() = #externalMacro(
+// Этот макрос добавляет членов (member-attached), а не «peer»
+@attached(member, names: named(printMethods))
+public macro PrintMethods() = #externalMacro(
     module: "MyMacroPackageMacros",
-    type: "TEPreviewableMacro"
+    type: "PrintMethodsMacro"
 )

@@ -9,15 +9,21 @@ import SwiftUI
 import MyMacroPackage
 
 
+@PrintMethods
 class Test {
-    @TEPreviewable var boundingBox = CGSize(width: 100, height: 100)
+    var a = 100
+    func testMethod() -> Int { return 10 }
+    func aaaa() {}
 }
+
 
 struct SimpleMacroSample: View {
     
     var number1 = Int(100)
+    var test = Test()
     
     var body: some View {
+        test.printMethods()
         print(#stringify(number1))
         return Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }

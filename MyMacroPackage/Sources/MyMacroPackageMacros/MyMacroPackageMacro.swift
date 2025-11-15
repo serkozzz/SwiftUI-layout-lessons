@@ -26,21 +26,46 @@ public struct StringifyMacro: ExpressionMacro {
 }
 
 
-public struct TEPreviewableMacro: PeerMacro {
+public struct PrintMethodsMacro: MemberMacro {
     public static func expansion(
         of node: AttributeSyntax,
-        providingPeersOf declaration: some DeclSyntaxProtocol,
+        providingMembersOf decl: some DeclSyntaxProtocol,
         in context: some MacroExpansionContext
     ) throws -> [DeclSyntax] {
-        return []
+
+
+        let memberBlock: MemberBlockSyntax?
+        if let classDecl = decl.as(ClassDeclSyntax.self) {
+            memberBlock = classDecl.memberBlock
+        } else if let structDecl = decl.as(StructDeclSyntax.self) {
+            memberBlock = structDecl.memberBlock
+        } else {
+            return []
+        }
+
+        // Собираем имена методов, уже объявленных в типе
+        let methodNames: [String] = memberBlock?.members.compactMap { member in
+            guard let fn = member.decl.as(FunctionDeclSyntax.self) else { return nil }
+            return fn.identifier.text
+        } ?? []
+
+        let joined = methodNames.joined(separator: ", ")
+
+        // Генерируем обычный (экземплярный) метод
+        let printMethod: DeclSyntax = """
+        func printMethods() {
+            print("\\\(raw: joined)")
+        }
+        """
+
+        return [printMethod]
     }
 }
-
 
 @main
 struct MyMacroPackagePlugin: CompilerPlugin {
     let providingMacros: [Macro.Type] = [
         StringifyMacro.self,
-        TEPreviewableMacro.self
+        PrintMethodsMacro.self
     ]
 }
