@@ -44,6 +44,12 @@
 		9D5539782E6A79410074E241 /* ClipShapeSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5539772E6A79410074E241 /* ClipShapeSample.swift */; };
 		9D55397D2E6B1F040074E241 /* TrimShapeAnimSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D55397C2E6B1F040074E241 /* TrimShapeAnimSample.swift */; };
 		9D5539832E6BAF360074E241 /* KeyFrameAnimSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5539822E6BAF360074E241 /* KeyFrameAnimSample.swift */; };
+		9D5737412F1C205100888E62 /* ModulationSourceMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5737402F1C205100888E62 /* ModulationSourceMenu.swift */; };
+		9D5737432F1C206E00888E62 /* Modulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5737422F1C206E00888E62 /* Modulation.swift */; };
+		9D5737452F1C20FA00888E62 /* Menu_ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5737442F1C20F300888E62 /* Menu_ContentView.swift */; };
+		9D5737472F1C212F00888E62 /* MenuSample_DropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5737462F1C212F00888E62 /* MenuSample_DropDown.swift */; };
+		9D57374F2F1C286E00888E62 /* MenuSample_CustomPopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D57374E2F1C286500888E62 /* MenuSample_CustomPopover.swift */; };
+		9D5737512F1C2E6200888E62 /* MenuSample_Sheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5737502F1C2E5000888E62 /* MenuSample_Sheet.swift */; };
 		9D5916032E10559000797BA7 /* NavigationPathSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5916022E10559000797BA7 /* NavigationPathSample.swift */; };
 		9D5916062E10710100797BA7 /* NavigationPathTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5916052E10710100797BA7 /* NavigationPathTree.swift */; };
 		9D5916092E10C42200797BA7 /* sandbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5916082E10C42200797BA7 /* sandbox.swift */; };
@@ -123,6 +129,12 @@
 		9D5539772E6A79410074E241 /* ClipShapeSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipShapeSample.swift; sourceTree = "<group>"; };
 		9D55397C2E6B1F040074E241 /* TrimShapeAnimSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrimShapeAnimSample.swift; sourceTree = "<group>"; };
 		9D5539822E6BAF360074E241 /* KeyFrameAnimSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyFrameAnimSample.swift; sourceTree = "<group>"; };
+		9D5737402F1C205100888E62 /* ModulationSourceMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModulationSourceMenu.swift; sourceTree = "<group>"; };
+		9D5737422F1C206E00888E62 /* Modulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modulation.swift; sourceTree = "<group>"; };
+		9D5737442F1C20F300888E62 /* Menu_ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu_ContentView.swift; sourceTree = "<group>"; };
+		9D5737462F1C212F00888E62 /* MenuSample_DropDown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuSample_DropDown.swift; sourceTree = "<group>"; };
+		9D57374E2F1C286500888E62 /* MenuSample_CustomPopover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuSample_CustomPopover.swift; sourceTree = "<group>"; };
+		9D5737502F1C2E5000888E62 /* MenuSample_Sheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuSample_Sheet.swift; sourceTree = "<group>"; };
 		9D5916022E10559000797BA7 /* NavigationPathSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationPathSample.swift; sourceTree = "<group>"; };
 		9D5916052E10710100797BA7 /* NavigationPathTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationPathTree.swift; sourceTree = "<group>"; };
 		9D5916082E10C42200797BA7 /* sandbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sandbox.swift; sourceTree = "<group>"; };
@@ -210,6 +222,7 @@
 		9D3C74992DF874060048D4E1 /* SwiftUIAutoLayout */ = {
 			isa = PBXGroup;
 			children = (
+				9D57373F2F1C204600888E62 /* Menu */,
 				9DE850012EC7AEA50046026E /* Macro */,
 				9DF79CE42EB4818F00A3B677 /* Mirror&KVC */,
 				9DA279092EAE98DB002FCAB4 /* PolymorphCodableSample */,
@@ -316,6 +329,19 @@
 				9D33478B2E6BDF0B0075A381 /* AnimatableViewSample.swift */,
 			);
 			path = GeneralPurposeInterpolator;
+			sourceTree = "<group>";
+		};
+		9D57373F2F1C204600888E62 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				9D5737502F1C2E5000888E62 /* MenuSample_Sheet.swift */,
+				9D57374E2F1C286500888E62 /* MenuSample_CustomPopover.swift */,
+				9D5737462F1C212F00888E62 /* MenuSample_DropDown.swift */,
+				9D5737442F1C20F300888E62 /* Menu_ContentView.swift */,
+				9D5737422F1C206E00888E62 /* Modulation.swift */,
+				9D5737402F1C205100888E62 /* ModulationSourceMenu.swift */,
+			);
+			path = Menu;
 			sourceTree = "<group>";
 		};
 		9D5916042E1070E400797BA7 /* Navigation */ = {
@@ -578,6 +604,7 @@
 				9D5278222E3BCCB90046C07A /* ViewModelExample.swift in Sources */,
 				9DB39EDF2E54141C00F9708A /* ZoomableScrollView.swift in Sources */,
 				9D3C749A2DF874060048D4E1 /* CompositionalLayout.swift in Sources */,
+				9D5737432F1C206E00888E62 /* Modulation.swift in Sources */,
 				9D3C74B02DF929F50048D4E1 /* LazyGrid.swift in Sources */,
 				9DF9E4C12E7237F6004FD61D /* AdaptivePopover.swift in Sources */,
 				9DB04BE92E8D9526007BFA89 /* AccessFromMainContext.swift in Sources */,
@@ -588,16 +615,19 @@
 				9DB04BE72E8D950D007BFA89 /* AccessFromBackgroundProcess.swift in Sources */,
 				9D0BD3872DFD18320029DBBB /* CircleWithTextWithoutPref.swift in Sources */,
 				9DFFBE602E5E2D0E003CA6C7 /* SimpleCircleAnimation.swift in Sources */,
+				9D5737452F1C20FA00888E62 /* Menu_ContentView.swift in Sources */,
 				9D0BD4022E09CD560029DBBB /* PreferencesWithoutGeometryReader.swift in Sources */,
 				9D982FEE2E94099E00190A8C /* CoordinatorSample.swift in Sources */,
 				9D55397D2E6B1F040074E241 /* TrimShapeAnimSample.swift in Sources */,
 				9D3C749C2DF874060048D4E1 /* Counter.swift in Sources */,
 				9D3B4F012E972E7800E441AA /* TableVC.swift in Sources */,
 				9D3B4EFF2E972E6300E441AA /* HostingConfigurationSample.swift in Sources */,
+				9D5737512F1C2E6200888E62 /* MenuSample_Sheet.swift in Sources */,
 				9D3C74A72DF8941C0048D4E1 /* CircleWithText.swift in Sources */,
 				9DF79CEB2EB481BD00A3B677 /* Mirror_KVC.swift in Sources */,
 				9DF79CEC2EB481BD00A3B677 /* SafeKVC.m in Sources */,
 				9D3C749D2DF874060048D4E1 /* ImageTest.swift in Sources */,
+				9D5737472F1C212F00888E62 /* MenuSample_DropDown.swift in Sources */,
 				9D33480D2E71267C0075A381 /* AnimatableEmitter.swift in Sources */,
 				9D5916062E10710100797BA7 /* NavigationPathTree.swift in Sources */,
 				9DF79C962EAF180D00A3B677 /* Sample_PCSEnum.swift in Sources */,
@@ -627,8 +657,10 @@
 				9D3C749F2DF874060048D4E1 /* MeasureBehavior.swift in Sources */,
 				9D5916122E189D8200797BA7 /* MyHStack.swift in Sources */,
 				9D5539782E6A79410074E241 /* ClipShapeSample.swift in Sources */,
+				9D5737412F1C205100888E62 /* ModulationSourceMenu.swift in Sources */,
 				9D3C74A52DF8876E0048D4E1 /* Variable.swift in Sources */,
 				9D3C74A02DF874060048D4E1 /* ScrollTest.swift in Sources */,
+				9D57374F2F1C286E00888E62 /* MenuSample_CustomPopover.swift in Sources */,
 				9D3C74A12DF874060048D4E1 /* SwiftUIAutoLayoutApp.swift in Sources */,
 				9DA62E2F2E36EAF500C85E7E /* FetchRequest.swift in Sources */,
 				9D3C74AA2DF8E84F0048D4E1 /* IndexCardsWithStack.swift in Sources */,
