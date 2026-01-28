@@ -16,7 +16,7 @@ struct SwiftUIAutoLayoutApp: App {
     
     var body: some Scene {
         WindowGroup {
-            SimpleMacroSample()
+            ZoomableScrollViewExample()
                 .environment(\.managedObjectContext, CoreDataStack.shared.managedContext)
 
         }

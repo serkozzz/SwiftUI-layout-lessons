@@ -5,7 +5,7 @@
 //  Created by Sergey Kozlov on 17.01.2026.
 //
 
-extension MenuSample {
+enum MenuSample {
     enum Modulation {
         enum Source: String, CaseIterable, Identifiable {
             case lfo1, lfo2, env1, env2
