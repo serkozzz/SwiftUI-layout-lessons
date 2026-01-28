@@ -4,6 +4,7 @@
 //
 //  Created by Sergey Kozlov on 28.01.2026.
 //
+
 import SwiftUI
 
 enum SegmentedControlSample {
