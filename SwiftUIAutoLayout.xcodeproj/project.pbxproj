@@ -36,6 +36,10 @@
 		9D3C74B02DF929F50048D4E1 /* LazyGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3C74AF2DF929F50048D4E1 /* LazyGrid.swift */; };
 		9D3C74BC2DFC73ED0048D4E1 /* AnchorSimpleExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3C74BB2DFC73EA0048D4E1 /* AnchorSimpleExample.swift */; };
 		9D3C74BE2DFCEAEA0048D4E1 /* AnchorTabsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3C74BD2DFCEADD0048D4E1 /* AnchorTabsExample.swift */; };
+		9D4F9C022F93CCCA002F529D /* ActiveSheetEnumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4F9BFC2F93CCCA002F529D /* ActiveSheetEnumView.swift */; };
+		9D4F9C0A2F93CD8B002F529D /* UIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4F9C092F93CD8B002F529D /* UIError.swift */; };
+		9D4F9C0C2F942E80002F529D /* ActiveSheetEnumExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4F9C0B2F942E80002F529D /* ActiveSheetEnumExample.swift */; };
+		9D4F9C0E2F94309B002F529D /* ActiveSheetExampleChildView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4F9C0D2F94309A002F529D /* ActiveSheetExampleChildView.swift */; };
 		9D52781C2E3B8AFD0046C07A /* CompactModeReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D52781B2E3B8AFD0046C07A /* CompactModeReader.swift */; };
 		9D5278222E3BCCB90046C07A /* ViewModelExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5278212E3BCCB20046C07A /* ViewModelExample.swift */; };
 		9D5539602E687DD70074E241 /* TextFittingPopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D55395F2E687DD70074E241 /* TextFittingPopover.swift */; };
@@ -122,6 +126,10 @@
 		9D3C74AF2DF929F50048D4E1 /* LazyGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyGrid.swift; sourceTree = "<group>"; };
 		9D3C74BB2DFC73EA0048D4E1 /* AnchorSimpleExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorSimpleExample.swift; sourceTree = "<group>"; };
 		9D3C74BD2DFCEADD0048D4E1 /* AnchorTabsExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorTabsExample.swift; sourceTree = "<group>"; };
+		9D4F9BFC2F93CCCA002F529D /* ActiveSheetEnumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveSheetEnumView.swift; sourceTree = "<group>"; };
+		9D4F9C092F93CD8B002F529D /* UIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIError.swift; sourceTree = "<group>"; };
+		9D4F9C0B2F942E80002F529D /* ActiveSheetEnumExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveSheetEnumExample.swift; sourceTree = "<group>"; };
+		9D4F9C0D2F94309A002F529D /* ActiveSheetExampleChildView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveSheetExampleChildView.swift; sourceTree = "<group>"; };
 		9D52781B2E3B8AFD0046C07A /* CompactModeReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompactModeReader.swift; sourceTree = "<group>"; };
 		9D5278212E3BCCB20046C07A /* ViewModelExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelExample.swift; sourceTree = "<group>"; };
 		9D55395F2E687DD70074E241 /* TextFittingPopover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFittingPopover.swift; sourceTree = "<group>"; };
@@ -224,6 +232,8 @@
 		9D3C74992DF874060048D4E1 /* SwiftUIAutoLayout */ = {
 			isa = PBXGroup;
 			children = (
+				9D4F9C082F93CD83002F529D /* Utils */,
+				9D4F9BF92F93CC6F002F529D /* ActiveSheetEnum */,
 				9DCCFCB32F2A8ACF0065E604 /* SegmentedControl */,
 				9D57373F2F1C204600888E62 /* Menu */,
 				9DE850012EC7AEA50046026E /* Macro */,
@@ -276,6 +286,24 @@
 				9D3C74BD2DFCEADD0048D4E1 /* AnchorTabsExample.swift */,
 			);
 			path = Anchors;
+			sourceTree = "<group>";
+		};
+		9D4F9BF92F93CC6F002F529D /* ActiveSheetEnum */ = {
+			isa = PBXGroup;
+			children = (
+				9D4F9C0D2F94309A002F529D /* ActiveSheetExampleChildView.swift */,
+				9D4F9BFC2F93CCCA002F529D /* ActiveSheetEnumView.swift */,
+				9D4F9C0B2F942E80002F529D /* ActiveSheetEnumExample.swift */,
+			);
+			path = ActiveSheetEnum;
+			sourceTree = "<group>";
+		};
+		9D4F9C082F93CD83002F529D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				9D4F9C092F93CD8B002F529D /* UIError.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		9D52781A2E3B8AA20046C07A /* Architecture */ = {
@@ -629,7 +657,9 @@
 				9DFFBE602E5E2D0E003CA6C7 /* SimpleCircleAnimation.swift in Sources */,
 				9D0BD4022E09CD560029DBBB /* PreferencesWithoutGeometryReader.swift in Sources */,
 				9D982FEE2E94099E00190A8C /* CoordinatorSample.swift in Sources */,
+				9D4F9C0A2F93CD8B002F529D /* UIError.swift in Sources */,
 				9D55397D2E6B1F040074E241 /* TrimShapeAnimSample.swift in Sources */,
+				9D4F9C0E2F94309B002F529D /* ActiveSheetExampleChildView.swift in Sources */,
 				9D3C749C2DF874060048D4E1 /* Counter.swift in Sources */,
 				9D3B4F012E972E7800E441AA /* TableVC.swift in Sources */,
 				9D3B4EFF2E972E6300E441AA /* HostingConfigurationSample.swift in Sources */,
@@ -640,10 +670,12 @@
 				9D3C749D2DF874060048D4E1 /* ImageTest.swift in Sources */,
 				9D5737472F1C212F00888E62 /* MenuSample_DropDown.swift in Sources */,
 				9D33480D2E71267C0075A381 /* AnimatableEmitter.swift in Sources */,
+				9D4F9C022F93CCCA002F529D /* ActiveSheetEnumView.swift in Sources */,
 				9D5916062E10710100797BA7 /* NavigationPathTree.swift in Sources */,
 				9DF79C962EAF180D00A3B677 /* Sample_PCSEnum.swift in Sources */,
 				9DFFBE3A2E5C08E4003CA6C7 /* AnimatableModifierSample.swift in Sources */,
 				9D5916102E17F4C200797BA7 /* CircleLayout.swift in Sources */,
+				9D4F9C0C2F942E80002F529D /* ActiveSheetEnumExample.swift in Sources */,
 				9D33478E2E6BE3490075A381 /* KeyFrameSample.swift in Sources */,
 				9D3C74BC2DFC73ED0048D4E1 /* AnchorSimpleExample.swift in Sources */,
 				9D52781C2E3B8AFD0046C07A /* CompactModeReader.swift in Sources */,
