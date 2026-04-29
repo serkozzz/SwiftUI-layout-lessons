@@ -12,6 +12,9 @@
 		9D0BD38B2DFE31210029DBBB /* LayoutCodeOrganization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0BD38A2DFE310F0029DBBB /* LayoutCodeOrganization.swift */; };
 		9D0BD3C02E0261560029DBBB /* StateObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0BD3BF2E02601F0029DBBB /* StateObject.swift */; };
 		9D0BD4022E09CD560029DBBB /* PreferencesWithoutGeometryReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0BD4012E09CD420029DBBB /* PreferencesWithoutGeometryReader.swift */; };
+		9D130B132FA1B2F700A760E9 /* KeyboardAndAutoScrollSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D130B0F2FA1B2F700A760E9 /* KeyboardAndAutoScrollSample.swift */; };
+		9D130B152FA1B2F700A760E9 /* UITextViewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D130B122FA1B2F700A760E9 /* UITextViewWrapper.swift */; };
+		9D130B162FA1B2F700A760E9 /* KeyboardAndAutoScrollSample_SheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D130B102FA1B2F700A760E9 /* KeyboardAndAutoScrollSample_SheetView.swift */; };
 		9D33478C2E6BDF0B0075A381 /* AnimatableViewSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D33478B2E6BDF0B0075A381 /* AnimatableViewSample.swift */; };
 		9D33478E2E6BE3490075A381 /* KeyFrameSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D33478D2E6BE3490075A381 /* KeyFrameSample.swift */; };
 		9D3347902E6BE6DA0075A381 /* KeyFrameInterpolator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D33478F2E6BE6DA0075A381 /* KeyFrameInterpolator.swift */; };
@@ -102,6 +105,9 @@
 		9D0BD38A2DFE310F0029DBBB /* LayoutCodeOrganization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutCodeOrganization.swift; sourceTree = "<group>"; };
 		9D0BD3BF2E02601F0029DBBB /* StateObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateObject.swift; sourceTree = "<group>"; };
 		9D0BD4012E09CD420029DBBB /* PreferencesWithoutGeometryReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesWithoutGeometryReader.swift; sourceTree = "<group>"; };
+		9D130B0F2FA1B2F700A760E9 /* KeyboardAndAutoScrollSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardAndAutoScrollSample.swift; sourceTree = "<group>"; };
+		9D130B102FA1B2F700A760E9 /* KeyboardAndAutoScrollSample_SheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardAndAutoScrollSample_SheetView.swift; sourceTree = "<group>"; };
+		9D130B122FA1B2F700A760E9 /* UITextViewWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextViewWrapper.swift; sourceTree = "<group>"; };
 		9D33478B2E6BDF0B0075A381 /* AnimatableViewSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableViewSample.swift; sourceTree = "<group>"; };
 		9D33478D2E6BE3490075A381 /* KeyFrameSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyFrameSample.swift; sourceTree = "<group>"; };
 		9D33478F2E6BE6DA0075A381 /* KeyFrameInterpolator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyFrameInterpolator.swift; sourceTree = "<group>"; };
@@ -212,6 +218,15 @@
 			path = Preferences;
 			sourceTree = "<group>";
 		};
+		9D130B0E2FA1B2D300A760E9 /* Keyboard&AutoScroll */ = {
+			isa = PBXGroup;
+			children = (
+				9D130B0F2FA1B2F700A760E9 /* KeyboardAndAutoScrollSample.swift */,
+				9D130B102FA1B2F700A760E9 /* KeyboardAndAutoScrollSample_SheetView.swift */,
+			);
+			path = "Keyboard&AutoScroll";
+			sourceTree = "<group>";
+		};
 		9D3B4EFD2E972E3E00E441AA /* HostingConfiguration */ = {
 			isa = PBXGroup;
 			children = (
@@ -232,6 +247,7 @@
 		9D3C74992DF874060048D4E1 /* SwiftUIAutoLayout */ = {
 			isa = PBXGroup;
 			children = (
+				9D130B0E2FA1B2D300A760E9 /* Keyboard&AutoScroll */,
 				9D4F9C082F93CD83002F529D /* Utils */,
 				9D4F9BF92F93CC6F002F529D /* ActiveSheetEnum */,
 				9DCCFCB32F2A8ACF0065E604 /* SegmentedControl */,
@@ -302,6 +318,7 @@
 			isa = PBXGroup;
 			children = (
 				9D4F9C092F93CD8B002F529D /* UIError.swift */,
+				9D130B122FA1B2F700A760E9 /* UITextViewWrapper.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -706,6 +723,9 @@
 				9D3C74A02DF874060048D4E1 /* ScrollTest.swift in Sources */,
 				9D57374F2F1C286E00888E62 /* MenuSample_CustomPopover.swift in Sources */,
 				9D3C74A12DF874060048D4E1 /* SwiftUIAutoLayoutApp.swift in Sources */,
+				9D130B132FA1B2F700A760E9 /* KeyboardAndAutoScrollSample.swift in Sources */,
+				9D130B152FA1B2F700A760E9 /* UITextViewWrapper.swift in Sources */,
+				9D130B162FA1B2F700A760E9 /* KeyboardAndAutoScrollSample_SheetView.swift in Sources */,
 				9DA62E2F2E36EAF500C85E7E /* FetchRequest.swift in Sources */,
 				9D3C74AA2DF8E84F0048D4E1 /* IndexCardsWithStack.swift in Sources */,
 				9D3C74AC2DF8FB430048D4E1 /* Grid.swift in Sources */,

@@ -16,7 +16,7 @@ struct SwiftUIAutoLayoutApp: App {
     
     var body: some Scene {
         WindowGroup {
-            sandbox()
+            KeyboardAndAutoScrollSample.ContentView()
                 .environment(\.managedObjectContext, CoreDataStack.shared.managedContext)
 
         }
