@@ -62,6 +62,8 @@
 		9D5916102E17F4C200797BA7 /* CircleLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D59160F2E17F4BC00797BA7 /* CircleLayout.swift */; };
 		9D5916122E189D8200797BA7 /* MyHStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5916112E189D8200797BA7 /* MyHStack.swift */; };
 		9D6F834B2E8DF2B400F17E41 /* SingletonWithStrictConcurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6F834A2E8DF2B100F17E41 /* SingletonWithStrictConcurrency.swift */; };
+		9D7E2BB72FBBE466005BECE3 /* AlertQueueDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7E2BB52FBBE466005BECE3 /* AlertQueueDemoView.swift */; };
+		9D7E2BB82FBBE466005BECE3 /* AlertQueueDemoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7E2BB62FBBE466005BECE3 /* AlertQueueDemoViewModel.swift */; };
 		9D982FEC2E94052900190A8C /* AppRouterSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D982FEB2E94052400190A8C /* AppRouterSample.swift */; };
 		9D982FEE2E94099E00190A8C /* CoordinatorSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D982FED2E94099600190A8C /* CoordinatorSample.swift */; };
 		9DA2790B2EAE990A002FCAB4 /* Sample_PCSInheritance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA2790A2EAE9906002FCAB4 /* Sample_PCSInheritance.swift */; };
@@ -155,6 +157,8 @@
 		9D59160F2E17F4BC00797BA7 /* CircleLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleLayout.swift; sourceTree = "<group>"; };
 		9D5916112E189D8200797BA7 /* MyHStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHStack.swift; sourceTree = "<group>"; };
 		9D6F834A2E8DF2B100F17E41 /* SingletonWithStrictConcurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingletonWithStrictConcurrency.swift; sourceTree = "<group>"; };
+		9D7E2BB52FBBE466005BECE3 /* AlertQueueDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertQueueDemoView.swift; sourceTree = "<group>"; };
+		9D7E2BB62FBBE466005BECE3 /* AlertQueueDemoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertQueueDemoViewModel.swift; sourceTree = "<group>"; };
 		9D93F8642DF63977009A957B /* SwiftUIAutoLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIAutoLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D982FEB2E94052400190A8C /* AppRouterSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouterSample.swift; sourceTree = "<group>"; };
 		9D982FED2E94099600190A8C /* CoordinatorSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorSample.swift; sourceTree = "<group>"; };
@@ -247,6 +251,7 @@
 		9D3C74992DF874060048D4E1 /* SwiftUIAutoLayout */ = {
 			isa = PBXGroup;
 			children = (
+				9D7E2BB42FBBE400005BECE3 /* AlertsQueue */,
 				9D130B0E2FA1B2D300A760E9 /* Keyboard&AutoScroll */,
 				9D4F9C082F93CD83002F529D /* Utils */,
 				9D4F9BF92F93CC6F002F529D /* ActiveSheetEnum */,
@@ -409,6 +414,15 @@
 				9D5916112E189D8200797BA7 /* MyHStack.swift */,
 			);
 			path = LayoutProtocol;
+			sourceTree = "<group>";
+		};
+		9D7E2BB42FBBE400005BECE3 /* AlertsQueue */ = {
+			isa = PBXGroup;
+			children = (
+				9D7E2BB52FBBE466005BECE3 /* AlertQueueDemoView.swift */,
+				9D7E2BB62FBBE466005BECE3 /* AlertQueueDemoViewModel.swift */,
+			);
+			path = AlertsQueue;
 			sourceTree = "<group>";
 		};
 		9D93F85B2DF63977009A957B = {
@@ -648,6 +662,8 @@
 			files = (
 				9DA62E292E36EA7B00C85E7E /* Car+CoreDataClass.swift in Sources */,
 				9DCCFCB72F2A8B2B0065E604 /* SegmentedControlView.swift in Sources */,
+				9D7E2BB72FBBE466005BECE3 /* AlertQueueDemoView.swift in Sources */,
+				9D7E2BB82FBBE466005BECE3 /* AlertQueueDemoViewModel.swift in Sources */,
 				9D33478C2E6BDF0B0075A381 /* AnimatableViewSample.swift in Sources */,
 				9D982FEC2E94052900190A8C /* AppRouterSample.swift in Sources */,
 				9DA62E342E36F2D000C85E7E /* BindingExample.swift in Sources */,
