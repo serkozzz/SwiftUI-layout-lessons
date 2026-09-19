@@ -75,6 +75,8 @@
 		9DA62E2F2E36EAF500C85E7E /* FetchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA62E2E2E36EAF500C85E7E /* FetchRequest.swift */; };
 		9DA62E322E36ED3300C85E7E /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9DA62E302E36ED3300C85E7E /* Model.xcdatamodeld */; };
 		9DA62E342E36F2D000C85E7E /* BindingExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA62E332E36F2D000C85E7E /* BindingExample.swift */; };
+		9DAF5F56305F39BD00E1A276 /* CustomSheetExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAF5F55305F39B600E1A276 /* CustomSheetExample.swift */; };
+		9DAF5F58305F3A2B00E1A276 /* CustomSheetModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAF5F57305F3A2400E1A276 /* CustomSheetModifier.swift */; };
 		9DB04BE72E8D950D007BFA89 /* AccessFromBackgroundProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB04BE62E8D94CA007BFA89 /* AccessFromBackgroundProcess.swift */; };
 		9DB04BE92E8D9526007BFA89 /* AccessFromMainContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB04BE82E8D9526007BFA89 /* AccessFromMainContext.swift */; };
 		9DB39EDF2E54141C00F9708A /* ZoomableScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB39EDE2E54141600F9708A /* ZoomableScrollView.swift */; };
@@ -171,6 +173,8 @@
 		9DA62E2E2E36EAF500C85E7E /* FetchRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchRequest.swift; sourceTree = "<group>"; };
 		9DA62E312E36ED3300C85E7E /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		9DA62E332E36F2D000C85E7E /* BindingExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingExample.swift; sourceTree = "<group>"; };
+		9DAF5F55305F39B600E1A276 /* CustomSheetExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSheetExample.swift; sourceTree = "<group>"; };
+		9DAF5F57305F3A2400E1A276 /* CustomSheetModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSheetModifier.swift; sourceTree = "<group>"; };
 		9DB04BE62E8D94CA007BFA89 /* AccessFromBackgroundProcess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessFromBackgroundProcess.swift; sourceTree = "<group>"; };
 		9DB04BE82E8D9526007BFA89 /* AccessFromMainContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessFromMainContext.swift; sourceTree = "<group>"; };
 		9DB39EDE2E54141600F9708A /* ZoomableScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomableScrollView.swift; sourceTree = "<group>"; };
@@ -251,6 +255,7 @@
 		9D3C74992DF874060048D4E1 /* SwiftUIAutoLayout */ = {
 			isa = PBXGroup;
 			children = (
+				9DAF5F54305F399300E1A276 /* CustomSheet */,
 				9D7E2BB42FBBE400005BECE3 /* AlertsQueue */,
 				9D130B0E2FA1B2D300A760E9 /* Keyboard&AutoScroll */,
 				9D4F9C082F93CD83002F529D /* Utils */,
@@ -500,6 +505,15 @@
 			path = db;
 			sourceTree = "<group>";
 		};
+		9DAF5F54305F399300E1A276 /* CustomSheet */ = {
+			isa = PBXGroup;
+			children = (
+				9DAF5F57305F3A2400E1A276 /* CustomSheetModifier.swift */,
+				9DAF5F55305F39B600E1A276 /* CustomSheetExample.swift */,
+			);
+			path = CustomSheet;
+			sourceTree = "<group>";
+		};
 		9DB04BE52E8D94C0007BFA89 /* Strict Concurency */ = {
 			isa = PBXGroup;
 			children = (
@@ -715,6 +729,7 @@
 				9D3347EB2E70DACD0075A381 /* ClockViewSample.swift in Sources */,
 				9D5539642E687E9A0074E241 /* FittingSizeUIViewSample.swift in Sources */,
 				9D5539602E687DD70074E241 /* TextFittingPopover.swift in Sources */,
+				9DAF5F58305F3A2B00E1A276 /* CustomSheetModifier.swift in Sources */,
 				9D5539832E6BAF360074E241 /* KeyFrameAnimSample.swift in Sources */,
 				9D3C74AE2DF907DB0048D4E1 /* Grid2.swift in Sources */,
 				9DA62E322E36ED3300C85E7E /* Model.xcdatamodeld in Sources */,
@@ -743,6 +758,7 @@
 				9D130B152FA1B2F700A760E9 /* UITextViewWrapper.swift in Sources */,
 				9D130B162FA1B2F700A760E9 /* KeyboardAndAutoScrollSample_SheetView.swift in Sources */,
 				9DA62E2F2E36EAF500C85E7E /* FetchRequest.swift in Sources */,
+				9DAF5F56305F39BD00E1A276 /* CustomSheetExample.swift in Sources */,
 				9D3C74AA2DF8E84F0048D4E1 /* IndexCardsWithStack.swift in Sources */,
 				9D3C74AC2DF8FB430048D4E1 /* Grid.swift in Sources */,
 				9DFFBE382E5BDE06003CA6C7 /* EndlessRotationSample.swift in Sources */,
