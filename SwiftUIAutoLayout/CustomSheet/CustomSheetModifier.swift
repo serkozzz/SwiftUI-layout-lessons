@@ -122,3 +122,30 @@ extension View {
         modifier(CustomSheetModifier(item: item, sheetContent: content))
     }
 }
+
+
+extension View {
+    func customSheet<SheetContent: View>(
+        isPresented: Binding<Bool>,
+        @ViewBuilder content: @escaping () -> SheetContent
+    ) -> some View {
+        let item = Binding<CustomSheetPresentation?>(
+            get: {
+                isPresented.wrappedValue
+                    ? CustomSheetPresentation()
+                    : nil
+            },
+            set: { newValue in
+                isPresented.wrappedValue = newValue != nil
+            }
+        )
+
+        return customSheet(item: item) { _ in
+            content()
+        }
+    }
+}
+
+private struct CustomSheetPresentation: Identifiable {
+    let id = 0
+}
