@@ -62,18 +62,18 @@ struct TextFieldView: UIViewRepresentable {
     }
 
     func makeCoordinator() -> Coordinator {
-        Coordinator(self)
+        Coordinator(text: $text)
     }
     
     class Coordinator: NSObject, UITextFieldDelegate {
-        var parent: TextFieldView
-        
-        init(_ parent: TextFieldView) {
-            self.parent = parent
+        private var text: Binding<String>
+
+        init(text: Binding<String>) {
+            self.text = text
         }
-        
+
         func textFieldDidEndEditing(_ textField: UITextField) {
-            parent.text = textField.text!
+            text.wrappedValue = textField.text ?? ""
         }
     }
 }

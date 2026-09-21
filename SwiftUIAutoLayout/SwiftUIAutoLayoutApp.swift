@@ -16,7 +16,7 @@ struct SwiftUIAutoLayoutApp: App {
     
     var body: some Scene {
         WindowGroup {
-            CustomSheetExample.ContentView()
+            UIViewRepresentableExample()
                 .environment(\.managedObjectContext, CoreDataStack.shared.managedContext)
 
         }
