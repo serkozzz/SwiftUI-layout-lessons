@@ -7,25 +7,34 @@
 
 import SwiftUI
 
-struct ShelfModifier<Item: Identifiable, ShelfContent: View>: ViewModifier {
+private enum ResizeMode {
+    case squeeze
+    case offset
+}
+
+private enum ShelfPosition {
+    case bottomShelf
+    case leftShelf
+}
+
+private struct ShelfPresentationStyle {
+    var resizeMode: ResizeMode
+    var shelfPosition: ShelfPosition
     
-    enum PresentationStyle {
-        case bottomShelf
-        case leftShelf
-        case fullScreen
-        
-        
-        static func choose(hSizeClass: UserInterfaceSizeClass?,
-                                            vSizeClass: UserInterfaceSizeClass?) ->PresentationStyle {
-            if vSizeClass == .compact {
-                return .leftShelf
-            }
-            if hSizeClass == .compact {
-                return .bottomShelf
-            }
-            return .leftShelf
+    static func choose(hSizeClass: UserInterfaceSizeClass?,
+                                        vSizeClass: UserInterfaceSizeClass?) -> ShelfPresentationStyle {
+        if vSizeClass == .compact {
+            return .init(resizeMode: .squeeze, shelfPosition: .leftShelf)
         }
+        if hSizeClass == .compact {
+            return .init(resizeMode: .offset, shelfPosition: .bottomShelf)
+        }
+        return .init(resizeMode: .squeeze, shelfPosition: .leftShelf)
     }
+}
+
+
+struct ShelfModifier<Item: Identifiable, ShelfContent: View>: ViewModifier {
     
     @Environment(\.horizontalSizeClass) var hSizeClass
     @Environment(\.verticalSizeClass) var vSizeClass
@@ -35,9 +44,13 @@ struct ShelfModifier<Item: Identifiable, ShelfContent: View>: ViewModifier {
     
     @State private var heightWhenStartGrab: CGFloat?
     @State private var currentHeight: CGFloat = 0
+    @State private var MAX_HEIGHT: CGFloat
+    @State private var MAX_WIDTH: CGFloat
     
     @State private var widthWhenStartGrab: CGFloat?
     @State private var currentWidth: CGFloat = 0
+    
+    @State private var currentOffset: CGFloat = 0
     
     private let heightDetents = [0, 200.0, 300, 400]
     private let widthDetents = [0, 200.0, 300, 400]
@@ -46,35 +59,34 @@ struct ShelfModifier<Item: Identifiable, ShelfContent: View>: ViewModifier {
         self._item = item
         self.shelfContent = shelfContent
         currentHeight = CGFloat(heightDetents[1])
+        MAX_HEIGHT = heightDetents.max()!
         currentWidth = CGFloat(widthDetents[1])
+        MAX_WIDTH = widthDetents.max()!
     }
     
     func body(content: Content) -> some View {
-        let presentationStyle = PresentationStyle.choose(hSizeClass: hSizeClass, vSizeClass: vSizeClass)
+        let presentationStyle = ShelfPresentationStyle.choose(hSizeClass: hSizeClass, vSizeClass: vSizeClass)
         ZStack {
             content
             
-            switch presentationStyle {
+            switch presentationStyle.shelfPosition {
             case .bottomShelf:
-                bottomShelf
+                bottomShelf(resizeMode: presentationStyle.resizeMode)
             case .leftShelf:
-                leftShelf
-            case .fullScreen:
-                fullScreen
+                leftShelf(resizeMode: presentationStyle.resizeMode)
             }
-            
         }
         .zIndex(12)
         .animation(.spring(duration: 0.3), value: item != nil)
     }
     
     @ViewBuilder
-    var bottomShelf: some View {
+    private func bottomShelf(resizeMode: ResizeMode) -> some View {
         if let item {
             ZStack(alignment: .top) {
                 shelfContent(item)
                     .frame(maxWidth: .infinity)
-                    .frame(height: currentHeight)
+                    .frame(height: resizeMode == .offset ? MAX_HEIGHT : currentHeight)
                 
                 Capsule()
                     .fill(.secondary)
@@ -107,18 +119,19 @@ struct ShelfModifier<Item: Identifiable, ShelfContent: View>: ViewModifier {
             }
             .zIndex(12)
             .background(.yellow)
+            .offset(y: resizeMode == .offset ? MAX_HEIGHT - currentHeight : 0)
             .transition(.move(edge: .bottom))
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottom)
         }
     }
     
     @ViewBuilder
-    var leftShelf: some View {
+    private func leftShelf(resizeMode: ResizeMode) -> some View {
         if let item {
             ZStack(alignment: .trailing) {
                 shelfContent(item)
                     .frame(maxHeight: .infinity)
-                    .frame(width: currentWidth)
+                    .frame(width: resizeMode == .offset ? MAX_WIDTH : currentWidth)
                 Capsule()
                     .fill(.secondary)
                     .frame(width: 36, height: 5)
@@ -153,23 +166,10 @@ struct ShelfModifier<Item: Identifiable, ShelfContent: View>: ViewModifier {
                 )
             }
             .background(.yellow)
+            .offset(x: resizeMode == .offset ? currentWidth - MAX_WIDTH : 0)
             .transition(.move(edge: .leading))
             .zIndex(12)
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
-        }
-    }
-    
-    
-    @ViewBuilder
-    var fullScreen: some View {
-        ZStack {
-            if let item {
-                shelfContent(item)
-                    .frame(maxWidth: .infinity, maxHeight: .infinity)
-                    .background(.white)
-                    .transition(.move(edge: .bottom))
-                    .zIndex(12)
-            }
         }
     }
 }
