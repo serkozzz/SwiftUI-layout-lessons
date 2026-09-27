@@ -83,39 +83,12 @@ struct ShelfModifier<Item: Identifiable, ShelfContent: View>: ViewModifier {
     @ViewBuilder
     private func bottomShelf(resizeMode: ResizeMode) -> some View {
         if let item {
-            ZStack(alignment: .top) {
+            VStack {
+                verticalGrabber
                 shelfContent(item)
                     .frame(maxWidth: .infinity)
                     .frame(height: resizeMode == .offset ? MAX_HEIGHT : currentHeight)
                 
-                Capsule()
-                    .fill(.secondary)
-                    .frame(width: 36, height: 5)
-                    .frame(maxWidth: .infinity)
-                    .frame(height: 44)
-                    .contentShape(Rectangle())
-                    .gesture(
-                        DragGesture(coordinateSpace: .global)
-                            .onChanged { value in
-                                if heightWhenStartGrab == nil {
-                                    heightWhenStartGrab = currentHeight
-                                }
-                                currentHeight = heightWhenStartGrab! - value.translation.height
-                                if self.currentHeight < 0 {
-                                    currentHeight = 0
-                                }
-                            }
-                            .onEnded { value in
-                                heightWhenStartGrab = nil
-                                withAnimation {
-                                    let newHeight = heightDetents.min(by: { abs($0 - currentHeight) < abs($1 - currentHeight) })!
-                                    self.currentHeight = CGFloat(newHeight)
-                                    if self.currentHeight < 0 {
-                                        currentHeight = 0
-                                    }
-                                }
-                            }
-                    )
             }
             .zIndex(12)
             .offset(y: resizeMode == .offset ? MAX_HEIGHT - currentHeight : 0)
@@ -124,50 +97,85 @@ struct ShelfModifier<Item: Identifiable, ShelfContent: View>: ViewModifier {
         }
     }
     
+    private var verticalGrabber: some View {
+        Capsule()
+            .fill(.secondary)
+            .frame(width: 36, height: 5)
+            .frame(maxWidth: .infinity)
+            .frame(height: 44)
+            .contentShape(Rectangle())
+            .gesture(
+                DragGesture(coordinateSpace: .global)
+                    .onChanged { value in
+                        if heightWhenStartGrab == nil {
+                            heightWhenStartGrab = currentHeight
+                        }
+                        currentHeight = heightWhenStartGrab! - value.translation.height
+                        if self.currentHeight < 0 {
+                            currentHeight = 0
+                        }
+                    }
+                    .onEnded { value in
+                        heightWhenStartGrab = nil
+                        withAnimation {
+                            let newHeight = heightDetents.min(by: { abs($0 - currentHeight) < abs($1 - currentHeight) })!
+                            self.currentHeight = CGFloat(newHeight)
+                            if self.currentHeight < 0 {
+                                currentHeight = 0
+                            }
+                        }
+                    }
+            )
+    }
+    
     @ViewBuilder
     private func leftShelf(resizeMode: ResizeMode) -> some View {
         if let item {
-            ZStack(alignment: .trailing) {
+            HStack {
                 shelfContent(item)
                     .frame(maxHeight: .infinity)
                     .frame(width: resizeMode == .offset ? MAX_WIDTH : currentWidth)
-                Capsule()
-                    .fill(.secondary)
-                    .frame(width: 36, height: 5)
-                    .rotationEffect(Angle(degrees: 90))
-                    .frame(maxHeight: .infinity)
-                    .frame(width: 44)
-                    
-                    .contentShape(Rectangle())
-                    .gesture(
-                        DragGesture(coordinateSpace: .global)
-                            .onChanged { value in
-                                if widthWhenStartGrab == nil {
-                                    widthWhenStartGrab = currentWidth
-                                
-                            }
-                                currentWidth = widthWhenStartGrab! + value.translation.width
-                                if self.currentWidth < 0 {
-                                    currentWidth = 0
-                                }
-                        }
-                        .onEnded { value in
-                            widthWhenStartGrab = nil
-                            withAnimation {
-                                let newWidth = widthDetents.min(by: { abs($0 - currentWidth) < abs($1 - currentWidth) })!
-                                self.currentWidth = CGFloat(newWidth)
-                                if self.currentWidth < 0 {
-                                    currentWidth = 0
-                                }
-                            }
-                        }
-                )
+                horizontalGrabber
             }
             .offset(x: resizeMode == .offset ? currentWidth - MAX_WIDTH : 0)
             .transition(.move(edge: .leading))
             .zIndex(12)
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
         }
+    }
+    
+    var horizontalGrabber: some View {
+        Capsule()
+            .fill(.secondary)
+            .frame(width: 36, height: 5)
+            .rotationEffect(Angle(degrees: 90))
+            .frame(maxHeight: .infinity)
+            .frame(width: 44)
+            
+            .contentShape(Rectangle())
+            .gesture(
+                DragGesture(coordinateSpace: .global)
+                    .onChanged { value in
+                        if widthWhenStartGrab == nil {
+                            widthWhenStartGrab = currentWidth
+                        
+                    }
+                        currentWidth = widthWhenStartGrab! + value.translation.width
+                        if self.currentWidth < 0 {
+                            currentWidth = 0
+                        }
+                }
+                .onEnded { value in
+                    widthWhenStartGrab = nil
+                    withAnimation {
+                        let newWidth = widthDetents.min(by: { abs($0 - currentWidth) < abs($1 - currentWidth) })!
+                        self.currentWidth = CGFloat(newWidth)
+                        if self.currentWidth < 0 {
+                            currentWidth = 0
+                        }
+                    }
+                }
+        )
     }
 }
 

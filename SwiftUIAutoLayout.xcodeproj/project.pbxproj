@@ -99,8 +99,8 @@
 		9DCCFCB52F2A8AD80065E604 /* SegmentedControlSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCCFCB42F2A8AD80065E604 /* SegmentedControlSample.swift */; };
 		9DCCFCB72F2A8B2B0065E604 /* SegmentedControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCCFCB62F2A8B2B0065E604 /* SegmentedControlView.swift */; };
 		9DD5850E2E86E0D90074455E /* ObservableChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD5850D2E86E0D90074455E /* ObservableChain.swift */; };
-		9DDFE0FC30687C9800C93690 /* ShelfModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDFE0F930687C9800C93690 /* ShelfModifier.swift */; };
 		9DDFE0FD30687C9800C93690 /* ShelfExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDFE0FA30687C9800C93690 /* ShelfExample.swift */; };
+		9DDFE536306994B600C93690 /* ShelfModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDFE535306994B600C93690 /* ShelfModifier.swift */; };
 		9DE850002EC7AE1E0046026E /* MyMacroPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 9DE84FFF2EC7AE1E0046026E /* MyMacroPackage */; };
 		9DE850032EC7AED10046026E /* SimpleMacroSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE850022EC7AED10046026E /* SimpleMacroSample.swift */; };
 		9DE850062EC820E40046026E /* MyMacroPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 9DE850052EC820E40046026E /* MyMacroPackage */; };
@@ -213,8 +213,8 @@
 		9DCCFCB42F2A8AD80065E604 /* SegmentedControlSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControlSample.swift; sourceTree = "<group>"; };
 		9DCCFCB62F2A8B2B0065E604 /* SegmentedControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControlView.swift; sourceTree = "<group>"; };
 		9DD5850D2E86E0D90074455E /* ObservableChain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableChain.swift; sourceTree = "<group>"; };
-		9DDFE0F930687C9800C93690 /* ShelfModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShelfModifier.swift; sourceTree = "<group>"; };
 		9DDFE0FA30687C9800C93690 /* ShelfExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShelfExample.swift; sourceTree = "<group>"; };
+		9DDFE535306994B600C93690 /* ShelfModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShelfModifier.swift; sourceTree = "<group>"; };
 		9DE850022EC7AED10046026E /* SimpleMacroSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleMacroSample.swift; sourceTree = "<group>"; };
 		9DF79C8B2EAF17EC00A3B677 /* Tree_NotPolymorph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tree_NotPolymorph.swift; sourceTree = "<group>"; };
 		9DF79C8F2EAF180500A3B677 /* Sample_NotPolymorph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample_NotPolymorph.swift; sourceTree = "<group>"; };
@@ -634,7 +634,7 @@
 		9DDFE0FB30687C9800C93690 /* Shelf */ = {
 			isa = PBXGroup;
 			children = (
-				9DDFE0F930687C9800C93690 /* ShelfModifier.swift */,
+				9DDFE535306994B600C93690 /* ShelfModifier.swift */,
 				9DDFE0FA30687C9800C93690 /* ShelfExample.swift */,
 			);
 			path = Shelf;
@@ -779,7 +779,6 @@
 				9D3706EE30674783007B09A1 /* GroupView.swift in Sources */,
 				9D3C74B02DF929F50048D4E1 /* LazyGrid.swift in Sources */,
 				9DF9E4C12E7237F6004FD61D /* AdaptivePopover.swift in Sources */,
-				9DDFE0FC30687C9800C93690 /* ShelfModifier.swift in Sources */,
 				9DB04BE92E8D9526007BFA89 /* AccessFromMainContext.swift in Sources */,
 				9D0BD38B2DFE31210029DBBB /* LayoutCodeOrganization.swift in Sources */,
 				9DD5850E2E86E0D90074455E /* ObservableChain.swift in Sources */,
@@ -803,6 +802,7 @@
 				9D3703A03066ECA3007B09A1 /* Item.swift in Sources */,
 				9D5737512F1C2E6200888E62 /* MenuSample_Sheet.swift in Sources */,
 				9D3C74A72DF8941C0048D4E1 /* CircleWithText.swift in Sources */,
+				9DDFE536306994B600C93690 /* ShelfModifier.swift in Sources */,
 				9DF79CEB2EB481BD00A3B677 /* Mirror_KVC.swift in Sources */,
 				9DF79CEC2EB481BD00A3B677 /* SafeKVC.m in Sources */,
 				9D3C749D2DF874060048D4E1 /* ImageTest.swift in Sources */,
