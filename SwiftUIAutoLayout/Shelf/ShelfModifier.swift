@@ -39,14 +39,14 @@ struct ShelfModifier<Item: Identifiable, ShelfContent: View>: ViewModifier {
     @State private var widthWhenStartGrab: CGFloat?
     @State private var currentWidth: CGFloat = 0
     
-    private let heightDetents = [200.0, 300, 400]
-    private let widthDetents = [200.0, 300, 400]
+    private let heightDetents = [0, 200.0, 300, 400]
+    private let widthDetents = [0, 200.0, 300, 400]
     
     init(item: Binding<Item?>, shelfContent: @escaping (Item) -> ShelfContent) {
         self._item = item
         self.shelfContent = shelfContent
-        currentHeight = CGFloat(heightDetents.first ?? 0)
-        currentWidth = CGFloat(widthDetents.first ?? 0)
+        currentHeight = CGFloat(heightDetents[1])
+        currentWidth = CGFloat(widthDetents[1])
     }
     
     func body(content: Content) -> some View {
