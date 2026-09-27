@@ -27,7 +27,13 @@ enum ShelfExample {
                 }
             }
             .shelf(item: $item) { item in
-                Text("This is custom sheet")
+                NavigationStack {
+                    Text("This is custom sheet")
+                        .navigationTitle("Title")
+                        .navigationBarTitleDisplayMode(.inline)
+                        .toolbarBackground(Color.yellow)
+                        .toolbarBackground(.visible, for: .navigationBar)
+                }
             }
         }
         

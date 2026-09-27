@@ -118,7 +118,6 @@ struct ShelfModifier<Item: Identifiable, ShelfContent: View>: ViewModifier {
                     )
             }
             .zIndex(12)
-            .background(.yellow)
             .offset(y: resizeMode == .offset ? MAX_HEIGHT - currentHeight : 0)
             .transition(.move(edge: .bottom))
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottom)
@@ -139,7 +138,6 @@ struct ShelfModifier<Item: Identifiable, ShelfContent: View>: ViewModifier {
                     .frame(maxHeight: .infinity)
                     .frame(width: 44)
                     
-                    .background(.red)
                     .contentShape(Rectangle())
                     .gesture(
                         DragGesture(coordinateSpace: .global)
@@ -165,7 +163,6 @@ struct ShelfModifier<Item: Identifiable, ShelfContent: View>: ViewModifier {
                         }
                 )
             }
-            .background(.yellow)
             .offset(x: resizeMode == .offset ? currentWidth - MAX_WIDTH : 0)
             .transition(.move(edge: .leading))
             .zIndex(12)
