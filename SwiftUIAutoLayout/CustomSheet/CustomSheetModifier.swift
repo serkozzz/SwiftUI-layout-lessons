@@ -14,6 +14,7 @@ struct CustomSheetModifier<Item: Identifiable, SheetContent: View>: ViewModifier
         case centeredModal
         case fullScreen
         
+        
         static func choose(hSizeClass: UserInterfaceSizeClass?,
                                             vSizeClass: UserInterfaceSizeClass?) ->PresentationStyle {
             if vSizeClass == .compact {
