@@ -101,6 +101,7 @@
 		9DD5850E2E86E0D90074455E /* ObservableChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD5850D2E86E0D90074455E /* ObservableChain.swift */; };
 		9DDFE0FD30687C9800C93690 /* ShelfExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDFE0FA30687C9800C93690 /* ShelfExample.swift */; };
 		9DDFE536306994B600C93690 /* ShelfModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDFE535306994B600C93690 /* ShelfModifier.swift */; };
+		9DDFE549306AAF1300C93690 /* HardCalculationsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDFE548306AAF1300C93690 /* HardCalculationsExample.swift */; };
 		9DE850002EC7AE1E0046026E /* MyMacroPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 9DE84FFF2EC7AE1E0046026E /* MyMacroPackage */; };
 		9DE850032EC7AED10046026E /* SimpleMacroSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE850022EC7AED10046026E /* SimpleMacroSample.swift */; };
 		9DE850062EC820E40046026E /* MyMacroPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 9DE850052EC820E40046026E /* MyMacroPackage */; };
@@ -215,6 +216,7 @@
 		9DD5850D2E86E0D90074455E /* ObservableChain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableChain.swift; sourceTree = "<group>"; };
 		9DDFE0FA30687C9800C93690 /* ShelfExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShelfExample.swift; sourceTree = "<group>"; };
 		9DDFE535306994B600C93690 /* ShelfModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShelfModifier.swift; sourceTree = "<group>"; };
+		9DDFE548306AAF1300C93690 /* HardCalculationsExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardCalculationsExample.swift; sourceTree = "<group>"; };
 		9DE850022EC7AED10046026E /* SimpleMacroSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleMacroSample.swift; sourceTree = "<group>"; };
 		9DF79C8B2EAF17EC00A3B677 /* Tree_NotPolymorph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tree_NotPolymorph.swift; sourceTree = "<group>"; };
 		9DF79C8F2EAF180500A3B677 /* Sample_NotPolymorph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample_NotPolymorph.swift; sourceTree = "<group>"; };
@@ -335,7 +337,7 @@
 				9DE850012EC7AEA50046026E /* Macro */,
 				9DF79CE42EB4818F00A3B677 /* Mirror&KVC */,
 				9DA279092EAE98DB002FCAB4 /* PolymorphCodableSample */,
-				9DB04BE52E8D94C0007BFA89 /* Strict Concurency */,
+				9DB04BE52E8D94C0007BFA89 /* Concurency */,
 				9D3C74982DF874060048D4E1 /* SwiftUIAutoLayoutApp.swift */,
 				9D3C748F2DF874060048D4E1 /* Preview Content */,
 				9D3C74902DF874060048D4E1 /* Assets.xcassets */,
@@ -585,14 +587,15 @@
 			path = CustomSheet;
 			sourceTree = "<group>";
 		};
-		9DB04BE52E8D94C0007BFA89 /* Strict Concurency */ = {
+		9DB04BE52E8D94C0007BFA89 /* Concurency */ = {
 			isa = PBXGroup;
 			children = (
+				9DDFE548306AAF1300C93690 /* HardCalculationsExample.swift */,
 				9DB04BE62E8D94CA007BFA89 /* AccessFromBackgroundProcess.swift */,
 				9DB04BE82E8D9526007BFA89 /* AccessFromMainContext.swift */,
 				9D6F834A2E8DF2B100F17E41 /* SingletonWithStrictConcurrency.swift */,
 			);
-			path = "Strict Concurency";
+			path = Concurency;
 			sourceTree = "<group>";
 		};
 		9DB39EDC2E54140900F9708A /* Zoom */ = {
@@ -815,6 +818,7 @@
 				9DFFBE3A2E5C08E4003CA6C7 /* AnimatableModifierSample.swift in Sources */,
 				9D5916102E17F4C200797BA7 /* CircleLayout.swift in Sources */,
 				9D4F9C0C2F942E80002F529D /* ActiveSheetEnumExample.swift in Sources */,
+				9DDFE549306AAF1300C93690 /* HardCalculationsExample.swift in Sources */,
 				9D33478E2E6BE3490075A381 /* KeyFrameSample.swift in Sources */,
 				9D3706E63066EDA6007B09A1 /* Group.swift in Sources */,
 				9D3C74BC2DFC73ED0048D4E1 /* AnchorSimpleExample.swift in Sources */,
