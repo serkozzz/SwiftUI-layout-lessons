@@ -6,12 +6,11 @@
 //
 
 
-extension FactorialExample {
+extension AsyncStreamExample {
     
     struct Equation: Identifiable {
         var base: Int
         var result: Int
-        
         
         func text() -> String {
             "\(base)! = \(result)"

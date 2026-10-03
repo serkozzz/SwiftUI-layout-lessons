@@ -46,7 +46,6 @@ extension FactorialExample {
             } catch {
                 self.error = ServerAPIError.unknown
             }
-            
         }
         
         func calculateUsingTaskGroup() async throws  {

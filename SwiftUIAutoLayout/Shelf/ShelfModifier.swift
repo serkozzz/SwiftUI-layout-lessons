@@ -27,7 +27,7 @@ private struct ShelfPresentationStyle {
             return .init(resizeMode: .squeeze, shelfPosition: .leftShelf)
         }
         if hSizeClass == .compact {
-            return .init(resizeMode: .offset, shelfPosition: .bottomShelf)
+            return .init(resizeMode: .squeeze, shelfPosition: .bottomShelf)
         }
         return .init(resizeMode: .squeeze, shelfPosition: .leftShelf)
     }
@@ -66,14 +66,22 @@ struct ShelfModifier<Item: Identifiable, ShelfContent: View>: ViewModifier {
     
     func body(content: Content) -> some View {
         let presentationStyle = ShelfPresentationStyle.choose(hSizeClass: hSizeClass, vSizeClass: vSizeClass)
-        ZStack {
-            content
-            
+        Group {
             switch presentationStyle.shelfPosition {
             case .bottomShelf:
-                bottomShelf(resizeMode: presentationStyle.resizeMode)
+                VStack {
+                    content
+                        .frame(maxWidth: .infinity, maxHeight: .infinity)
+                        .background(.red)
+                    bottomShelf(resizeMode: presentationStyle.resizeMode)
+                }
             case .leftShelf:
-                leftShelf(resizeMode: presentationStyle.resizeMode)
+                HStack {
+                    leftShelf(resizeMode: presentationStyle.resizeMode)
+                    content
+                        .frame(maxWidth: .infinity, maxHeight: .infinity)
+                        .background(.red)
+                }
             }
         }
         .zIndex(12)
@@ -93,7 +101,7 @@ struct ShelfModifier<Item: Identifiable, ShelfContent: View>: ViewModifier {
             .zIndex(12)
             .offset(y: resizeMode == .offset ? MAX_HEIGHT - currentHeight : 0)
             .transition(.move(edge: .bottom))
-            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottom)
+            //.frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottom)
         }
     }
     
@@ -140,7 +148,6 @@ struct ShelfModifier<Item: Identifiable, ShelfContent: View>: ViewModifier {
             .offset(x: resizeMode == .offset ? currentWidth - MAX_WIDTH : 0)
             .transition(.move(edge: .leading))
             .zIndex(12)
-            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
         }
     }
     

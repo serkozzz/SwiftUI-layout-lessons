@@ -8,7 +8,7 @@
 import SwiftUI
 import Combine
 
-extension FactorialExample {
+extension AsyncStreamExample {
     
     enum ConcurencyType {
         case groupTask
@@ -58,8 +58,9 @@ extension FactorialExample {
                         }
                     }
                     var equations: [Equation] = []
-                    for try await result in group {
-                        equations.append(result)
+                    for try await stream in group {
+                        let equation = try await handleStream(stream)
+                        equations.append(equation)
                     }
                     self.equations = equations
                 }
@@ -69,11 +70,30 @@ extension FactorialExample {
         func calculateWithUnstructedConcurrensy() async throws {
             for base in bases {
                 let task = Task {
-                    let result = try await Calculator().factorial(base)
-                    self.equations.append(result)
+                    let stream = try await Calculator().factorial(base)
+                    let equation = try await handleStream(stream)
+                    self.equations.append(equation)
                 }
                 self.tasks.append(task)
             }
+        }
+        
+        private func handleStream(_ stream: AsyncThrowingStream<CalculationEvent, Error>) async throws -> Equation {
+            do {
+                for try await event in stream {
+                    switch event {
+                    case .progress(let progress):
+                        print(progress)
+                        
+                    case .complete(let equation):
+                        return equation
+                    }
+                }
+            }
+            catch {
+                throw error
+            }
+            throw ServerAPIError.unknown
         }
         
         func cancellAll() {

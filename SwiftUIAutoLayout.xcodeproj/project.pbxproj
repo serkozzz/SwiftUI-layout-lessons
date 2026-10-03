@@ -112,6 +112,10 @@
 		9DDFEA9D306C15D500C93690 /* FactorialExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDFEA9C306C15D500C93690 /* FactorialExample.swift */; };
 		9DDFEA9F306C160C00C93690 /* FacCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDFEA9E306C160700C93690 /* FacCalculator.swift */; };
 		9DDFEAA1306C211F00C93690 /* FacEquation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDFEAA0306C211A00C93690 /* FacEquation.swift */; };
+		9DDFEE21306C930C00C93690 /* ASCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDFEE1D306C930C00C93690 /* ASCalculator.swift */; };
+		9DDFEE22306C930C00C93690 /* AsyncStreamExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDFEE1E306C930C00C93690 /* AsyncStreamExample.swift */; };
+		9DDFEE23306C930C00C93690 /* ASEquation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDFEE1C306C930C00C93690 /* ASEquation.swift */; };
+		9DDFEE24306C930C00C93690 /* ASViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDFEE1F306C930C00C93690 /* ASViewModel.swift */; };
 		9DE850002EC7AE1E0046026E /* MyMacroPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 9DE84FFF2EC7AE1E0046026E /* MyMacroPackage */; };
 		9DE850032EC7AED10046026E /* SimpleMacroSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE850022EC7AED10046026E /* SimpleMacroSample.swift */; };
 		9DE850062EC820E40046026E /* MyMacroPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 9DE850052EC820E40046026E /* MyMacroPackage */; };
@@ -237,6 +241,10 @@
 		9DDFEA9C306C15D500C93690 /* FactorialExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactorialExample.swift; sourceTree = "<group>"; };
 		9DDFEA9E306C160700C93690 /* FacCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacCalculator.swift; sourceTree = "<group>"; };
 		9DDFEAA0306C211A00C93690 /* FacEquation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacEquation.swift; sourceTree = "<group>"; };
+		9DDFEE1C306C930C00C93690 /* ASEquation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASEquation.swift; sourceTree = "<group>"; };
+		9DDFEE1D306C930C00C93690 /* ASCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASCalculator.swift; sourceTree = "<group>"; };
+		9DDFEE1E306C930C00C93690 /* AsyncStreamExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncStreamExample.swift; sourceTree = "<group>"; };
+		9DDFEE1F306C930C00C93690 /* ASViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASViewModel.swift; sourceTree = "<group>"; };
 		9DE850022EC7AED10046026E /* SimpleMacroSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleMacroSample.swift; sourceTree = "<group>"; };
 		9DF79C8B2EAF17EC00A3B677 /* Tree_NotPolymorph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tree_NotPolymorph.swift; sourceTree = "<group>"; };
 		9DF79C8F2EAF180500A3B677 /* Sample_NotPolymorph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample_NotPolymorph.swift; sourceTree = "<group>"; };
@@ -612,6 +620,7 @@
 			isa = PBXGroup;
 			children = (
 				9DDFEA99306C11C300C93690 /* FactorialExample */,
+				9DDFEE20306C930C00C93690 /* AsyncStreamExample */,
 				9DDFEA94306B637700C93690 /* let async */,
 				9DDFEA93306B635900C93690 /* TaskGroup */,
 				9DDFEA8D306AF98F00C93690 /* old */,
@@ -711,6 +720,17 @@
 				9DDFEA9A306C15C600C93690 /* FacViewModel.swift */,
 			);
 			path = FactorialExample;
+			sourceTree = "<group>";
+		};
+		9DDFEE20306C930C00C93690 /* AsyncStreamExample */ = {
+			isa = PBXGroup;
+			children = (
+				9DDFEE1C306C930C00C93690 /* ASEquation.swift */,
+				9DDFEE1D306C930C00C93690 /* ASCalculator.swift */,
+				9DDFEE1E306C930C00C93690 /* AsyncStreamExample.swift */,
+				9DDFEE1F306C930C00C93690 /* ASViewModel.swift */,
+			);
+			path = AsyncStreamExample;
 			sourceTree = "<group>";
 		};
 		9DE850012EC7AEA50046026E /* Macro */ = {
@@ -844,6 +864,7 @@
 				9D3347902E6BE6DA0075A381 /* KeyFrameInterpolator.swift in Sources */,
 				9D0BD3892DFDB1080029DBBB /* ThinkingInSwiftUI_AnimatedStack.swift in Sources */,
 				9D5278222E3BCCB90046C07A /* ViewModelExample.swift in Sources */,
+				9DDFEE22306C930C00C93690 /* AsyncStreamExample.swift in Sources */,
 				9DB39EDF2E54141C00F9708A /* ZoomableScrollView.swift in Sources */,
 				9D3C749A2DF874060048D4E1 /* CompositionalLayout.swift in Sources */,
 				9DDFEA9F306C160C00C93690 /* FacCalculator.swift in Sources */,
@@ -868,12 +889,14 @@
 				9DDFEA8C306AF96300C93690 /* ServerAPI.swift in Sources */,
 				9D3706FC30676163007B09A1 /* ModelsListExample.swift in Sources */,
 				9D982FEE2E94099E00190A8C /* CoordinatorSample.swift in Sources */,
+				9DDFEE24306C930C00C93690 /* ASViewModel.swift in Sources */,
 				9D4F9C0A2F93CD8B002F529D /* UIError.swift in Sources */,
 				9D55397D2E6B1F040074E241 /* TrimShapeAnimSample.swift in Sources */,
 				9D4F9C0E2F94309B002F529D /* ActiveSheetExampleChildView.swift in Sources */,
 				9D3C749C2DF874060048D4E1 /* Counter.swift in Sources */,
 				9D3B4F012E972E7800E441AA /* TableVC.swift in Sources */,
 				9D3706FD30676163007B09A1 /* MLEItemView.swift in Sources */,
+				9DDFEE21306C930C00C93690 /* ASCalculator.swift in Sources */,
 				9D3B4EFF2E972E6300E441AA /* HostingConfigurationSample.swift in Sources */,
 				9D3703A03066ECA3007B09A1 /* Item.swift in Sources */,
 				9D5737512F1C2E6200888E62 /* MenuSample_Sheet.swift in Sources */,
@@ -912,6 +935,7 @@
 				9DF79C8C2EAF17EF00A3B677 /* Tree_NotPolymorph.swift in Sources */,
 				9D5916092E10C42200797BA7 /* sandbox.swift in Sources */,
 				9DFFBE342E5AB2AE003CA6C7 /* SimpleTransitionAnimation.swift in Sources */,
+				9DDFEE23306C930C00C93690 /* ASEquation.swift in Sources */,
 				9DB39EE42E54E17100F9708A /* ZoomableScrollViewExample.swift in Sources */,
 				9D5916032E10559000797BA7 /* NavigationPathSample.swift in Sources */,
 				9DF79C942EAF180D00A3B677 /* Tree_PCSEnum.swift in Sources */,

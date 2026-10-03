@@ -8,7 +8,7 @@
 import SwiftUI
 import Charts
 
-enum FactorialExample {
+enum AsyncStreamExample {
     struct ContentView: View {
         
         @StateObject var viewModel = ViewModel()

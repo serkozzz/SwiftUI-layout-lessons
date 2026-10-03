@@ -25,6 +25,8 @@ enum ShelfExample {
                 Button("show shelf") {
                     item = Preset()
                 }
+                Spacer()
+                Text("Hello, World!")
             }
             .shelf(item: $item) { item in
                 NavigationStack {
