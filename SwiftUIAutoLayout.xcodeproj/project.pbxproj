@@ -12,6 +12,8 @@
 		9D0BD38B2DFE31210029DBBB /* LayoutCodeOrganization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0BD38A2DFE310F0029DBBB /* LayoutCodeOrganization.swift */; };
 		9D0BD3C02E0261560029DBBB /* StateObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0BD3BF2E02601F0029DBBB /* StateObject.swift */; };
 		9D0BD4022E09CD560029DBBB /* PreferencesWithoutGeometryReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0BD4012E09CD420029DBBB /* PreferencesWithoutGeometryReader.swift */; };
+		9D12BC85307311CA00F62912 /* ShelfGrabber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D12BC83307311CA00F62912 /* ShelfGrabber.swift */; };
+		9D12BC86307311CA00F62912 /* ShelfModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D12BC84307311CA00F62912 /* ShelfModifier.swift */; };
 		9D130B132FA1B2F700A760E9 /* KeyboardAndAutoScrollSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D130B0F2FA1B2F700A760E9 /* KeyboardAndAutoScrollSample.swift */; };
 		9D130B152FA1B2F700A760E9 /* UITextViewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D130B122FA1B2F700A760E9 /* UITextViewWrapper.swift */; };
 		9D130B162FA1B2F700A760E9 /* KeyboardAndAutoScrollSample_SheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D130B102FA1B2F700A760E9 /* KeyboardAndAutoScrollSample_SheetView.swift */; };
@@ -100,7 +102,6 @@
 		9DCCFCB72F2A8B2B0065E604 /* SegmentedControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCCFCB62F2A8B2B0065E604 /* SegmentedControlView.swift */; };
 		9DD5850E2E86E0D90074455E /* ObservableChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD5850D2E86E0D90074455E /* ObservableChain.swift */; };
 		9DDFE0FD30687C9800C93690 /* ShelfExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDFE0FA30687C9800C93690 /* ShelfExample.swift */; };
-		9DDFE536306994B600C93690 /* ShelfModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDFE535306994B600C93690 /* ShelfModifier.swift */; };
 		9DDFE549306AAF1300C93690 /* HardCalculationsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDFE548306AAF1300C93690 /* HardCalculationsExample.swift */; };
 		9DDFEA8B306AF96300C93690 /* ServerAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDFEA8A306AF96300C93690 /* ServerAPIError.swift */; };
 		9DDFEA8C306AF96300C93690 /* ServerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDFEA89306AF96300C93690 /* ServerAPI.swift */; };
@@ -140,6 +141,8 @@
 		9D0BD38A2DFE310F0029DBBB /* LayoutCodeOrganization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutCodeOrganization.swift; sourceTree = "<group>"; };
 		9D0BD3BF2E02601F0029DBBB /* StateObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateObject.swift; sourceTree = "<group>"; };
 		9D0BD4012E09CD420029DBBB /* PreferencesWithoutGeometryReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesWithoutGeometryReader.swift; sourceTree = "<group>"; };
+		9D12BC83307311CA00F62912 /* ShelfGrabber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShelfGrabber.swift; sourceTree = "<group>"; };
+		9D12BC84307311CA00F62912 /* ShelfModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShelfModifier.swift; sourceTree = "<group>"; };
 		9D130B0F2FA1B2F700A760E9 /* KeyboardAndAutoScrollSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardAndAutoScrollSample.swift; sourceTree = "<group>"; };
 		9D130B102FA1B2F700A760E9 /* KeyboardAndAutoScrollSample_SheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardAndAutoScrollSample_SheetView.swift; sourceTree = "<group>"; };
 		9D130B122FA1B2F700A760E9 /* UITextViewWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextViewWrapper.swift; sourceTree = "<group>"; };
@@ -229,7 +232,6 @@
 		9DCCFCB62F2A8B2B0065E604 /* SegmentedControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControlView.swift; sourceTree = "<group>"; };
 		9DD5850D2E86E0D90074455E /* ObservableChain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableChain.swift; sourceTree = "<group>"; };
 		9DDFE0FA30687C9800C93690 /* ShelfExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShelfExample.swift; sourceTree = "<group>"; };
-		9DDFE535306994B600C93690 /* ShelfModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShelfModifier.swift; sourceTree = "<group>"; };
 		9DDFE548306AAF1300C93690 /* HardCalculationsExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardCalculationsExample.swift; sourceTree = "<group>"; };
 		9DDFEA89306AF96300C93690 /* ServerAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerAPI.swift; sourceTree = "<group>"; };
 		9DDFEA8A306AF96300C93690 /* ServerAPIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerAPIError.swift; sourceTree = "<group>"; };
@@ -668,8 +670,9 @@
 		9DDFE0FB30687C9800C93690 /* Shelf */ = {
 			isa = PBXGroup;
 			children = (
-				9DDFE535306994B600C93690 /* ShelfModifier.swift */,
 				9DDFE0FA30687C9800C93690 /* ShelfExample.swift */,
+				9D12BC83307311CA00F62912 /* ShelfGrabber.swift */,
+				9D12BC84307311CA00F62912 /* ShelfModifier.swift */,
 			);
 			path = Shelf;
 			sourceTree = "<group>";
@@ -901,7 +904,6 @@
 				9D3703A03066ECA3007B09A1 /* Item.swift in Sources */,
 				9D5737512F1C2E6200888E62 /* MenuSample_Sheet.swift in Sources */,
 				9D3C74A72DF8941C0048D4E1 /* CircleWithText.swift in Sources */,
-				9DDFE536306994B600C93690 /* ShelfModifier.swift in Sources */,
 				9DF79CEB2EB481BD00A3B677 /* Mirror_KVC.swift in Sources */,
 				9DF79CEC2EB481BD00A3B677 /* SafeKVC.m in Sources */,
 				9D3C749D2DF874060048D4E1 /* ImageTest.swift in Sources */,
@@ -933,6 +935,8 @@
 				9DA2790F2EAEB201002FCAB4 /* TreeSerializer_PCSInheritance .swift in Sources */,
 				9D0BD3C02E0261560029DBBB /* StateObject.swift in Sources */,
 				9DF79C8C2EAF17EF00A3B677 /* Tree_NotPolymorph.swift in Sources */,
+				9D12BC85307311CA00F62912 /* ShelfGrabber.swift in Sources */,
+				9D12BC86307311CA00F62912 /* ShelfModifier.swift in Sources */,
 				9D5916092E10C42200797BA7 /* sandbox.swift in Sources */,
 				9DFFBE342E5AB2AE003CA6C7 /* SimpleTransitionAnimation.swift in Sources */,
 				9DDFEE23306C930C00C93690 /* ASEquation.swift in Sources */,

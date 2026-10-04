@@ -33,6 +33,7 @@ private struct ShelfPresentationStyle {
     }
 }
 
+private let GRABBER_THICKNESS: CGFloat = 12
 
 struct ShelfModifier<Item: Identifiable, ShelfContent: View>: ViewModifier {
     
@@ -44,43 +45,44 @@ struct ShelfModifier<Item: Identifiable, ShelfContent: View>: ViewModifier {
     
     @State private var heightWhenStartGrab: CGFloat?
     @State private var currentHeight: CGFloat = 0
-    @State private var MAX_HEIGHT: CGFloat
-    @State private var MAX_WIDTH: CGFloat
+    private var MAX_HEIGHT: CGFloat
+    private var MIN_HEIGHT: CGFloat
+    private var MAX_WIDTH: CGFloat
+    private var MIN_WIDTH: CGFloat
+
     
     @State private var widthWhenStartGrab: CGFloat?
     @State private var currentWidth: CGFloat = 0
     
     @State private var currentOffset: CGFloat = 0
     
-    private let heightDetents = [0, 200.0, 300, 400]
-    private let widthDetents = [0, 200.0, 300, 400]
+    private let heightDetents = [GRABBER_THICKNESS, 200.0, 300, 400]
+    private let widthDetents = [GRABBER_THICKNESS, 200.0, 300, 400]
     
     init(item: Binding<Item?>, shelfContent: @escaping (Item) -> ShelfContent) {
         self._item = item
         self.shelfContent = shelfContent
         currentHeight = CGFloat(heightDetents[1])
         MAX_HEIGHT = heightDetents.max()!
+        MIN_HEIGHT = heightDetents.min()!
         currentWidth = CGFloat(widthDetents[1])
         MAX_WIDTH = widthDetents.max()!
+        MIN_WIDTH = widthDetents.min()!
     }
     
     func body(content: Content) -> some View {
         let presentationStyle = ShelfPresentationStyle.choose(hSizeClass: hSizeClass, vSizeClass: vSizeClass)
         Group {
-            switch presentationStyle.shelfPosition {
-            case .bottomShelf:
-                VStack {
-                    content
-                        .frame(maxWidth: .infinity, maxHeight: .infinity)
-                        .background(.red)
+            content
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .safeAreaInset(edge: .bottom, spacing: 0) {
+                if presentationStyle.shelfPosition == .bottomShelf {
                     bottomShelf(resizeMode: presentationStyle.resizeMode)
                 }
-            case .leftShelf:
-                HStack {
+            }
+            .safeAreaInset(edge: .leading, spacing: 0) {
+                if presentationStyle.shelfPosition == .leftShelf {
                     leftShelf(resizeMode: presentationStyle.resizeMode)
-                    content
-                        .frame(maxWidth: .infinity, maxHeight: .infinity)
-                        .background(.red)
                 }
             }
         }
@@ -93,27 +95,32 @@ struct ShelfModifier<Item: Identifiable, ShelfContent: View>: ViewModifier {
         if let item {
             VStack {
                 verticalGrabber
-                shelfContent(item)
-                    .frame(maxWidth: .infinity)
-                    .frame(height: resizeMode == .offset ? MAX_HEIGHT : currentHeight)
-                
+                Group {
+                    if (currentHeight <= MIN_HEIGHT)
+                    {
+                        Color(uiColor: UIColor.secondarySystemBackground)
+                    }
+                    else {
+                        shelfContent(item)
+                            .frame(maxWidth: .infinity)
+                    }
+                }
+                .frame(height: resizeMode == .offset ? MAX_HEIGHT : max(0, currentHeight - GRABBER_THICKNESS))
             }
             .zIndex(12)
             .offset(y: resizeMode == .offset ? MAX_HEIGHT - currentHeight : 0)
             .transition(.move(edge: .bottom))
-            //.frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottom)
+            .background(Color(uiColor: UIColor.secondarySystemBackground))
         }
     }
     
     private var verticalGrabber: some View {
-        Capsule()
-            .fill(.secondary)
-            .frame(width: 36, height: 5)
+        ShelfGrabber(isHighlighted: heightWhenStartGrab != nil)
             .frame(maxWidth: .infinity)
-            .frame(height: 44)
+            .frame(height: GRABBER_THICKNESS)
             .contentShape(Rectangle())
             .gesture(
-                DragGesture(coordinateSpace: .global)
+                DragGesture(minimumDistance: 0, coordinateSpace: .global)
                     .onChanged { value in
                         if heightWhenStartGrab == nil {
                             heightWhenStartGrab = currentHeight
@@ -140,28 +147,35 @@ struct ShelfModifier<Item: Identifiable, ShelfContent: View>: ViewModifier {
     private func leftShelf(resizeMode: ResizeMode) -> some View {
         if let item {
             HStack {
-                shelfContent(item)
-                    .frame(maxHeight: .infinity)
-                    .frame(width: resizeMode == .offset ? MAX_WIDTH : currentWidth)
+                Group {
+                    if (currentHeight <= MIN_HEIGHT)
+                    {
+                        Color(uiColor: UIColor.secondarySystemBackground)
+                    }
+                    else {
+                        shelfContent(item)
+                            .frame(maxHeight: .infinity)
+                    }
+                }
+                .frame(width: resizeMode == .offset ? MAX_WIDTH : max(0, currentWidth - GRABBER_THICKNESS))
                 horizontalGrabber
             }
+            
             .offset(x: resizeMode == .offset ? currentWidth - MAX_WIDTH : 0)
             .transition(.move(edge: .leading))
+            .background(Color(uiColor: UIColor.secondarySystemBackground))
             .zIndex(12)
         }
     }
     
     var horizontalGrabber: some View {
-        Capsule()
-            .fill(.secondary)
-            .frame(width: 36, height: 5)
+        ShelfGrabber(isHighlighted: widthWhenStartGrab != nil)
             .rotationEffect(Angle(degrees: 90))
             .frame(maxHeight: .infinity)
-            .frame(width: 44)
-            
+            .frame(width: GRABBER_THICKNESS)
             .contentShape(Rectangle())
             .gesture(
-                DragGesture(coordinateSpace: .global)
+                DragGesture(minimumDistance: 0, coordinateSpace: .global)
                     .onChanged { value in
                         if widthWhenStartGrab == nil {
                             widthWhenStartGrab = currentWidth
