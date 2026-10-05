@@ -14,6 +14,14 @@
 		9D0BD4022E09CD560029DBBB /* PreferencesWithoutGeometryReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0BD4012E09CD420029DBBB /* PreferencesWithoutGeometryReader.swift */; };
 		9D12BC85307311CA00F62912 /* ShelfGrabber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D12BC83307311CA00F62912 /* ShelfGrabber.swift */; };
 		9D12BC86307311CA00F62912 /* ShelfModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D12BC84307311CA00F62912 /* ShelfModifier.swift */; };
+		9D12BCBA3073F35C00F62912 /* RIRenderJobView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D12BCB63073F35C00F62912 /* RIRenderJobView.swift */; };
+		9D12BCBB3073F35C00F62912 /* RIRenderEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D12BCB23073F35C00F62912 /* RIRenderEngine.swift */; };
+		9D12BCBC3073F35C00F62912 /* RIRenderError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D12BCB33073F35C00F62912 /* RIRenderError.swift */; };
+		9D12BCBE3073F35C00F62912 /* RIRenderManagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D12BCB83073F35C00F62912 /* RIRenderManagerView.swift */; };
+		9D12BCBF3073F35C00F62912 /* RIRenderJob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D12BCB53073F35C00F62912 /* RIRenderJob.swift */; };
+		9D12BCC03073F35C00F62912 /* RIRenderJobViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D12BCB73073F35C00F62912 /* RIRenderJobViewModel.swift */; };
+		9D12BCC13073F35C00F62912 /* RIRenderManagerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D12BCB93073F35C00F62912 /* RIRenderManagerViewModel.swift */; };
+		9D12BCC33073F3BB00F62912 /* RIContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D12BCC23073F3B700F62912 /* RIContentView.swift */; };
 		9D130B132FA1B2F700A760E9 /* KeyboardAndAutoScrollSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D130B0F2FA1B2F700A760E9 /* KeyboardAndAutoScrollSample.swift */; };
 		9D130B152FA1B2F700A760E9 /* UITextViewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D130B122FA1B2F700A760E9 /* UITextViewWrapper.swift */; };
 		9D130B162FA1B2F700A760E9 /* KeyboardAndAutoScrollSample_SheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D130B102FA1B2F700A760E9 /* KeyboardAndAutoScrollSample_SheetView.swift */; };
@@ -143,6 +151,14 @@
 		9D0BD4012E09CD420029DBBB /* PreferencesWithoutGeometryReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesWithoutGeometryReader.swift; sourceTree = "<group>"; };
 		9D12BC83307311CA00F62912 /* ShelfGrabber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShelfGrabber.swift; sourceTree = "<group>"; };
 		9D12BC84307311CA00F62912 /* ShelfModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShelfModifier.swift; sourceTree = "<group>"; };
+		9D12BCB23073F35C00F62912 /* RIRenderEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RIRenderEngine.swift; sourceTree = "<group>"; };
+		9D12BCB33073F35C00F62912 /* RIRenderError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RIRenderError.swift; sourceTree = "<group>"; };
+		9D12BCB53073F35C00F62912 /* RIRenderJob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RIRenderJob.swift; sourceTree = "<group>"; };
+		9D12BCB63073F35C00F62912 /* RIRenderJobView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RIRenderJobView.swift; sourceTree = "<group>"; };
+		9D12BCB73073F35C00F62912 /* RIRenderJobViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RIRenderJobViewModel.swift; sourceTree = "<group>"; };
+		9D12BCB83073F35C00F62912 /* RIRenderManagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RIRenderManagerView.swift; sourceTree = "<group>"; };
+		9D12BCB93073F35C00F62912 /* RIRenderManagerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RIRenderManagerViewModel.swift; sourceTree = "<group>"; };
+		9D12BCC23073F3B700F62912 /* RIContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RIContentView.swift; sourceTree = "<group>"; };
 		9D130B0F2FA1B2F700A760E9 /* KeyboardAndAutoScrollSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardAndAutoScrollSample.swift; sourceTree = "<group>"; };
 		9D130B102FA1B2F700A760E9 /* KeyboardAndAutoScrollSample_SheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardAndAutoScrollSample_SheetView.swift; sourceTree = "<group>"; };
 		9D130B122FA1B2F700A760E9 /* UITextViewWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextViewWrapper.swift; sourceTree = "<group>"; };
@@ -288,6 +304,21 @@
 				9D0BD4012E09CD420029DBBB /* PreferencesWithoutGeometryReader.swift */,
 			);
 			path = Preferences;
+			sourceTree = "<group>";
+		};
+		9D12BCB13073F35600F62912 /* RenderImitation */ = {
+			isa = PBXGroup;
+			children = (
+				9D12BCC23073F3B700F62912 /* RIContentView.swift */,
+				9D12BCB23073F35C00F62912 /* RIRenderEngine.swift */,
+				9D12BCB33073F35C00F62912 /* RIRenderError.swift */,
+				9D12BCB53073F35C00F62912 /* RIRenderJob.swift */,
+				9D12BCB63073F35C00F62912 /* RIRenderJobView.swift */,
+				9D12BCB73073F35C00F62912 /* RIRenderJobViewModel.swift */,
+				9D12BCB83073F35C00F62912 /* RIRenderManagerView.swift */,
+				9D12BCB93073F35C00F62912 /* RIRenderManagerViewModel.swift */,
+			);
+			path = RenderImitation;
 			sourceTree = "<group>";
 		};
 		9D130B0E2FA1B2D300A760E9 /* Keyboard&AutoScroll */ = {
@@ -621,6 +652,7 @@
 		9DB04BE52E8D94C0007BFA89 /* Concurency */ = {
 			isa = PBXGroup;
 			children = (
+				9D12BCB13073F35600F62912 /* RenderImitation */,
 				9DDFEA99306C11C300C93690 /* FactorialExample */,
 				9DDFEE20306C930C00C93690 /* AsyncStreamExample */,
 				9DDFEA94306B637700C93690 /* let async */,
@@ -908,6 +940,13 @@
 				9DF79CEC2EB481BD00A3B677 /* SafeKVC.m in Sources */,
 				9D3C749D2DF874060048D4E1 /* ImageTest.swift in Sources */,
 				9D5737472F1C212F00888E62 /* MenuSample_DropDown.swift in Sources */,
+				9D12BCBA3073F35C00F62912 /* RIRenderJobView.swift in Sources */,
+				9D12BCBB3073F35C00F62912 /* RIRenderEngine.swift in Sources */,
+				9D12BCBC3073F35C00F62912 /* RIRenderError.swift in Sources */,
+				9D12BCBE3073F35C00F62912 /* RIRenderManagerView.swift in Sources */,
+				9D12BCBF3073F35C00F62912 /* RIRenderJob.swift in Sources */,
+				9D12BCC03073F35C00F62912 /* RIRenderJobViewModel.swift in Sources */,
+				9D12BCC13073F35C00F62912 /* RIRenderManagerViewModel.swift in Sources */,
 				9D33480D2E71267C0075A381 /* AnimatableEmitter.swift in Sources */,
 				9D37070030676163007B09A1 /* MLEGroup.swift in Sources */,
 				9D4F9C022F93CCCA002F529D /* ActiveSheetEnumView.swift in Sources */,
@@ -971,6 +1010,7 @@
 				9D3C74AC2DF8FB430048D4E1 /* Grid.swift in Sources */,
 				9DFFBE382E5BDE06003CA6C7 /* EndlessRotationSample.swift in Sources */,
 				9DA2790D2EAEB1E2002FCAB4 /* Tree_PCSInheritance.swift in Sources */,
+				9D12BCC33073F3BB00F62912 /* RIContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
