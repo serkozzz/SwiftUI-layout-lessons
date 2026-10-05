@@ -9,6 +9,8 @@ import SwiftUI
 import Combine
 
 extension RenderImitation {
+    
+    @MainActor
     class RenderEngine {
         
         enum Event {
@@ -17,13 +19,14 @@ extension RenderImitation {
             case error(RenderError)
         }
         
+        @concurrent
         func nextIteration(for job: RenderJob) async throws {
             try await Task.sleep(for: .seconds(0.1))
         }
         
         func render(_ job: RenderJob) -> AsyncThrowingStream<Event, Error> {
             AsyncThrowingStream<Event, Error>() { continuation in
-                Task { @concurrent in
+                let task = Task { @concurrent in
                     for i in 0...100 {
                         
                         try await nextIteration(for: job)
@@ -32,6 +35,10 @@ extension RenderImitation {
                     }
                     continuation.yield(.complete(UIImage(systemName: "arrow.down")!))
                     continuation.finish()
+                }
+                
+                continuation.onTermination = { @Sendable _ in
+                    task.cancel()
                 }
             }
         }

@@ -20,11 +20,10 @@ enum RenderImitation {
         var body: some View {
             VStack {
                 Button("start") {
-                    viewModel.jobVMs.forEach { item in
-                        Task {
-                            try await item.startRender()
-                        }
-                    }
+                    viewModel.startRenders()
+                }
+                Button("cancel") {
+                    viewModel.cancelRenders()
                 }
                 List(viewModel.jobVMs) { jobVM in
                     RenderJobView(jobVM: jobVM)
