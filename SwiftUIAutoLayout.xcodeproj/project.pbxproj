@@ -88,6 +88,12 @@
 		9D6F834B2E8DF2B400F17E41 /* SingletonWithStrictConcurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6F834A2E8DF2B100F17E41 /* SingletonWithStrictConcurrency.swift */; };
 		9D7E2BB72FBBE466005BECE3 /* AlertQueueDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7E2BB52FBBE466005BECE3 /* AlertQueueDemoView.swift */; };
 		9D7E2BB82FBBE466005BECE3 /* AlertQueueDemoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7E2BB62FBBE466005BECE3 /* AlertQueueDemoViewModel.swift */; };
+		9D8771563078435E00B18371 /* PictureDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8771543078435E00B18371 /* PictureDTO.swift */; };
+		9D87715C3078436200B18371 /* PVHAlbumViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8771583078436200B18371 /* PVHAlbumViewModel.swift */; };
+		9D87715D3078436200B18371 /* PVHContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8771593078436200B18371 /* PVHContentView.swift */; };
+		9D87715E3078436200B18371 /* PVHAlbumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8771573078436200B18371 /* PVHAlbumView.swift */; };
+		9D87715F3078436200B18371 /* PVHPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D87715A3078436200B18371 /* PVHPhotoView.swift */; };
+		9D8771603078436200B18371 /* PVHPicturesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D87715B3078436200B18371 /* PVHPicturesService.swift */; };
 		9D982FEC2E94052900190A8C /* AppRouterSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D982FEB2E94052400190A8C /* AppRouterSample.swift */; };
 		9D982FEE2E94099E00190A8C /* CoordinatorSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D982FED2E94099600190A8C /* CoordinatorSample.swift */; };
 		9DA2790B2EAE990A002FCAB4 /* Sample_PCSInheritance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA2790A2EAE9906002FCAB4 /* Sample_PCSInheritance.swift */; };
@@ -225,6 +231,12 @@
 		9D6F834A2E8DF2B100F17E41 /* SingletonWithStrictConcurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingletonWithStrictConcurrency.swift; sourceTree = "<group>"; };
 		9D7E2BB52FBBE466005BECE3 /* AlertQueueDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertQueueDemoView.swift; sourceTree = "<group>"; };
 		9D7E2BB62FBBE466005BECE3 /* AlertQueueDemoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertQueueDemoViewModel.swift; sourceTree = "<group>"; };
+		9D8771543078435E00B18371 /* PictureDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureDTO.swift; sourceTree = "<group>"; };
+		9D8771573078436200B18371 /* PVHAlbumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PVHAlbumView.swift; sourceTree = "<group>"; };
+		9D8771583078436200B18371 /* PVHAlbumViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PVHAlbumViewModel.swift; sourceTree = "<group>"; };
+		9D8771593078436200B18371 /* PVHContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PVHContentView.swift; sourceTree = "<group>"; };
+		9D87715A3078436200B18371 /* PVHPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PVHPhotoView.swift; sourceTree = "<group>"; };
+		9D87715B3078436200B18371 /* PVHPicturesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PVHPicturesService.swift; sourceTree = "<group>"; };
 		9D93F8642DF63977009A957B /* SwiftUIAutoLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIAutoLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D982FEB2E94052400190A8C /* AppRouterSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouterSample.swift; sourceTree = "<group>"; };
 		9D982FED2E94099600190A8C /* CoordinatorSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorSample.swift; sourceTree = "<group>"; };
@@ -565,6 +577,26 @@
 			path = AlertsQueue;
 			sourceTree = "<group>";
 		};
+		9D877150307842D900B18371 /* PhotoViewerHTTP */ = {
+			isa = PBXGroup;
+			children = (
+				9D8771573078436200B18371 /* PVHAlbumView.swift */,
+				9D8771583078436200B18371 /* PVHAlbumViewModel.swift */,
+				9D8771593078436200B18371 /* PVHContentView.swift */,
+				9D87715A3078436200B18371 /* PVHPhotoView.swift */,
+				9D87715B3078436200B18371 /* PVHPicturesService.swift */,
+			);
+			path = PhotoViewerHTTP;
+			sourceTree = "<group>";
+		};
+		9D8771553078435E00B18371 /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				9D8771543078435E00B18371 /* PictureDTO.swift */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
 		9D93F85B2DF63977009A957B = {
 			isa = PBXGroup;
 			children = (
@@ -652,6 +684,7 @@
 		9DB04BE52E8D94C0007BFA89 /* Concurency */ = {
 			isa = PBXGroup;
 			children = (
+				9D877150307842D900B18371 /* PhotoViewerHTTP */,
 				9D12BCB13073F35600F62912 /* RenderImitation */,
 				9DDFEA99306C11C300C93690 /* FactorialExample */,
 				9DDFEE20306C930C00C93690 /* AsyncStreamExample */,
@@ -712,6 +745,7 @@
 		9DDFEA88306AF95800C93690 /* ServerAPI */ = {
 			isa = PBXGroup;
 			children = (
+				9D8771553078435E00B18371 /* DTO */,
 				9DDFEA89306AF96300C93690 /* ServerAPI.swift */,
 				9DDFEA8A306AF96300C93690 /* ServerAPIError.swift */,
 			);
@@ -885,6 +919,7 @@
 			files = (
 				9DA62E292E36EA7B00C85E7E /* Car+CoreDataClass.swift in Sources */,
 				9DCCFCB72F2A8B2B0065E604 /* SegmentedControlView.swift in Sources */,
+				9D8771563078435E00B18371 /* PictureDTO.swift in Sources */,
 				9D7E2BB72FBBE466005BECE3 /* AlertQueueDemoView.swift in Sources */,
 				9D7E2BB82FBBE466005BECE3 /* AlertQueueDemoViewModel.swift in Sources */,
 				9D33478C2E6BDF0B0075A381 /* AnimatableViewSample.swift in Sources */,
@@ -914,6 +949,11 @@
 				9DD5850E2E86E0D90074455E /* ObservableChain.swift in Sources */,
 				9DFFBE322E5AADF5003CA6C7 /* SimpleOpacityAnimation.swift in Sources */,
 				9D3C74BE2DFCEAEA0048D4E1 /* AnchorTabsExample.swift in Sources */,
+				9D87715C3078436200B18371 /* PVHAlbumViewModel.swift in Sources */,
+				9D87715D3078436200B18371 /* PVHContentView.swift in Sources */,
+				9D87715E3078436200B18371 /* PVHAlbumView.swift in Sources */,
+				9D87715F3078436200B18371 /* PVHPhotoView.swift in Sources */,
+				9D8771603078436200B18371 /* PVHPicturesService.swift in Sources */,
 				9D37070230676163007B09A1 /* MLEGroupViewModel.swift in Sources */,
 				9DB04BE72E8D950D007BFA89 /* AccessFromBackgroundProcess.swift in Sources */,
 				9D0BD3872DFD18320029DBBB /* CircleWithTextWithoutPref.swift in Sources */,

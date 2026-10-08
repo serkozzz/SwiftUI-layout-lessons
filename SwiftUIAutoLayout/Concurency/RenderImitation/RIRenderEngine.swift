@@ -27,14 +27,19 @@ extension RenderImitation {
         func render(_ job: RenderJob) -> AsyncThrowingStream<Event, Error> {
             AsyncThrowingStream<Event, Error>() { continuation in
                 let task = Task { @concurrent in
-                    for i in 0...100 {
-                        
-                        try await nextIteration(for: job)
-                        continuation.yield(.progress(Double(i) / 100.0))
-                        try Task.checkCancellation()
+                    do {
+                        for i in 0...100 {
+                            
+                            try await nextIteration(for: job)
+                            continuation.yield(.progress(Double(i) / 100.0))
+                            try Task.checkCancellation()
+                        }
+                        continuation.yield(.complete(UIImage(systemName: "arrow.down")!))
+                        continuation.finish()
                     }
-                    continuation.yield(.complete(UIImage(systemName: "arrow.down")!))
-                    continuation.finish()
+                    catch {
+                        continuation.finish(throwing: error) //обязательно нужно, потому что иначе исключение не перейдет границу task наверх
+                    }
                 }
                 
                 continuation.onTermination = { @Sendable _ in

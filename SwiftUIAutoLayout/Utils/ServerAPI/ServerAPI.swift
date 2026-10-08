@@ -9,7 +9,7 @@ import SwiftUI
 
 @MainActor
 class ServerAPI {
-    static let endpoint = URL(string: "https://picsum.photos/v2/list")!
+    static let endpoint = "https://picsum.photos/v2/list"
     
     func getImage(_ url: String) async throws -> UIImage {
         let data = try await sendGETRequest(url)
@@ -19,9 +19,9 @@ class ServerAPI {
         return image
     }
     
-    func sendJSONRequest<T: Decodable>(_ urlStr: String) async throws -> T {
+    func getJSON<T: Decodable>(_ urlStr: String) async throws -> T {
+        let data = try await sendGETRequest(urlStr)
         do {
-            let data = try await sendGETRequest(urlStr)
             let result = try JSONDecoder().decode(T.self, from: data)
             return result
         }
@@ -53,7 +53,10 @@ class ServerAPI {
             throw ServerAPIError.cancellation
         }
         catch let error as ServerAPIError {
-                throw error
+            throw error
+        }
+        catch  {
+            throw ServerAPIError.unknown
         }
     }
 }
