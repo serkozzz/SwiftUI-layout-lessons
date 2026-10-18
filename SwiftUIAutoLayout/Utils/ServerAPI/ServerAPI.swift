@@ -10,7 +10,8 @@ import SwiftUI
 @MainActor
 class ServerAPI {
     static let endpoint = "https://picsum.photos/v2/list"
-    
+    static var colorsEndpoing = "https://showroom.calico.blackmana.com/api/1.2/fabrics/colors"
+
     func getImage(_ url: String) async throws -> UIImage {
         let data = try await sendGETRequest(url)
         guard let image = UIImage(data: data) else {
@@ -51,6 +52,9 @@ class ServerAPI {
             throw ServerAPIError.cancellation
         } catch let error as URLError where error.code == .cancelled {
             throw ServerAPIError.cancellation
+        }
+        catch let error as URLError {
+            throw ServerAPIError(error)
         }
         catch let error as ServerAPIError {
             throw error

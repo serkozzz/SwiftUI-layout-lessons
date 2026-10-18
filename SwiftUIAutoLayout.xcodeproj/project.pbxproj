@@ -131,6 +131,14 @@
 		9DDFEE22306C930C00C93690 /* AsyncStreamExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDFEE1E306C930C00C93690 /* AsyncStreamExample.swift */; };
 		9DDFEE23306C930C00C93690 /* ASEquation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDFEE1C306C930C00C93690 /* ASEquation.swift */; };
 		9DDFEE24306C930C00C93690 /* ASViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDFEE1F306C930C00C93690 /* ASViewModel.swift */; };
+		9DE22ACF308580D40010EE91 /* PVDQColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE22ACD308580D40010EE91 /* PVDQColorView.swift */; };
+		9DE22AD0308580D40010EE91 /* PVDQColorsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE22ACC308580D40010EE91 /* PVDQColorsService.swift */; };
+		9DE22AD1308580D40010EE91 /* PVDQColorsCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE22ACB308580D40010EE91 /* PVDQColorsCollectionViewModel.swift */; };
+		9DE22AD2308580D40010EE91 /* PVDQColorsCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE22ACA308580D40010EE91 /* PVDQColorsCollectionView.swift */; };
+		9DE22AD3308580D40010EE91 /* PVDQContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE22ACE308580D40010EE91 /* PVDQContentView.swift */; };
+		9DE22AD4308580D40010EE91 /* ColorDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE22AC9308580D40010EE91 /* ColorDTO.swift */; };
+		9DE22AD93085823A0010EE91 /* PVDQServerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE22AD73085823A0010EE91 /* PVDQServerAPI.swift */; };
+		9DE22ADA3085823A0010EE91 /* PVDQServerAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE22AD83085823A0010EE91 /* PVDQServerAPIError.swift */; };
 		9DE850002EC7AE1E0046026E /* MyMacroPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 9DE84FFF2EC7AE1E0046026E /* MyMacroPackage */; };
 		9DE850032EC7AED10046026E /* SimpleMacroSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE850022EC7AED10046026E /* SimpleMacroSample.swift */; };
 		9DE850062EC820E40046026E /* MyMacroPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 9DE850052EC820E40046026E /* MyMacroPackage */; };
@@ -275,6 +283,14 @@
 		9DDFEE1D306C930C00C93690 /* ASCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASCalculator.swift; sourceTree = "<group>"; };
 		9DDFEE1E306C930C00C93690 /* AsyncStreamExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncStreamExample.swift; sourceTree = "<group>"; };
 		9DDFEE1F306C930C00C93690 /* ASViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASViewModel.swift; sourceTree = "<group>"; };
+		9DE22AC9308580D40010EE91 /* ColorDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorDTO.swift; sourceTree = "<group>"; };
+		9DE22ACA308580D40010EE91 /* PVDQColorsCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PVDQColorsCollectionView.swift; sourceTree = "<group>"; };
+		9DE22ACB308580D40010EE91 /* PVDQColorsCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PVDQColorsCollectionViewModel.swift; sourceTree = "<group>"; };
+		9DE22ACC308580D40010EE91 /* PVDQColorsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PVDQColorsService.swift; sourceTree = "<group>"; };
+		9DE22ACD308580D40010EE91 /* PVDQColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PVDQColorView.swift; sourceTree = "<group>"; };
+		9DE22ACE308580D40010EE91 /* PVDQContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PVDQContentView.swift; sourceTree = "<group>"; };
+		9DE22AD73085823A0010EE91 /* PVDQServerAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PVDQServerAPI.swift; sourceTree = "<group>"; };
+		9DE22AD83085823A0010EE91 /* PVDQServerAPIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PVDQServerAPIError.swift; sourceTree = "<group>"; };
 		9DE850022EC7AED10046026E /* SimpleMacroSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleMacroSample.swift; sourceTree = "<group>"; };
 		9DF79C8B2EAF17EC00A3B677 /* Tree_NotPolymorph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tree_NotPolymorph.swift; sourceTree = "<group>"; };
 		9DF79C8F2EAF180500A3B677 /* Sample_NotPolymorph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample_NotPolymorph.swift; sourceTree = "<group>"; };
@@ -592,6 +608,7 @@
 		9D8771553078435E00B18371 /* DTO */ = {
 			isa = PBXGroup;
 			children = (
+				9DE22AC9308580D40010EE91 /* ColorDTO.swift */,
 				9D8771543078435E00B18371 /* PictureDTO.swift */,
 			);
 			path = DTO;
@@ -684,6 +701,7 @@
 		9DB04BE52E8D94C0007BFA89 /* Concurency */ = {
 			isa = PBXGroup;
 			children = (
+				9DE22AC8308580810010EE91 /* PhotoViewerDispatchQuieue */,
 				9D877150307842D900B18371 /* PhotoViewerHTTP */,
 				9D12BCB13073F35600F62912 /* RenderImitation */,
 				9DDFEA99306C11C300C93690 /* FactorialExample */,
@@ -800,6 +818,20 @@
 				9DDFEE1F306C930C00C93690 /* ASViewModel.swift */,
 			);
 			path = AsyncStreamExample;
+			sourceTree = "<group>";
+		};
+		9DE22AC8308580810010EE91 /* PhotoViewerDispatchQuieue */ = {
+			isa = PBXGroup;
+			children = (
+				9DE22ACA308580D40010EE91 /* PVDQColorsCollectionView.swift */,
+				9DE22ACB308580D40010EE91 /* PVDQColorsCollectionViewModel.swift */,
+				9DE22AD73085823A0010EE91 /* PVDQServerAPI.swift */,
+				9DE22AD83085823A0010EE91 /* PVDQServerAPIError.swift */,
+				9DE22ACC308580D40010EE91 /* PVDQColorsService.swift */,
+				9DE22ACD308580D40010EE91 /* PVDQColorView.swift */,
+				9DE22ACE308580D40010EE91 /* PVDQContentView.swift */,
+			);
+			path = PhotoViewerDispatchQuieue;
 			sourceTree = "<group>";
 		};
 		9DE850012EC7AEA50046026E /* Macro */ = {
@@ -930,6 +962,8 @@
 				9DE850032EC7AED10046026E /* SimpleMacroSample.swift in Sources */,
 				9DA62E2A2E36EA7B00C85E7E /* DBGenerator.swift in Sources */,
 				9D37039A3066EA67007B09A1 /* ViewModelListExample.swift in Sources */,
+				9DE22AD93085823A0010EE91 /* PVDQServerAPI.swift in Sources */,
+				9DE22ADA3085823A0010EE91 /* PVDQServerAPIError.swift in Sources */,
 				9DA62E2B2E36EA7B00C85E7E /* CoreDataStack.swift in Sources */,
 				9D3347902E6BE6DA0075A381 /* KeyFrameInterpolator.swift in Sources */,
 				9D0BD3892DFDB1080029DBBB /* ThinkingInSwiftUI_AnimatedStack.swift in Sources */,
@@ -965,6 +999,12 @@
 				9D3706FC30676163007B09A1 /* ModelsListExample.swift in Sources */,
 				9D982FEE2E94099E00190A8C /* CoordinatorSample.swift in Sources */,
 				9DDFEE24306C930C00C93690 /* ASViewModel.swift in Sources */,
+				9DE22ACF308580D40010EE91 /* PVDQColorView.swift in Sources */,
+				9DE22AD0308580D40010EE91 /* PVDQColorsService.swift in Sources */,
+				9DE22AD1308580D40010EE91 /* PVDQColorsCollectionViewModel.swift in Sources */,
+				9DE22AD2308580D40010EE91 /* PVDQColorsCollectionView.swift in Sources */,
+				9DE22AD3308580D40010EE91 /* PVDQContentView.swift in Sources */,
+				9DE22AD4308580D40010EE91 /* ColorDTO.swift in Sources */,
 				9D4F9C0A2F93CD8B002F529D /* UIError.swift in Sources */,
 				9D55397D2E6B1F040074E241 /* TrimShapeAnimSample.swift in Sources */,
 				9D4F9C0E2F94309B002F529D /* ActiveSheetExampleChildView.swift in Sources */,

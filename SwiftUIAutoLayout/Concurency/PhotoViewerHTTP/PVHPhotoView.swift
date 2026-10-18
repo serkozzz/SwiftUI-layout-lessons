@@ -33,7 +33,12 @@ extension PhotoViewerHTTPWithTasksQueue {
             do {
                 print("PhotoView.task")
                 
-                image = try await picturesService.getIcon(for: dto)
+                let image = try await picturesService.getIcon(for: dto)
+                guard let thumbnail = await image.byPreparingThumbnail(
+                    ofSize: CGSize(width: 800, height: 600)) else {
+                        throw ServerAPIError.invalidBodyData
+                    }
+                self.image = thumbnail
             }
             catch {
                 
