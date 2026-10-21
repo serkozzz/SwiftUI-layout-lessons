@@ -139,6 +139,12 @@
 		9DE22AD4308580D40010EE91 /* ColorDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE22AC9308580D40010EE91 /* ColorDTO.swift */; };
 		9DE22AD93085823A0010EE91 /* PVDQServerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE22AD73085823A0010EE91 /* PVDQServerAPI.swift */; };
 		9DE22ADA3085823A0010EE91 /* PVDQServerAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE22AD83085823A0010EE91 /* PVDQServerAPIError.swift */; };
+		9DE22B503088397C0010EE91 /* RIWCRenderJobView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE22B4D3088397C0010EE91 /* RIWCRenderJobView.swift */; };
+		9DE22B513088397C0010EE91 /* RIWCRenderManagerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE22B4F3088397C0010EE91 /* RIWCRenderManagerViewModel.swift */; };
+		9DE22B523088397C0010EE91 /* RIWCContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE22B4A3088397C0010EE91 /* RIWCContentView.swift */; };
+		9DE22B533088397C0010EE91 /* RIWCRenderJob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE22B4C3088397C0010EE91 /* RIWCRenderJob.swift */; };
+		9DE22B543088397C0010EE91 /* RIWCRenderEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE22B4B3088397C0010EE91 /* RIWCRenderEngine.swift */; };
+		9DE22B553088397C0010EE91 /* RIWCRenderManagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE22B4E3088397C0010EE91 /* RIWCRenderManagerView.swift */; };
 		9DE850002EC7AE1E0046026E /* MyMacroPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 9DE84FFF2EC7AE1E0046026E /* MyMacroPackage */; };
 		9DE850032EC7AED10046026E /* SimpleMacroSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE850022EC7AED10046026E /* SimpleMacroSample.swift */; };
 		9DE850062EC820E40046026E /* MyMacroPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 9DE850052EC820E40046026E /* MyMacroPackage */; };
@@ -291,6 +297,12 @@
 		9DE22ACE308580D40010EE91 /* PVDQContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PVDQContentView.swift; sourceTree = "<group>"; };
 		9DE22AD73085823A0010EE91 /* PVDQServerAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PVDQServerAPI.swift; sourceTree = "<group>"; };
 		9DE22AD83085823A0010EE91 /* PVDQServerAPIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PVDQServerAPIError.swift; sourceTree = "<group>"; };
+		9DE22B4A3088397C0010EE91 /* RIWCContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RIWCContentView.swift; sourceTree = "<group>"; };
+		9DE22B4B3088397C0010EE91 /* RIWCRenderEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RIWCRenderEngine.swift; sourceTree = "<group>"; };
+		9DE22B4C3088397C0010EE91 /* RIWCRenderJob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RIWCRenderJob.swift; sourceTree = "<group>"; };
+		9DE22B4D3088397C0010EE91 /* RIWCRenderJobView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RIWCRenderJobView.swift; sourceTree = "<group>"; };
+		9DE22B4E3088397C0010EE91 /* RIWCRenderManagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RIWCRenderManagerView.swift; sourceTree = "<group>"; };
+		9DE22B4F3088397C0010EE91 /* RIWCRenderManagerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RIWCRenderManagerViewModel.swift; sourceTree = "<group>"; };
 		9DE850022EC7AED10046026E /* SimpleMacroSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleMacroSample.swift; sourceTree = "<group>"; };
 		9DF79C8B2EAF17EC00A3B677 /* Tree_NotPolymorph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tree_NotPolymorph.swift; sourceTree = "<group>"; };
 		9DF79C8F2EAF180500A3B677 /* Sample_NotPolymorph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample_NotPolymorph.swift; sourceTree = "<group>"; };
@@ -596,10 +608,10 @@
 		9D877150307842D900B18371 /* PhotoViewerHTTP */ = {
 			isa = PBXGroup;
 			children = (
-				9D8771573078436200B18371 /* PVHAlbumView.swift */,
 				9D8771583078436200B18371 /* PVHAlbumViewModel.swift */,
 				9D8771593078436200B18371 /* PVHContentView.swift */,
 				9D87715A3078436200B18371 /* PVHPhotoView.swift */,
+				9D8771573078436200B18371 /* PVHAlbumView.swift */,
 				9D87715B3078436200B18371 /* PVHPicturesService.swift */,
 			);
 			path = PhotoViewerHTTP;
@@ -703,6 +715,7 @@
 			children = (
 				9DE22AC8308580810010EE91 /* PhotoViewerDispatchQuieue */,
 				9D877150307842D900B18371 /* PhotoViewerHTTP */,
+				9DE22B49308838E70010EE91 /* RenderImitationWithCancellation */,
 				9D12BCB13073F35600F62912 /* RenderImitation */,
 				9DDFEA99306C11C300C93690 /* FactorialExample */,
 				9DDFEE20306C930C00C93690 /* AsyncStreamExample */,
@@ -834,6 +847,19 @@
 			path = PhotoViewerDispatchQuieue;
 			sourceTree = "<group>";
 		};
+		9DE22B49308838E70010EE91 /* RenderImitationWithCancellation */ = {
+			isa = PBXGroup;
+			children = (
+				9DE22B4A3088397C0010EE91 /* RIWCContentView.swift */,
+				9DE22B4B3088397C0010EE91 /* RIWCRenderEngine.swift */,
+				9DE22B4C3088397C0010EE91 /* RIWCRenderJob.swift */,
+				9DE22B4D3088397C0010EE91 /* RIWCRenderJobView.swift */,
+				9DE22B4E3088397C0010EE91 /* RIWCRenderManagerView.swift */,
+				9DE22B4F3088397C0010EE91 /* RIWCRenderManagerViewModel.swift */,
+			);
+			path = RenderImitationWithCancellation;
+			sourceTree = "<group>";
+		};
 		9DE850012EC7AEA50046026E /* Macro */ = {
 			isa = PBXGroup;
 			children = (
@@ -949,6 +975,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DE22B503088397C0010EE91 /* RIWCRenderJobView.swift in Sources */,
+				9DE22B513088397C0010EE91 /* RIWCRenderManagerViewModel.swift in Sources */,
+				9DE22B523088397C0010EE91 /* RIWCContentView.swift in Sources */,
+				9DE22B533088397C0010EE91 /* RIWCRenderJob.swift in Sources */,
+				9DE22B543088397C0010EE91 /* RIWCRenderEngine.swift in Sources */,
+				9DE22B553088397C0010EE91 /* RIWCRenderManagerView.swift in Sources */,
 				9DA62E292E36EA7B00C85E7E /* Car+CoreDataClass.swift in Sources */,
 				9DCCFCB72F2A8B2B0065E604 /* SegmentedControlView.swift in Sources */,
 				9D8771563078435E00B18371 /* PictureDTO.swift in Sources */,
