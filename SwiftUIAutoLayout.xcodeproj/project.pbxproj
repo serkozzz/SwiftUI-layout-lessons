@@ -30,6 +30,14 @@
 		9D3347902E6BE6DA0075A381 /* KeyFrameInterpolator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D33478F2E6BE6DA0075A381 /* KeyFrameInterpolator.swift */; };
 		9D3347EB2E70DACD0075A381 /* ClockViewSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3347EA2E70DACD0075A381 /* ClockViewSample.swift */; };
 		9D33480D2E71267C0075A381 /* AnimatableEmitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D33480C2E71267C0075A381 /* AnimatableEmitter.swift */; };
+		9D3526433089C45B00F4D7FA /* RIGCDRenderEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D35263E3089C45B00F4D7FA /* RIGCDRenderEngine.swift */; };
+		9D3526443089C45B00F4D7FA /* RIGCDRenderJobView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3526403089C45B00F4D7FA /* RIGCDRenderJobView.swift */; };
+		9D3526453089C45B00F4D7FA /* RIGCDRenderManagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3526413089C45B00F4D7FA /* RIGCDRenderManagerView.swift */; };
+		9D3526463089C45B00F4D7FA /* RIGCDContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D35263D3089C45B00F4D7FA /* RIGCDContentView.swift */; };
+		9D3526473089C45B00F4D7FA /* RIGCDRenderJob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D35263F3089C45B00F4D7FA /* RIGCDRenderJob.swift */; };
+		9D3526483089C45B00F4D7FA /* RIGCDRenderManagerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3526423089C45B00F4D7FA /* RIGCDRenderManagerViewModel.swift */; };
+		9D3526BE308B078E00F4D7FA /* DGENetworkServiceImitation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3526BD308B078E00F4D7FA /* DGENetworkServiceImitation.swift */; };
+		9D3526BF308B078E00F4D7FA /* DGEContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3526BC308B078E00F4D7FA /* DGEContentView.swift */; };
 		9D37039A3066EA67007B09A1 /* ViewModelListExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3703983066EA67007B09A1 /* ViewModelListExample.swift */; };
 		9D37039C3066EA9B007B09A1 /* GroupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D37039B3066EA92007B09A1 /* GroupViewModel.swift */; };
 		9D37039E3066EAA3007B09A1 /* ItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D37039D3066EA9F007B09A1 /* ItemViewModel.swift */; };
@@ -187,6 +195,14 @@
 		9D33478F2E6BE6DA0075A381 /* KeyFrameInterpolator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyFrameInterpolator.swift; sourceTree = "<group>"; };
 		9D3347EA2E70DACD0075A381 /* ClockViewSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockViewSample.swift; sourceTree = "<group>"; };
 		9D33480C2E71267C0075A381 /* AnimatableEmitter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableEmitter.swift; sourceTree = "<group>"; };
+		9D35263D3089C45B00F4D7FA /* RIGCDContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RIGCDContentView.swift; sourceTree = "<group>"; };
+		9D35263E3089C45B00F4D7FA /* RIGCDRenderEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RIGCDRenderEngine.swift; sourceTree = "<group>"; };
+		9D35263F3089C45B00F4D7FA /* RIGCDRenderJob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RIGCDRenderJob.swift; sourceTree = "<group>"; };
+		9D3526403089C45B00F4D7FA /* RIGCDRenderJobView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RIGCDRenderJobView.swift; sourceTree = "<group>"; };
+		9D3526413089C45B00F4D7FA /* RIGCDRenderManagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RIGCDRenderManagerView.swift; sourceTree = "<group>"; };
+		9D3526423089C45B00F4D7FA /* RIGCDRenderManagerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RIGCDRenderManagerViewModel.swift; sourceTree = "<group>"; };
+		9D3526BC308B078E00F4D7FA /* DGEContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DGEContentView.swift; sourceTree = "<group>"; };
+		9D3526BD308B078E00F4D7FA /* DGENetworkServiceImitation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DGENetworkServiceImitation.swift; sourceTree = "<group>"; };
 		9D3703983066EA67007B09A1 /* ViewModelListExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelListExample.swift; sourceTree = "<group>"; };
 		9D37039B3066EA92007B09A1 /* GroupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupViewModel.swift; sourceTree = "<group>"; };
 		9D37039D3066EA9F007B09A1 /* ItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewModel.swift; sourceTree = "<group>"; };
@@ -368,6 +384,28 @@
 				9D130B102FA1B2F700A760E9 /* KeyboardAndAutoScrollSample_SheetView.swift */,
 			);
 			path = "Keyboard&AutoScroll";
+			sourceTree = "<group>";
+		};
+		9D35263C3089C45300F4D7FA /* RenderImitationGCD */ = {
+			isa = PBXGroup;
+			children = (
+				9D35263D3089C45B00F4D7FA /* RIGCDContentView.swift */,
+				9D35263E3089C45B00F4D7FA /* RIGCDRenderEngine.swift */,
+				9D35263F3089C45B00F4D7FA /* RIGCDRenderJob.swift */,
+				9D3526403089C45B00F4D7FA /* RIGCDRenderJobView.swift */,
+				9D3526413089C45B00F4D7FA /* RIGCDRenderManagerView.swift */,
+				9D3526423089C45B00F4D7FA /* RIGCDRenderManagerViewModel.swift */,
+			);
+			path = RenderImitationGCD;
+			sourceTree = "<group>";
+		};
+		9D3526BB308B078600F4D7FA /* DispatchGroupExample */ = {
+			isa = PBXGroup;
+			children = (
+				9D3526BC308B078E00F4D7FA /* DGEContentView.swift */,
+				9D3526BD308B078E00F4D7FA /* DGENetworkServiceImitation.swift */,
+			);
+			path = DispatchGroupExample;
 			sourceTree = "<group>";
 		};
 		9D3703993066EA67007B09A1 /* ViewModelsList */ = {
@@ -713,10 +751,12 @@
 		9DB04BE52E8D94C0007BFA89 /* Concurency */ = {
 			isa = PBXGroup;
 			children = (
+				9D3526BB308B078600F4D7FA /* DispatchGroupExample */,
 				9DE22AC8308580810010EE91 /* PhotoViewerDispatchQuieue */,
 				9D877150307842D900B18371 /* PhotoViewerHTTP */,
 				9DE22B49308838E70010EE91 /* RenderImitationWithCancellation */,
 				9D12BCB13073F35600F62912 /* RenderImitation */,
+				9D35263C3089C45300F4D7FA /* RenderImitationGCD */,
 				9DDFEA99306C11C300C93690 /* FactorialExample */,
 				9DDFEE20306C930C00C93690 /* AsyncStreamExample */,
 				9DDFEA94306B637700C93690 /* let async */,
@@ -1073,6 +1113,14 @@
 				9D3706E63066EDA6007B09A1 /* Group.swift in Sources */,
 				9D3C74BC2DFC73ED0048D4E1 /* AnchorSimpleExample.swift in Sources */,
 				9D52781C2E3B8AFD0046C07A /* CompactModeReader.swift in Sources */,
+				9D3526BE308B078E00F4D7FA /* DGENetworkServiceImitation.swift in Sources */,
+				9D3526BF308B078E00F4D7FA /* DGEContentView.swift in Sources */,
+				9D3526433089C45B00F4D7FA /* RIGCDRenderEngine.swift in Sources */,
+				9D3526443089C45B00F4D7FA /* RIGCDRenderJobView.swift in Sources */,
+				9D3526453089C45B00F4D7FA /* RIGCDRenderManagerView.swift in Sources */,
+				9D3526463089C45B00F4D7FA /* RIGCDContentView.swift in Sources */,
+				9D3526473089C45B00F4D7FA /* RIGCDRenderJob.swift in Sources */,
+				9D3526483089C45B00F4D7FA /* RIGCDRenderManagerViewModel.swift in Sources */,
 				9D37039E3066EAA3007B09A1 /* ItemViewModel.swift in Sources */,
 				9D3347EB2E70DACD0075A381 /* ClockViewSample.swift in Sources */,
 				9D5539642E687E9A0074E241 /* FittingSizeUIViewSample.swift in Sources */,
